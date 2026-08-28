@@ -1,0 +1,22 @@
+# Dependencias / IDE
+node_modules/
+dist/
+build/
+.idea/
+.vscode/
+*.log
+.DS_Store
+
+# Secrets — nunca commitear
+**/.env
+**/.env.*
+!**/.env.example
+**/config/config.env
+**/config/*.env
+!**/config/config.env.example
+
+# Uploads / temporales
+uploads/
+tmp/
+*.pem
+*.key

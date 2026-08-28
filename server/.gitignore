@@ -1,0 +1,25 @@
+# Dependencias
+node_modules/
+
+# Secretos — config.env lleva claves de Culqi, Gmail y la base de datos.
+# El .example sí se versiona: es la plantilla sin valores.
+config/config.env
+config/*.env
+!config/config.env.example
+*.pem
+*.key
+
+# Volcados de base de datos: son datos, no código. Nunca al repositorio.
+*.sql.gz
+*.dump
+dump.sql
+backup*.sql
+backups/
+
+# Temporales de subida (express-fileupload usa esta carpeta)
+uploads/*
+!uploads/.gitkeep
+
+# Registros y basura del sistema
+*.log
+.DS_Store

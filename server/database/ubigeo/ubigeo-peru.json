@@ -1,0 +1,10460 @@
+{
+"_fuente": "INEI · Ubigeo Perú 2016 (github.com/ernestorivero/Ubigeo-Peru)",
+"_nota": "El código ubigeo es la clave estable: los nombres se repiten (hay 4 distritos llamados Miraflores).",
+"departamentos": [
+{
+"ubigeo": "01",
+"nombre": "Amazonas"
+},
+{
+"ubigeo": "02",
+"nombre": "Áncash"
+},
+{
+"ubigeo": "03",
+"nombre": "Apurímac"
+},
+{
+"ubigeo": "04",
+"nombre": "Arequipa"
+},
+{
+"ubigeo": "05",
+"nombre": "Ayacucho"
+},
+{
+"ubigeo": "06",
+"nombre": "Cajamarca"
+},
+{
+"ubigeo": "07",
+"nombre": "Callao"
+},
+{
+"ubigeo": "08",
+"nombre": "Cusco"
+},
+{
+"ubigeo": "09",
+"nombre": "Huancavelica"
+},
+{
+"ubigeo": "10",
+"nombre": "Huánuco"
+},
+{
+"ubigeo": "11",
+"nombre": "Ica"
+},
+{
+"ubigeo": "12",
+"nombre": "Junín"
+},
+{
+"ubigeo": "13",
+"nombre": "La Libertad"
+},
+{
+"ubigeo": "14",
+"nombre": "Lambayeque"
+},
+{
+"ubigeo": "15",
+"nombre": "Lima"
+},
+{
+"ubigeo": "16",
+"nombre": "Loreto"
+},
+{
+"ubigeo": "17",
+"nombre": "Madre de Dios"
+},
+{
+"ubigeo": "18",
+"nombre": "Moquegua"
+},
+{
+"ubigeo": "19",
+"nombre": "Pasco"
+},
+{
+"ubigeo": "20",
+"nombre": "Piura"
+},
+{
+"ubigeo": "21",
+"nombre": "Puno"
+},
+{
+"ubigeo": "22",
+"nombre": "San Martín"
+},
+{
+"ubigeo": "23",
+"nombre": "Tacna"
+},
+{
+"ubigeo": "24",
+"nombre": "Tumbes"
+},
+{
+"ubigeo": "25",
+"nombre": "Ucayali"
+}
+],
+"provincias": [
+{
+"ubigeo": "0101",
+"nombre": "Chachapoyas",
+"departamento": "01"
+},
+{
+"ubigeo": "0102",
+"nombre": "Bagua",
+"departamento": "01"
+},
+{
+"ubigeo": "0103",
+"nombre": "Bongará",
+"departamento": "01"
+},
+{
+"ubigeo": "0104",
+"nombre": "Condorcanqui",
+"departamento": "01"
+},
+{
+"ubigeo": "0105",
+"nombre": "Luya",
+"departamento": "01"
+},
+{
+"ubigeo": "0106",
+"nombre": "Rodríguez de Mendoza",
+"departamento": "01"
+},
+{
+"ubigeo": "0107",
+"nombre": "Utcubamba",
+"departamento": "01"
+},
+{
+"ubigeo": "0201",
+"nombre": "Huaraz",
+"departamento": "02"
+},
+{
+"ubigeo": "0202",
+"nombre": "Aija",
+"departamento": "02"
+},
+{
+"ubigeo": "0203",
+"nombre": "Antonio Raymondi",
+"departamento": "02"
+},
+{
+"ubigeo": "0204",
+"nombre": "Asunción",
+"departamento": "02"
+},
+{
+"ubigeo": "0205",
+"nombre": "Bolognesi",
+"departamento": "02"
+},
+{
+"ubigeo": "0206",
+"nombre": "Carhuaz",
+"departamento": "02"
+},
+{
+"ubigeo": "0207",
+"nombre": "Carlos Fermín Fitzcarrald",
+"departamento": "02"
+},
+{
+"ubigeo": "0208",
+"nombre": "Casma",
+"departamento": "02"
+},
+{
+"ubigeo": "0209",
+"nombre": "Corongo",
+"departamento": "02"
+},
+{
+"ubigeo": "0210",
+"nombre": "Huari",
+"departamento": "02"
+},
+{
+"ubigeo": "0211",
+"nombre": "Huarmey",
+"departamento": "02"
+},
+{
+"ubigeo": "0212",
+"nombre": "Huaylas",
+"departamento": "02"
+},
+{
+"ubigeo": "0213",
+"nombre": "Mariscal Luzuriaga",
+"departamento": "02"
+},
+{
+"ubigeo": "0214",
+"nombre": "Ocros",
+"departamento": "02"
+},
+{
+"ubigeo": "0215",
+"nombre": "Pallasca",
+"departamento": "02"
+},
+{
+"ubigeo": "0216",
+"nombre": "Pomabamba",
+"departamento": "02"
+},
+{
+"ubigeo": "0217",
+"nombre": "Recuay",
+"departamento": "02"
+},
+{
+"ubigeo": "0218",
+"nombre": "Santa",
+"departamento": "02"
+},
+{
+"ubigeo": "0219",
+"nombre": "Sihuas",
+"departamento": "02"
+},
+{
+"ubigeo": "0220",
+"nombre": "Yungay",
+"departamento": "02"
+},
+{
+"ubigeo": "0301",
+"nombre": "Abancay",
+"departamento": "03"
+},
+{
+"ubigeo": "0302",
+"nombre": "Andahuaylas",
+"departamento": "03"
+},
+{
+"ubigeo": "0303",
+"nombre": "Antabamba",
+"departamento": "03"
+},
+{
+"ubigeo": "0304",
+"nombre": "Aymaraes",
+"departamento": "03"
+},
+{
+"ubigeo": "0305",
+"nombre": "Cotabambas",
+"departamento": "03"
+},
+{
+"ubigeo": "0306",
+"nombre": "Chincheros",
+"departamento": "03"
+},
+{
+"ubigeo": "0307",
+"nombre": "Grau",
+"departamento": "03"
+},
+{
+"ubigeo": "0401",
+"nombre": "Arequipa",
+"departamento": "04"
+},
+{
+"ubigeo": "0402",
+"nombre": "Camaná",
+"departamento": "04"
+},
+{
+"ubigeo": "0403",
+"nombre": "Caravelí",
+"departamento": "04"
+},
+{
+"ubigeo": "0404",
+"nombre": "Castilla",
+"departamento": "04"
+},
+{
+"ubigeo": "0405",
+"nombre": "Caylloma",
+"departamento": "04"
+},
+{
+"ubigeo": "0406",
+"nombre": "Condesuyos",
+"departamento": "04"
+},
+{
+"ubigeo": "0407",
+"nombre": "Islay",
+"departamento": "04"
+},
+{
+"ubigeo": "0408",
+"nombre": "La Uniòn",
+"departamento": "04"
+},
+{
+"ubigeo": "0501",
+"nombre": "Huamanga",
+"departamento": "05"
+},
+{
+"ubigeo": "0502",
+"nombre": "Cangallo",
+"departamento": "05"
+},
+{
+"ubigeo": "0503",
+"nombre": "Huanca Sancos",
+"departamento": "05"
+},
+{
+"ubigeo": "0504",
+"nombre": "Huanta",
+"departamento": "05"
+},
+{
+"ubigeo": "0505",
+"nombre": "La Mar",
+"departamento": "05"
+},
+{
+"ubigeo": "0506",
+"nombre": "Lucanas",
+"departamento": "05"
+},
+{
+"ubigeo": "0507",
+"nombre": "Parinacochas",
+"departamento": "05"
+},
+{
+"ubigeo": "0508",
+"nombre": "Pàucar del Sara Sara",
+"departamento": "05"
+},
+{
+"ubigeo": "0509",
+"nombre": "Sucre",
+"departamento": "05"
+},
+{
+"ubigeo": "0510",
+"nombre": "Víctor Fajardo",
+"departamento": "05"
+},
+{
+"ubigeo": "0511",
+"nombre": "Vilcas Huamán",
+"departamento": "05"
+},
+{
+"ubigeo": "0601",
+"nombre": "Cajamarca",
+"departamento": "06"
+},
+{
+"ubigeo": "0602",
+"nombre": "Cajabamba",
+"departamento": "06"
+},
+{
+"ubigeo": "0603",
+"nombre": "Celendín",
+"departamento": "06"
+},
+{
+"ubigeo": "0604",
+"nombre": "Chota",
+"departamento": "06"
+},
+{
+"ubigeo": "0605",
+"nombre": "Contumazá",
+"departamento": "06"
+},
+{
+"ubigeo": "0606",
+"nombre": "Cutervo",
+"departamento": "06"
+},
+{
+"ubigeo": "0607",
+"nombre": "Hualgayoc",
+"departamento": "06"
+},
+{
+"ubigeo": "0608",
+"nombre": "Jaén",
+"departamento": "06"
+},
+{
+"ubigeo": "0609",
+"nombre": "San Ignacio",
+"departamento": "06"
+},
+{
+"ubigeo": "0610",
+"nombre": "San Marcos",
+"departamento": "06"
+},
+{
+"ubigeo": "0611",
+"nombre": "San Miguel",
+"departamento": "06"
+},
+{
+"ubigeo": "0612",
+"nombre": "San Pablo",
+"departamento": "06"
+},
+{
+"ubigeo": "0613",
+"nombre": "Santa Cruz",
+"departamento": "06"
+},
+{
+"ubigeo": "0701",
+"nombre": "Prov. Const. del Callao",
+"departamento": "07"
+},
+{
+"ubigeo": "0801",
+"nombre": "Cusco",
+"departamento": "08"
+},
+{
+"ubigeo": "0802",
+"nombre": "Acomayo",
+"departamento": "08"
+},
+{
+"ubigeo": "0803",
+"nombre": "Anta",
+"departamento": "08"
+},
+{
+"ubigeo": "0804",
+"nombre": "Calca",
+"departamento": "08"
+},
+{
+"ubigeo": "0805",
+"nombre": "Canas",
+"departamento": "08"
+},
+{
+"ubigeo": "0806",
+"nombre": "Canchis",
+"departamento": "08"
+},
+{
+"ubigeo": "0807",
+"nombre": "Chumbivilcas",
+"departamento": "08"
+},
+{
+"ubigeo": "0808",
+"nombre": "Espinar",
+"departamento": "08"
+},
+{
+"ubigeo": "0809",
+"nombre": "La Convención",
+"departamento": "08"
+},
+{
+"ubigeo": "0810",
+"nombre": "Paruro",
+"departamento": "08"
+},
+{
+"ubigeo": "0811",
+"nombre": "Paucartambo",
+"departamento": "08"
+},
+{
+"ubigeo": "0812",
+"nombre": "Quispicanchi",
+"departamento": "08"
+},
+{
+"ubigeo": "0813",
+"nombre": "Urubamba",
+"departamento": "08"
+},
+{
+"ubigeo": "0901",
+"nombre": "Huancavelica",
+"departamento": "09"
+},
+{
+"ubigeo": "0902",
+"nombre": "Acobamba",
+"departamento": "09"
+},
+{
+"ubigeo": "0903",
+"nombre": "Angaraes",
+"departamento": "09"
+},
+{
+"ubigeo": "0904",
+"nombre": "Castrovirreyna",
+"departamento": "09"
+},
+{
+"ubigeo": "0905",
+"nombre": "Churcampa",
+"departamento": "09"
+},
+{
+"ubigeo": "0906",
+"nombre": "Huaytará",
+"departamento": "09"
+},
+{
+"ubigeo": "0907",
+"nombre": "Tayacaja",
+"departamento": "09"
+},
+{
+"ubigeo": "1001",
+"nombre": "Huánuco",
+"departamento": "10"
+},
+{
+"ubigeo": "1002",
+"nombre": "Ambo",
+"departamento": "10"
+},
+{
+"ubigeo": "1003",
+"nombre": "Dos de Mayo",
+"departamento": "10"
+},
+{
+"ubigeo": "1004",
+"nombre": "Huacaybamba",
+"departamento": "10"
+},
+{
+"ubigeo": "1005",
+"nombre": "Huamalíes",
+"departamento": "10"
+},
+{
+"ubigeo": "1006",
+"nombre": "Leoncio Prado",
+"departamento": "10"
+},
+{
+"ubigeo": "1007",
+"nombre": "Marañón",
+"departamento": "10"
+},
+{
+"ubigeo": "1008",
+"nombre": "Pachitea",
+"departamento": "10"
+},
+{
+"ubigeo": "1009",
+"nombre": "Puerto Inca",
+"departamento": "10"
+},
+{
+"ubigeo": "1010",
+"nombre": "Lauricocha",
+"departamento": "10"
+},
+{
+"ubigeo": "1011",
+"nombre": "Yarowilca",
+"departamento": "10"
+},
+{
+"ubigeo": "1101",
+"nombre": "Ica",
+"departamento": "11"
+},
+{
+"ubigeo": "1102",
+"nombre": "Chincha",
+"departamento": "11"
+},
+{
+"ubigeo": "1103",
+"nombre": "Nasca",
+"departamento": "11"
+},
+{
+"ubigeo": "1104",
+"nombre": "Palpa",
+"departamento": "11"
+},
+{
+"ubigeo": "1105",
+"nombre": "Pisco",
+"departamento": "11"
+},
+{
+"ubigeo": "1201",
+"nombre": "Huancayo",
+"departamento": "12"
+},
+{
+"ubigeo": "1202",
+"nombre": "Concepción",
+"departamento": "12"
+},
+{
+"ubigeo": "1203",
+"nombre": "Chanchamayo",
+"departamento": "12"
+},
+{
+"ubigeo": "1204",
+"nombre": "Jauja",
+"departamento": "12"
+},
+{
+"ubigeo": "1205",
+"nombre": "Junín",
+"departamento": "12"
+},
+{
+"ubigeo": "1206",
+"nombre": "Satipo",
+"departamento": "12"
+},
+{
+"ubigeo": "1207",
+"nombre": "Tarma",
+"departamento": "12"
+},
+{
+"ubigeo": "1208",
+"nombre": "Yauli",
+"departamento": "12"
+},
+{
+"ubigeo": "1209",
+"nombre": "Chupaca",
+"departamento": "12"
+},
+{
+"ubigeo": "1301",
+"nombre": "Trujillo",
+"departamento": "13"
+},
+{
+"ubigeo": "1302",
+"nombre": "Ascope",
+"departamento": "13"
+},
+{
+"ubigeo": "1303",
+"nombre": "Bolívar",
+"departamento": "13"
+},
+{
+"ubigeo": "1304",
+"nombre": "Chepén",
+"departamento": "13"
+},
+{
+"ubigeo": "1305",
+"nombre": "Julcán",
+"departamento": "13"
+},
+{
+"ubigeo": "1306",
+"nombre": "Otuzco",
+"departamento": "13"
+},
+{
+"ubigeo": "1307",
+"nombre": "Pacasmayo",
+"departamento": "13"
+},
+{
+"ubigeo": "1308",
+"nombre": "Pataz",
+"departamento": "13"
+},
+{
+"ubigeo": "1309",
+"nombre": "Sánchez Carrión",
+"departamento": "13"
+},
+{
+"ubigeo": "1310",
+"nombre": "Santiago de Chuco",
+"departamento": "13"
+},
+{
+"ubigeo": "1311",
+"nombre": "Gran Chimú",
+"departamento": "13"
+},
+{
+"ubigeo": "1312",
+"nombre": "Virú",
+"departamento": "13"
+},
+{
+"ubigeo": "1401",
+"nombre": "Chiclayo",
+"departamento": "14"
+},
+{
+"ubigeo": "1402",
+"nombre": "Ferreñafe",
+"departamento": "14"
+},
+{
+"ubigeo": "1403",
+"nombre": "Lambayeque",
+"departamento": "14"
+},
+{
+"ubigeo": "1501",
+"nombre": "Lima",
+"departamento": "15"
+},
+{
+"ubigeo": "1502",
+"nombre": "Barranca",
+"departamento": "15"
+},
+{
+"ubigeo": "1503",
+"nombre": "Cajatambo",
+"departamento": "15"
+},
+{
+"ubigeo": "1504",
+"nombre": "Canta",
+"departamento": "15"
+},
+{
+"ubigeo": "1505",
+"nombre": "Cañete",
+"departamento": "15"
+},
+{
+"ubigeo": "1506",
+"nombre": "Huaral",
+"departamento": "15"
+},
+{
+"ubigeo": "1507",
+"nombre": "Huarochirí",
+"departamento": "15"
+},
+{
+"ubigeo": "1508",
+"nombre": "Huaura",
+"departamento": "15"
+},
+{
+"ubigeo": "1509",
+"nombre": "Oyón",
+"departamento": "15"
+},
+{
+"ubigeo": "1510",
+"nombre": "Yauyos",
+"departamento": "15"
+},
+{
+"ubigeo": "1601",
+"nombre": "Maynas",
+"departamento": "16"
+},
+{
+"ubigeo": "1602",
+"nombre": "Alto Amazonas",
+"departamento": "16"
+},
+{
+"ubigeo": "1603",
+"nombre": "Loreto",
+"departamento": "16"
+},
+{
+"ubigeo": "1604",
+"nombre": "Mariscal Ramón Castilla",
+"departamento": "16"
+},
+{
+"ubigeo": "1605",
+"nombre": "Requena",
+"departamento": "16"
+},
+{
+"ubigeo": "1606",
+"nombre": "Ucayali",
+"departamento": "16"
+},
+{
+"ubigeo": "1607",
+"nombre": "Datem del Marañón",
+"departamento": "16"
+},
+{
+"ubigeo": "1608",
+"nombre": "Putumayo",
+"departamento": "16"
+},
+{
+"ubigeo": "1701",
+"nombre": "Tambopata",
+"departamento": "17"
+},
+{
+"ubigeo": "1702",
+"nombre": "Manu",
+"departamento": "17"
+},
+{
+"ubigeo": "1703",
+"nombre": "Tahuamanu",
+"departamento": "17"
+},
+{
+"ubigeo": "1801",
+"nombre": "Mariscal Nieto",
+"departamento": "18"
+},
+{
+"ubigeo": "1802",
+"nombre": "General Sánchez Cerro",
+"departamento": "18"
+},
+{
+"ubigeo": "1803",
+"nombre": "Ilo",
+"departamento": "18"
+},
+{
+"ubigeo": "1901",
+"nombre": "Pasco",
+"departamento": "19"
+},
+{
+"ubigeo": "1902",
+"nombre": "Daniel Alcides Carrión",
+"departamento": "19"
+},
+{
+"ubigeo": "1903",
+"nombre": "Oxapampa",
+"departamento": "19"
+},
+{
+"ubigeo": "2001",
+"nombre": "Piura",
+"departamento": "20"
+},
+{
+"ubigeo": "2002",
+"nombre": "Ayabaca",
+"departamento": "20"
+},
+{
+"ubigeo": "2003",
+"nombre": "Huancabamba",
+"departamento": "20"
+},
+{
+"ubigeo": "2004",
+"nombre": "Morropón",
+"departamento": "20"
+},
+{
+"ubigeo": "2005",
+"nombre": "Paita",
+"departamento": "20"
+},
+{
+"ubigeo": "2006",
+"nombre": "Sullana",
+"departamento": "20"
+},
+{
+"ubigeo": "2007",
+"nombre": "Talara",
+"departamento": "20"
+},
+{
+"ubigeo": "2008",
+"nombre": "Sechura",
+"departamento": "20"
+},
+{
+"ubigeo": "2101",
+"nombre": "Puno",
+"departamento": "21"
+},
+{
+"ubigeo": "2102",
+"nombre": "Azángaro",
+"departamento": "21"
+},
+{
+"ubigeo": "2103",
+"nombre": "Carabaya",
+"departamento": "21"
+},
+{
+"ubigeo": "2104",
+"nombre": "Chucuito",
+"departamento": "21"
+},
+{
+"ubigeo": "2105",
+"nombre": "El Collao",
+"departamento": "21"
+},
+{
+"ubigeo": "2106",
+"nombre": "Huancané",
+"departamento": "21"
+},
+{
+"ubigeo": "2107",
+"nombre": "Lampa",
+"departamento": "21"
+},
+{
+"ubigeo": "2108",
+"nombre": "Melgar",
+"departamento": "21"
+},
+{
+"ubigeo": "2109",
+"nombre": "Moho",
+"departamento": "21"
+},
+{
+"ubigeo": "2110",
+"nombre": "San Antonio de Putina",
+"departamento": "21"
+},
+{
+"ubigeo": "2111",
+"nombre": "San Román",
+"departamento": "21"
+},
+{
+"ubigeo": "2112",
+"nombre": "Sandia",
+"departamento": "21"
+},
+{
+"ubigeo": "2113",
+"nombre": "Yunguyo",
+"departamento": "21"
+},
+{
+"ubigeo": "2201",
+"nombre": "Moyobamba",
+"departamento": "22"
+},
+{
+"ubigeo": "2202",
+"nombre": "Bellavista",
+"departamento": "22"
+},
+{
+"ubigeo": "2203",
+"nombre": "El Dorado",
+"departamento": "22"
+},
+{
+"ubigeo": "2204",
+"nombre": "Huallaga",
+"departamento": "22"
+},
+{
+"ubigeo": "2205",
+"nombre": "Lamas",
+"departamento": "22"
+},
+{
+"ubigeo": "2206",
+"nombre": "Mariscal Cáceres",
+"departamento": "22"
+},
+{
+"ubigeo": "2207",
+"nombre": "Picota",
+"departamento": "22"
+},
+{
+"ubigeo": "2208",
+"nombre": "Rioja",
+"departamento": "22"
+},
+{
+"ubigeo": "2209",
+"nombre": "San Martín",
+"departamento": "22"
+},
+{
+"ubigeo": "2210",
+"nombre": "Tocache",
+"departamento": "22"
+},
+{
+"ubigeo": "2301",
+"nombre": "Tacna",
+"departamento": "23"
+},
+{
+"ubigeo": "2302",
+"nombre": "Candarave",
+"departamento": "23"
+},
+{
+"ubigeo": "2303",
+"nombre": "Jorge Basadre",
+"departamento": "23"
+},
+{
+"ubigeo": "2304",
+"nombre": "Tarata",
+"departamento": "23"
+},
+{
+"ubigeo": "2401",
+"nombre": "Tumbes",
+"departamento": "24"
+},
+{
+"ubigeo": "2402",
+"nombre": "Contralmirante Villar",
+"departamento": "24"
+},
+{
+"ubigeo": "2403",
+"nombre": "Zarumilla",
+"departamento": "24"
+},
+{
+"ubigeo": "2501",
+"nombre": "Coronel Portillo",
+"departamento": "25"
+},
+{
+"ubigeo": "2502",
+"nombre": "Atalaya",
+"departamento": "25"
+},
+{
+"ubigeo": "2503",
+"nombre": "Padre Abad",
+"departamento": "25"
+},
+{
+"ubigeo": "2504",
+"nombre": "Purús",
+"departamento": "25"
+}
+],
+"distritos": [
+{
+"ubigeo": "010101",
+"nombre": "Chachapoyas",
+"provincia": "0101"
+},
+{
+"ubigeo": "010102",
+"nombre": "Asunción",
+"provincia": "0101"
+},
+{
+"ubigeo": "010103",
+"nombre": "Balsas",
+"provincia": "0101"
+},
+{
+"ubigeo": "010104",
+"nombre": "Cheto",
+"provincia": "0101"
+},
+{
+"ubigeo": "010105",
+"nombre": "Chiliquin",
+"provincia": "0101"
+},
+{
+"ubigeo": "010106",
+"nombre": "Chuquibamba",
+"provincia": "0101"
+},
+{
+"ubigeo": "010107",
+"nombre": "Granada",
+"provincia": "0101"
+},
+{
+"ubigeo": "010108",
+"nombre": "Huancas",
+"provincia": "0101"
+},
+{
+"ubigeo": "010109",
+"nombre": "La Jalca",
+"provincia": "0101"
+},
+{
+"ubigeo": "010110",
+"nombre": "Leimebamba",
+"provincia": "0101"
+},
+{
+"ubigeo": "010111",
+"nombre": "Levanto",
+"provincia": "0101"
+},
+{
+"ubigeo": "010112",
+"nombre": "Magdalena",
+"provincia": "0101"
+},
+{
+"ubigeo": "010113",
+"nombre": "Mariscal Castilla",
+"provincia": "0101"
+},
+{
+"ubigeo": "010114",
+"nombre": "Molinopampa",
+"provincia": "0101"
+},
+{
+"ubigeo": "010115",
+"nombre": "Montevideo",
+"provincia": "0101"
+},
+{
+"ubigeo": "010116",
+"nombre": "Olleros",
+"provincia": "0101"
+},
+{
+"ubigeo": "010117",
+"nombre": "Quinjalca",
+"provincia": "0101"
+},
+{
+"ubigeo": "010118",
+"nombre": "San Francisco de Daguas",
+"provincia": "0101"
+},
+{
+"ubigeo": "010119",
+"nombre": "San Isidro de Maino",
+"provincia": "0101"
+},
+{
+"ubigeo": "010120",
+"nombre": "Soloco",
+"provincia": "0101"
+},
+{
+"ubigeo": "010121",
+"nombre": "Sonche",
+"provincia": "0101"
+},
+{
+"ubigeo": "010201",
+"nombre": "Bagua",
+"provincia": "0102"
+},
+{
+"ubigeo": "010202",
+"nombre": "Aramango",
+"provincia": "0102"
+},
+{
+"ubigeo": "010203",
+"nombre": "Copallin",
+"provincia": "0102"
+},
+{
+"ubigeo": "010204",
+"nombre": "El Parco",
+"provincia": "0102"
+},
+{
+"ubigeo": "010205",
+"nombre": "Imaza",
+"provincia": "0102"
+},
+{
+"ubigeo": "010206",
+"nombre": "La Peca",
+"provincia": "0102"
+},
+{
+"ubigeo": "010301",
+"nombre": "Jumbilla",
+"provincia": "0103"
+},
+{
+"ubigeo": "010302",
+"nombre": "Chisquilla",
+"provincia": "0103"
+},
+{
+"ubigeo": "010303",
+"nombre": "Churuja",
+"provincia": "0103"
+},
+{
+"ubigeo": "010304",
+"nombre": "Corosha",
+"provincia": "0103"
+},
+{
+"ubigeo": "010305",
+"nombre": "Cuispes",
+"provincia": "0103"
+},
+{
+"ubigeo": "010306",
+"nombre": "Florida",
+"provincia": "0103"
+},
+{
+"ubigeo": "010307",
+"nombre": "Jazan",
+"provincia": "0103"
+},
+{
+"ubigeo": "010308",
+"nombre": "Recta",
+"provincia": "0103"
+},
+{
+"ubigeo": "010309",
+"nombre": "San Carlos",
+"provincia": "0103"
+},
+{
+"ubigeo": "010310",
+"nombre": "Shipasbamba",
+"provincia": "0103"
+},
+{
+"ubigeo": "010311",
+"nombre": "Valera",
+"provincia": "0103"
+},
+{
+"ubigeo": "010312",
+"nombre": "Yambrasbamba",
+"provincia": "0103"
+},
+{
+"ubigeo": "010401",
+"nombre": "Nieva",
+"provincia": "0104"
+},
+{
+"ubigeo": "010402",
+"nombre": "El Cenepa",
+"provincia": "0104"
+},
+{
+"ubigeo": "010403",
+"nombre": "Río Santiago",
+"provincia": "0104"
+},
+{
+"ubigeo": "010501",
+"nombre": "Lamud",
+"provincia": "0105"
+},
+{
+"ubigeo": "010502",
+"nombre": "Camporredondo",
+"provincia": "0105"
+},
+{
+"ubigeo": "010503",
+"nombre": "Cocabamba",
+"provincia": "0105"
+},
+{
+"ubigeo": "010504",
+"nombre": "Colcamar",
+"provincia": "0105"
+},
+{
+"ubigeo": "010505",
+"nombre": "Conila",
+"provincia": "0105"
+},
+{
+"ubigeo": "010506",
+"nombre": "Inguilpata",
+"provincia": "0105"
+},
+{
+"ubigeo": "010507",
+"nombre": "Longuita",
+"provincia": "0105"
+},
+{
+"ubigeo": "010508",
+"nombre": "Lonya Chico",
+"provincia": "0105"
+},
+{
+"ubigeo": "010509",
+"nombre": "Luya",
+"provincia": "0105"
+},
+{
+"ubigeo": "010510",
+"nombre": "Luya Viejo",
+"provincia": "0105"
+},
+{
+"ubigeo": "010511",
+"nombre": "María",
+"provincia": "0105"
+},
+{
+"ubigeo": "010512",
+"nombre": "Ocalli",
+"provincia": "0105"
+},
+{
+"ubigeo": "010513",
+"nombre": "Ocumal",
+"provincia": "0105"
+},
+{
+"ubigeo": "010514",
+"nombre": "Pisuquia",
+"provincia": "0105"
+},
+{
+"ubigeo": "010515",
+"nombre": "Providencia",
+"provincia": "0105"
+},
+{
+"ubigeo": "010516",
+"nombre": "San Cristóbal",
+"provincia": "0105"
+},
+{
+"ubigeo": "010517",
+"nombre": "San Francisco de Yeso",
+"provincia": "0105"
+},
+{
+"ubigeo": "010518",
+"nombre": "San Jerónimo",
+"provincia": "0105"
+},
+{
+"ubigeo": "010519",
+"nombre": "San Juan de Lopecancha",
+"provincia": "0105"
+},
+{
+"ubigeo": "010520",
+"nombre": "Santa Catalina",
+"provincia": "0105"
+},
+{
+"ubigeo": "010521",
+"nombre": "Santo Tomas",
+"provincia": "0105"
+},
+{
+"ubigeo": "010522",
+"nombre": "Tingo",
+"provincia": "0105"
+},
+{
+"ubigeo": "010523",
+"nombre": "Trita",
+"provincia": "0105"
+},
+{
+"ubigeo": "010601",
+"nombre": "San Nicolás",
+"provincia": "0106"
+},
+{
+"ubigeo": "010602",
+"nombre": "Chirimoto",
+"provincia": "0106"
+},
+{
+"ubigeo": "010603",
+"nombre": "Cochamal",
+"provincia": "0106"
+},
+{
+"ubigeo": "010604",
+"nombre": "Huambo",
+"provincia": "0106"
+},
+{
+"ubigeo": "010605",
+"nombre": "Limabamba",
+"provincia": "0106"
+},
+{
+"ubigeo": "010606",
+"nombre": "Longar",
+"provincia": "0106"
+},
+{
+"ubigeo": "010607",
+"nombre": "Mariscal Benavides",
+"provincia": "0106"
+},
+{
+"ubigeo": "010608",
+"nombre": "Milpuc",
+"provincia": "0106"
+},
+{
+"ubigeo": "010609",
+"nombre": "Omia",
+"provincia": "0106"
+},
+{
+"ubigeo": "010610",
+"nombre": "Santa Rosa",
+"provincia": "0106"
+},
+{
+"ubigeo": "010611",
+"nombre": "Totora",
+"provincia": "0106"
+},
+{
+"ubigeo": "010612",
+"nombre": "Vista Alegre",
+"provincia": "0106"
+},
+{
+"ubigeo": "010701",
+"nombre": "Bagua Grande",
+"provincia": "0107"
+},
+{
+"ubigeo": "010702",
+"nombre": "Cajaruro",
+"provincia": "0107"
+},
+{
+"ubigeo": "010703",
+"nombre": "Cumba",
+"provincia": "0107"
+},
+{
+"ubigeo": "010704",
+"nombre": "El Milagro",
+"provincia": "0107"
+},
+{
+"ubigeo": "010705",
+"nombre": "Jamalca",
+"provincia": "0107"
+},
+{
+"ubigeo": "010706",
+"nombre": "Lonya Grande",
+"provincia": "0107"
+},
+{
+"ubigeo": "010707",
+"nombre": "Yamon",
+"provincia": "0107"
+},
+{
+"ubigeo": "020101",
+"nombre": "Huaraz",
+"provincia": "0201"
+},
+{
+"ubigeo": "020102",
+"nombre": "Cochabamba",
+"provincia": "0201"
+},
+{
+"ubigeo": "020103",
+"nombre": "Colcabamba",
+"provincia": "0201"
+},
+{
+"ubigeo": "020104",
+"nombre": "Huanchay",
+"provincia": "0201"
+},
+{
+"ubigeo": "020105",
+"nombre": "Independencia",
+"provincia": "0201"
+},
+{
+"ubigeo": "020106",
+"nombre": "Jangas",
+"provincia": "0201"
+},
+{
+"ubigeo": "020107",
+"nombre": "La Libertad",
+"provincia": "0201"
+},
+{
+"ubigeo": "020108",
+"nombre": "Olleros",
+"provincia": "0201"
+},
+{
+"ubigeo": "020109",
+"nombre": "Pampas Grande",
+"provincia": "0201"
+},
+{
+"ubigeo": "020110",
+"nombre": "Pariacoto",
+"provincia": "0201"
+},
+{
+"ubigeo": "020111",
+"nombre": "Pira",
+"provincia": "0201"
+},
+{
+"ubigeo": "020112",
+"nombre": "Tarica",
+"provincia": "0201"
+},
+{
+"ubigeo": "020201",
+"nombre": "Aija",
+"provincia": "0202"
+},
+{
+"ubigeo": "020202",
+"nombre": "Coris",
+"provincia": "0202"
+},
+{
+"ubigeo": "020203",
+"nombre": "Huacllan",
+"provincia": "0202"
+},
+{
+"ubigeo": "020204",
+"nombre": "La Merced",
+"provincia": "0202"
+},
+{
+"ubigeo": "020205",
+"nombre": "Succha",
+"provincia": "0202"
+},
+{
+"ubigeo": "020301",
+"nombre": "Llamellin",
+"provincia": "0203"
+},
+{
+"ubigeo": "020302",
+"nombre": "Aczo",
+"provincia": "0203"
+},
+{
+"ubigeo": "020303",
+"nombre": "Chaccho",
+"provincia": "0203"
+},
+{
+"ubigeo": "020304",
+"nombre": "Chingas",
+"provincia": "0203"
+},
+{
+"ubigeo": "020305",
+"nombre": "Mirgas",
+"provincia": "0203"
+},
+{
+"ubigeo": "020306",
+"nombre": "San Juan de Rontoy",
+"provincia": "0203"
+},
+{
+"ubigeo": "020401",
+"nombre": "Chacas",
+"provincia": "0204"
+},
+{
+"ubigeo": "020402",
+"nombre": "Acochaca",
+"provincia": "0204"
+},
+{
+"ubigeo": "020501",
+"nombre": "Chiquian",
+"provincia": "0205"
+},
+{
+"ubigeo": "020502",
+"nombre": "Abelardo Pardo Lezameta",
+"provincia": "0205"
+},
+{
+"ubigeo": "020503",
+"nombre": "Antonio Raymondi",
+"provincia": "0205"
+},
+{
+"ubigeo": "020504",
+"nombre": "Aquia",
+"provincia": "0205"
+},
+{
+"ubigeo": "020505",
+"nombre": "Cajacay",
+"provincia": "0205"
+},
+{
+"ubigeo": "020506",
+"nombre": "Canis",
+"provincia": "0205"
+},
+{
+"ubigeo": "020507",
+"nombre": "Colquioc",
+"provincia": "0205"
+},
+{
+"ubigeo": "020508",
+"nombre": "Huallanca",
+"provincia": "0205"
+},
+{
+"ubigeo": "020509",
+"nombre": "Huasta",
+"provincia": "0205"
+},
+{
+"ubigeo": "020510",
+"nombre": "Huayllacayan",
+"provincia": "0205"
+},
+{
+"ubigeo": "020511",
+"nombre": "La Primavera",
+"provincia": "0205"
+},
+{
+"ubigeo": "020512",
+"nombre": "Mangas",
+"provincia": "0205"
+},
+{
+"ubigeo": "020513",
+"nombre": "Pacllon",
+"provincia": "0205"
+},
+{
+"ubigeo": "020514",
+"nombre": "San Miguel de Corpanqui",
+"provincia": "0205"
+},
+{
+"ubigeo": "020515",
+"nombre": "Ticllos",
+"provincia": "0205"
+},
+{
+"ubigeo": "020601",
+"nombre": "Carhuaz",
+"provincia": "0206"
+},
+{
+"ubigeo": "020602",
+"nombre": "Acopampa",
+"provincia": "0206"
+},
+{
+"ubigeo": "020603",
+"nombre": "Amashca",
+"provincia": "0206"
+},
+{
+"ubigeo": "020604",
+"nombre": "Anta",
+"provincia": "0206"
+},
+{
+"ubigeo": "020605",
+"nombre": "Ataquero",
+"provincia": "0206"
+},
+{
+"ubigeo": "020606",
+"nombre": "Marcara",
+"provincia": "0206"
+},
+{
+"ubigeo": "020607",
+"nombre": "Pariahuanca",
+"provincia": "0206"
+},
+{
+"ubigeo": "020608",
+"nombre": "San Miguel de Aco",
+"provincia": "0206"
+},
+{
+"ubigeo": "020609",
+"nombre": "Shilla",
+"provincia": "0206"
+},
+{
+"ubigeo": "020610",
+"nombre": "Tinco",
+"provincia": "0206"
+},
+{
+"ubigeo": "020611",
+"nombre": "Yungar",
+"provincia": "0206"
+},
+{
+"ubigeo": "020701",
+"nombre": "San Luis",
+"provincia": "0207"
+},
+{
+"ubigeo": "020702",
+"nombre": "San Nicolás",
+"provincia": "0207"
+},
+{
+"ubigeo": "020703",
+"nombre": "Yauya",
+"provincia": "0207"
+},
+{
+"ubigeo": "020801",
+"nombre": "Casma",
+"provincia": "0208"
+},
+{
+"ubigeo": "020802",
+"nombre": "Buena Vista Alta",
+"provincia": "0208"
+},
+{
+"ubigeo": "020803",
+"nombre": "Comandante Noel",
+"provincia": "0208"
+},
+{
+"ubigeo": "020804",
+"nombre": "Yautan",
+"provincia": "0208"
+},
+{
+"ubigeo": "020901",
+"nombre": "Corongo",
+"provincia": "0209"
+},
+{
+"ubigeo": "020902",
+"nombre": "Aco",
+"provincia": "0209"
+},
+{
+"ubigeo": "020903",
+"nombre": "Bambas",
+"provincia": "0209"
+},
+{
+"ubigeo": "020904",
+"nombre": "Cusca",
+"provincia": "0209"
+},
+{
+"ubigeo": "020905",
+"nombre": "La Pampa",
+"provincia": "0209"
+},
+{
+"ubigeo": "020906",
+"nombre": "Yanac",
+"provincia": "0209"
+},
+{
+"ubigeo": "020907",
+"nombre": "Yupan",
+"provincia": "0209"
+},
+{
+"ubigeo": "021001",
+"nombre": "Huari",
+"provincia": "0210"
+},
+{
+"ubigeo": "021002",
+"nombre": "Anra",
+"provincia": "0210"
+},
+{
+"ubigeo": "021003",
+"nombre": "Cajay",
+"provincia": "0210"
+},
+{
+"ubigeo": "021004",
+"nombre": "Chavin de Huantar",
+"provincia": "0210"
+},
+{
+"ubigeo": "021005",
+"nombre": "Huacachi",
+"provincia": "0210"
+},
+{
+"ubigeo": "021006",
+"nombre": "Huacchis",
+"provincia": "0210"
+},
+{
+"ubigeo": "021007",
+"nombre": "Huachis",
+"provincia": "0210"
+},
+{
+"ubigeo": "021008",
+"nombre": "Huantar",
+"provincia": "0210"
+},
+{
+"ubigeo": "021009",
+"nombre": "Masin",
+"provincia": "0210"
+},
+{
+"ubigeo": "021010",
+"nombre": "Paucas",
+"provincia": "0210"
+},
+{
+"ubigeo": "021011",
+"nombre": "Ponto",
+"provincia": "0210"
+},
+{
+"ubigeo": "021012",
+"nombre": "Rahuapampa",
+"provincia": "0210"
+},
+{
+"ubigeo": "021013",
+"nombre": "Rapayan",
+"provincia": "0210"
+},
+{
+"ubigeo": "021014",
+"nombre": "San Marcos",
+"provincia": "0210"
+},
+{
+"ubigeo": "021015",
+"nombre": "San Pedro de Chana",
+"provincia": "0210"
+},
+{
+"ubigeo": "021016",
+"nombre": "Uco",
+"provincia": "0210"
+},
+{
+"ubigeo": "021101",
+"nombre": "Huarmey",
+"provincia": "0211"
+},
+{
+"ubigeo": "021102",
+"nombre": "Cochapeti",
+"provincia": "0211"
+},
+{
+"ubigeo": "021103",
+"nombre": "Culebras",
+"provincia": "0211"
+},
+{
+"ubigeo": "021104",
+"nombre": "Huayan",
+"provincia": "0211"
+},
+{
+"ubigeo": "021105",
+"nombre": "Malvas",
+"provincia": "0211"
+},
+{
+"ubigeo": "021201",
+"nombre": "Caraz",
+"provincia": "0212"
+},
+{
+"ubigeo": "021202",
+"nombre": "Huallanca",
+"provincia": "0212"
+},
+{
+"ubigeo": "021203",
+"nombre": "Huata",
+"provincia": "0212"
+},
+{
+"ubigeo": "021204",
+"nombre": "Huaylas",
+"provincia": "0212"
+},
+{
+"ubigeo": "021205",
+"nombre": "Mato",
+"provincia": "0212"
+},
+{
+"ubigeo": "021206",
+"nombre": "Pamparomas",
+"provincia": "0212"
+},
+{
+"ubigeo": "021207",
+"nombre": "Pueblo Libre",
+"provincia": "0212"
+},
+{
+"ubigeo": "021208",
+"nombre": "Santa Cruz",
+"provincia": "0212"
+},
+{
+"ubigeo": "021209",
+"nombre": "Santo Toribio",
+"provincia": "0212"
+},
+{
+"ubigeo": "021210",
+"nombre": "Yuracmarca",
+"provincia": "0212"
+},
+{
+"ubigeo": "021301",
+"nombre": "Piscobamba",
+"provincia": "0213"
+},
+{
+"ubigeo": "021302",
+"nombre": "Casca",
+"provincia": "0213"
+},
+{
+"ubigeo": "021303",
+"nombre": "Eleazar Guzmán Barron",
+"provincia": "0213"
+},
+{
+"ubigeo": "021304",
+"nombre": "Fidel Olivas Escudero",
+"provincia": "0213"
+},
+{
+"ubigeo": "021305",
+"nombre": "Llama",
+"provincia": "0213"
+},
+{
+"ubigeo": "021306",
+"nombre": "Llumpa",
+"provincia": "0213"
+},
+{
+"ubigeo": "021307",
+"nombre": "Lucma",
+"provincia": "0213"
+},
+{
+"ubigeo": "021308",
+"nombre": "Musga",
+"provincia": "0213"
+},
+{
+"ubigeo": "021401",
+"nombre": "Ocros",
+"provincia": "0214"
+},
+{
+"ubigeo": "021402",
+"nombre": "Acas",
+"provincia": "0214"
+},
+{
+"ubigeo": "021403",
+"nombre": "Cajamarquilla",
+"provincia": "0214"
+},
+{
+"ubigeo": "021404",
+"nombre": "Carhuapampa",
+"provincia": "0214"
+},
+{
+"ubigeo": "021405",
+"nombre": "Cochas",
+"provincia": "0214"
+},
+{
+"ubigeo": "021406",
+"nombre": "Congas",
+"provincia": "0214"
+},
+{
+"ubigeo": "021407",
+"nombre": "Llipa",
+"provincia": "0214"
+},
+{
+"ubigeo": "021408",
+"nombre": "San Cristóbal de Rajan",
+"provincia": "0214"
+},
+{
+"ubigeo": "021409",
+"nombre": "San Pedro",
+"provincia": "0214"
+},
+{
+"ubigeo": "021410",
+"nombre": "Santiago de Chilcas",
+"provincia": "0214"
+},
+{
+"ubigeo": "021501",
+"nombre": "Cabana",
+"provincia": "0215"
+},
+{
+"ubigeo": "021502",
+"nombre": "Bolognesi",
+"provincia": "0215"
+},
+{
+"ubigeo": "021503",
+"nombre": "Conchucos",
+"provincia": "0215"
+},
+{
+"ubigeo": "021504",
+"nombre": "Huacaschuque",
+"provincia": "0215"
+},
+{
+"ubigeo": "021505",
+"nombre": "Huandoval",
+"provincia": "0215"
+},
+{
+"ubigeo": "021506",
+"nombre": "Lacabamba",
+"provincia": "0215"
+},
+{
+"ubigeo": "021507",
+"nombre": "Llapo",
+"provincia": "0215"
+},
+{
+"ubigeo": "021508",
+"nombre": "Pallasca",
+"provincia": "0215"
+},
+{
+"ubigeo": "021509",
+"nombre": "Pampas",
+"provincia": "0215"
+},
+{
+"ubigeo": "021510",
+"nombre": "Santa Rosa",
+"provincia": "0215"
+},
+{
+"ubigeo": "021511",
+"nombre": "Tauca",
+"provincia": "0215"
+},
+{
+"ubigeo": "021601",
+"nombre": "Pomabamba",
+"provincia": "0216"
+},
+{
+"ubigeo": "021602",
+"nombre": "Huayllan",
+"provincia": "0216"
+},
+{
+"ubigeo": "021603",
+"nombre": "Parobamba",
+"provincia": "0216"
+},
+{
+"ubigeo": "021604",
+"nombre": "Quinuabamba",
+"provincia": "0216"
+},
+{
+"ubigeo": "021701",
+"nombre": "Recuay",
+"provincia": "0217"
+},
+{
+"ubigeo": "021702",
+"nombre": "Catac",
+"provincia": "0217"
+},
+{
+"ubigeo": "021703",
+"nombre": "Cotaparaco",
+"provincia": "0217"
+},
+{
+"ubigeo": "021704",
+"nombre": "Huayllapampa",
+"provincia": "0217"
+},
+{
+"ubigeo": "021705",
+"nombre": "Llacllin",
+"provincia": "0217"
+},
+{
+"ubigeo": "021706",
+"nombre": "Marca",
+"provincia": "0217"
+},
+{
+"ubigeo": "021707",
+"nombre": "Pampas Chico",
+"provincia": "0217"
+},
+{
+"ubigeo": "021708",
+"nombre": "Pararin",
+"provincia": "0217"
+},
+{
+"ubigeo": "021709",
+"nombre": "Tapacocha",
+"provincia": "0217"
+},
+{
+"ubigeo": "021710",
+"nombre": "Ticapampa",
+"provincia": "0217"
+},
+{
+"ubigeo": "021801",
+"nombre": "Chimbote",
+"provincia": "0218"
+},
+{
+"ubigeo": "021802",
+"nombre": "Cáceres del Perú",
+"provincia": "0218"
+},
+{
+"ubigeo": "021803",
+"nombre": "Coishco",
+"provincia": "0218"
+},
+{
+"ubigeo": "021804",
+"nombre": "Macate",
+"provincia": "0218"
+},
+{
+"ubigeo": "021805",
+"nombre": "Moro",
+"provincia": "0218"
+},
+{
+"ubigeo": "021806",
+"nombre": "Nepeña",
+"provincia": "0218"
+},
+{
+"ubigeo": "021807",
+"nombre": "Samanco",
+"provincia": "0218"
+},
+{
+"ubigeo": "021808",
+"nombre": "Santa",
+"provincia": "0218"
+},
+{
+"ubigeo": "021809",
+"nombre": "Nuevo Chimbote",
+"provincia": "0218"
+},
+{
+"ubigeo": "021901",
+"nombre": "Sihuas",
+"provincia": "0219"
+},
+{
+"ubigeo": "021902",
+"nombre": "Acobamba",
+"provincia": "0219"
+},
+{
+"ubigeo": "021903",
+"nombre": "Alfonso Ugarte",
+"provincia": "0219"
+},
+{
+"ubigeo": "021904",
+"nombre": "Cashapampa",
+"provincia": "0219"
+},
+{
+"ubigeo": "021905",
+"nombre": "Chingalpo",
+"provincia": "0219"
+},
+{
+"ubigeo": "021906",
+"nombre": "Huayllabamba",
+"provincia": "0219"
+},
+{
+"ubigeo": "021907",
+"nombre": "Quiches",
+"provincia": "0219"
+},
+{
+"ubigeo": "021908",
+"nombre": "Ragash",
+"provincia": "0219"
+},
+{
+"ubigeo": "021909",
+"nombre": "San Juan",
+"provincia": "0219"
+},
+{
+"ubigeo": "021910",
+"nombre": "Sicsibamba",
+"provincia": "0219"
+},
+{
+"ubigeo": "022001",
+"nombre": "Yungay",
+"provincia": "0220"
+},
+{
+"ubigeo": "022002",
+"nombre": "Cascapara",
+"provincia": "0220"
+},
+{
+"ubigeo": "022003",
+"nombre": "Mancos",
+"provincia": "0220"
+},
+{
+"ubigeo": "022004",
+"nombre": "Matacoto",
+"provincia": "0220"
+},
+{
+"ubigeo": "022005",
+"nombre": "Quillo",
+"provincia": "0220"
+},
+{
+"ubigeo": "022006",
+"nombre": "Ranrahirca",
+"provincia": "0220"
+},
+{
+"ubigeo": "022007",
+"nombre": "Shupluy",
+"provincia": "0220"
+},
+{
+"ubigeo": "022008",
+"nombre": "Yanama",
+"provincia": "0220"
+},
+{
+"ubigeo": "030101",
+"nombre": "Abancay",
+"provincia": "0301"
+},
+{
+"ubigeo": "030102",
+"nombre": "Chacoche",
+"provincia": "0301"
+},
+{
+"ubigeo": "030103",
+"nombre": "Circa",
+"provincia": "0301"
+},
+{
+"ubigeo": "030104",
+"nombre": "Curahuasi",
+"provincia": "0301"
+},
+{
+"ubigeo": "030105",
+"nombre": "Huanipaca",
+"provincia": "0301"
+},
+{
+"ubigeo": "030106",
+"nombre": "Lambrama",
+"provincia": "0301"
+},
+{
+"ubigeo": "030107",
+"nombre": "Pichirhua",
+"provincia": "0301"
+},
+{
+"ubigeo": "030108",
+"nombre": "San Pedro de Cachora",
+"provincia": "0301"
+},
+{
+"ubigeo": "030109",
+"nombre": "Tamburco",
+"provincia": "0301"
+},
+{
+"ubigeo": "030201",
+"nombre": "Andahuaylas",
+"provincia": "0302"
+},
+{
+"ubigeo": "030202",
+"nombre": "Andarapa",
+"provincia": "0302"
+},
+{
+"ubigeo": "030203",
+"nombre": "Chiara",
+"provincia": "0302"
+},
+{
+"ubigeo": "030204",
+"nombre": "Huancarama",
+"provincia": "0302"
+},
+{
+"ubigeo": "030205",
+"nombre": "Huancaray",
+"provincia": "0302"
+},
+{
+"ubigeo": "030206",
+"nombre": "Huayana",
+"provincia": "0302"
+},
+{
+"ubigeo": "030207",
+"nombre": "Kishuara",
+"provincia": "0302"
+},
+{
+"ubigeo": "030208",
+"nombre": "Pacobamba",
+"provincia": "0302"
+},
+{
+"ubigeo": "030209",
+"nombre": "Pacucha",
+"provincia": "0302"
+},
+{
+"ubigeo": "030210",
+"nombre": "Pampachiri",
+"provincia": "0302"
+},
+{
+"ubigeo": "030211",
+"nombre": "Pomacocha",
+"provincia": "0302"
+},
+{
+"ubigeo": "030212",
+"nombre": "San Antonio de Cachi",
+"provincia": "0302"
+},
+{
+"ubigeo": "030213",
+"nombre": "San Jerónimo",
+"provincia": "0302"
+},
+{
+"ubigeo": "030214",
+"nombre": "San Miguel de Chaccrampa",
+"provincia": "0302"
+},
+{
+"ubigeo": "030215",
+"nombre": "Santa María de Chicmo",
+"provincia": "0302"
+},
+{
+"ubigeo": "030216",
+"nombre": "Talavera",
+"provincia": "0302"
+},
+{
+"ubigeo": "030217",
+"nombre": "Tumay Huaraca",
+"provincia": "0302"
+},
+{
+"ubigeo": "030218",
+"nombre": "Turpo",
+"provincia": "0302"
+},
+{
+"ubigeo": "030219",
+"nombre": "Kaquiabamba",
+"provincia": "0302"
+},
+{
+"ubigeo": "030220",
+"nombre": "José María Arguedas",
+"provincia": "0302"
+},
+{
+"ubigeo": "030301",
+"nombre": "Antabamba",
+"provincia": "0303"
+},
+{
+"ubigeo": "030302",
+"nombre": "El Oro",
+"provincia": "0303"
+},
+{
+"ubigeo": "030303",
+"nombre": "Huaquirca",
+"provincia": "0303"
+},
+{
+"ubigeo": "030304",
+"nombre": "Juan Espinoza Medrano",
+"provincia": "0303"
+},
+{
+"ubigeo": "030305",
+"nombre": "Oropesa",
+"provincia": "0303"
+},
+{
+"ubigeo": "030306",
+"nombre": "Pachaconas",
+"provincia": "0303"
+},
+{
+"ubigeo": "030307",
+"nombre": "Sabaino",
+"provincia": "0303"
+},
+{
+"ubigeo": "030401",
+"nombre": "Chalhuanca",
+"provincia": "0304"
+},
+{
+"ubigeo": "030402",
+"nombre": "Capaya",
+"provincia": "0304"
+},
+{
+"ubigeo": "030403",
+"nombre": "Caraybamba",
+"provincia": "0304"
+},
+{
+"ubigeo": "030404",
+"nombre": "Chapimarca",
+"provincia": "0304"
+},
+{
+"ubigeo": "030405",
+"nombre": "Colcabamba",
+"provincia": "0304"
+},
+{
+"ubigeo": "030406",
+"nombre": "Cotaruse",
+"provincia": "0304"
+},
+{
+"ubigeo": "030407",
+"nombre": "Ihuayllo",
+"provincia": "0304"
+},
+{
+"ubigeo": "030408",
+"nombre": "Justo Apu Sahuaraura",
+"provincia": "0304"
+},
+{
+"ubigeo": "030409",
+"nombre": "Lucre",
+"provincia": "0304"
+},
+{
+"ubigeo": "030410",
+"nombre": "Pocohuanca",
+"provincia": "0304"
+},
+{
+"ubigeo": "030411",
+"nombre": "San Juan de Chacña",
+"provincia": "0304"
+},
+{
+"ubigeo": "030412",
+"nombre": "Sañayca",
+"provincia": "0304"
+},
+{
+"ubigeo": "030413",
+"nombre": "Soraya",
+"provincia": "0304"
+},
+{
+"ubigeo": "030414",
+"nombre": "Tapairihua",
+"provincia": "0304"
+},
+{
+"ubigeo": "030415",
+"nombre": "Tintay",
+"provincia": "0304"
+},
+{
+"ubigeo": "030416",
+"nombre": "Toraya",
+"provincia": "0304"
+},
+{
+"ubigeo": "030417",
+"nombre": "Yanaca",
+"provincia": "0304"
+},
+{
+"ubigeo": "030501",
+"nombre": "Tambobamba",
+"provincia": "0305"
+},
+{
+"ubigeo": "030502",
+"nombre": "Cotabambas",
+"provincia": "0305"
+},
+{
+"ubigeo": "030503",
+"nombre": "Coyllurqui",
+"provincia": "0305"
+},
+{
+"ubigeo": "030504",
+"nombre": "Haquira",
+"provincia": "0305"
+},
+{
+"ubigeo": "030505",
+"nombre": "Mara",
+"provincia": "0305"
+},
+{
+"ubigeo": "030506",
+"nombre": "Challhuahuacho",
+"provincia": "0305"
+},
+{
+"ubigeo": "030601",
+"nombre": "Chincheros",
+"provincia": "0306"
+},
+{
+"ubigeo": "030602",
+"nombre": "Anco_Huallo",
+"provincia": "0306"
+},
+{
+"ubigeo": "030603",
+"nombre": "Cocharcas",
+"provincia": "0306"
+},
+{
+"ubigeo": "030604",
+"nombre": "Huaccana",
+"provincia": "0306"
+},
+{
+"ubigeo": "030605",
+"nombre": "Ocobamba",
+"provincia": "0306"
+},
+{
+"ubigeo": "030606",
+"nombre": "Ongoy",
+"provincia": "0306"
+},
+{
+"ubigeo": "030607",
+"nombre": "Uranmarca",
+"provincia": "0306"
+},
+{
+"ubigeo": "030608",
+"nombre": "Ranracancha",
+"provincia": "0306"
+},
+{
+"ubigeo": "030609",
+"nombre": "Rocchacc",
+"provincia": "0306"
+},
+{
+"ubigeo": "030610",
+"nombre": "El Porvenir",
+"provincia": "0306"
+},
+{
+"ubigeo": "030611",
+"nombre": "Los Chankas",
+"provincia": "0306"
+},
+{
+"ubigeo": "030701",
+"nombre": "Chuquibambilla",
+"provincia": "0307"
+},
+{
+"ubigeo": "030702",
+"nombre": "Curpahuasi",
+"provincia": "0307"
+},
+{
+"ubigeo": "030703",
+"nombre": "Gamarra",
+"provincia": "0307"
+},
+{
+"ubigeo": "030704",
+"nombre": "Huayllati",
+"provincia": "0307"
+},
+{
+"ubigeo": "030705",
+"nombre": "Mamara",
+"provincia": "0307"
+},
+{
+"ubigeo": "030706",
+"nombre": "Micaela Bastidas",
+"provincia": "0307"
+},
+{
+"ubigeo": "030707",
+"nombre": "Pataypampa",
+"provincia": "0307"
+},
+{
+"ubigeo": "030708",
+"nombre": "Progreso",
+"provincia": "0307"
+},
+{
+"ubigeo": "030709",
+"nombre": "San Antonio",
+"provincia": "0307"
+},
+{
+"ubigeo": "030710",
+"nombre": "Santa Rosa",
+"provincia": "0307"
+},
+{
+"ubigeo": "030711",
+"nombre": "Turpay",
+"provincia": "0307"
+},
+{
+"ubigeo": "030712",
+"nombre": "Vilcabamba",
+"provincia": "0307"
+},
+{
+"ubigeo": "030713",
+"nombre": "Virundo",
+"provincia": "0307"
+},
+{
+"ubigeo": "030714",
+"nombre": "Curasco",
+"provincia": "0307"
+},
+{
+"ubigeo": "040101",
+"nombre": "Arequipa",
+"provincia": "0401"
+},
+{
+"ubigeo": "040102",
+"nombre": "Alto Selva Alegre",
+"provincia": "0401"
+},
+{
+"ubigeo": "040103",
+"nombre": "Cayma",
+"provincia": "0401"
+},
+{
+"ubigeo": "040104",
+"nombre": "Cerro Colorado",
+"provincia": "0401"
+},
+{
+"ubigeo": "040105",
+"nombre": "Characato",
+"provincia": "0401"
+},
+{
+"ubigeo": "040106",
+"nombre": "Chiguata",
+"provincia": "0401"
+},
+{
+"ubigeo": "040107",
+"nombre": "Jacobo Hunter",
+"provincia": "0401"
+},
+{
+"ubigeo": "040108",
+"nombre": "La Joya",
+"provincia": "0401"
+},
+{
+"ubigeo": "040109",
+"nombre": "Mariano Melgar",
+"provincia": "0401"
+},
+{
+"ubigeo": "040110",
+"nombre": "Miraflores",
+"provincia": "0401"
+},
+{
+"ubigeo": "040111",
+"nombre": "Mollebaya",
+"provincia": "0401"
+},
+{
+"ubigeo": "040112",
+"nombre": "Paucarpata",
+"provincia": "0401"
+},
+{
+"ubigeo": "040113",
+"nombre": "Pocsi",
+"provincia": "0401"
+},
+{
+"ubigeo": "040114",
+"nombre": "Polobaya",
+"provincia": "0401"
+},
+{
+"ubigeo": "040115",
+"nombre": "Quequeña",
+"provincia": "0401"
+},
+{
+"ubigeo": "040116",
+"nombre": "Sabandia",
+"provincia": "0401"
+},
+{
+"ubigeo": "040117",
+"nombre": "Sachaca",
+"provincia": "0401"
+},
+{
+"ubigeo": "040118",
+"nombre": "San Juan de Siguas",
+"provincia": "0401"
+},
+{
+"ubigeo": "040119",
+"nombre": "San Juan de Tarucani",
+"provincia": "0401"
+},
+{
+"ubigeo": "040120",
+"nombre": "Santa Isabel de Siguas",
+"provincia": "0401"
+},
+{
+"ubigeo": "040121",
+"nombre": "Santa Rita de Siguas",
+"provincia": "0401"
+},
+{
+"ubigeo": "040122",
+"nombre": "Socabaya",
+"provincia": "0401"
+},
+{
+"ubigeo": "040123",
+"nombre": "Tiabaya",
+"provincia": "0401"
+},
+{
+"ubigeo": "040124",
+"nombre": "Uchumayo",
+"provincia": "0401"
+},
+{
+"ubigeo": "040125",
+"nombre": "Vitor",
+"provincia": "0401"
+},
+{
+"ubigeo": "040126",
+"nombre": "Yanahuara",
+"provincia": "0401"
+},
+{
+"ubigeo": "040127",
+"nombre": "Yarabamba",
+"provincia": "0401"
+},
+{
+"ubigeo": "040128",
+"nombre": "Yura",
+"provincia": "0401"
+},
+{
+"ubigeo": "040129",
+"nombre": "José Luis Bustamante Y Rivero",
+"provincia": "0401"
+},
+{
+"ubigeo": "040201",
+"nombre": "Camaná",
+"provincia": "0402"
+},
+{
+"ubigeo": "040202",
+"nombre": "José María Quimper",
+"provincia": "0402"
+},
+{
+"ubigeo": "040203",
+"nombre": "Mariano Nicolás Valcárcel",
+"provincia": "0402"
+},
+{
+"ubigeo": "040204",
+"nombre": "Mariscal Cáceres",
+"provincia": "0402"
+},
+{
+"ubigeo": "040205",
+"nombre": "Nicolás de Pierola",
+"provincia": "0402"
+},
+{
+"ubigeo": "040206",
+"nombre": "Ocoña",
+"provincia": "0402"
+},
+{
+"ubigeo": "040207",
+"nombre": "Quilca",
+"provincia": "0402"
+},
+{
+"ubigeo": "040208",
+"nombre": "Samuel Pastor",
+"provincia": "0402"
+},
+{
+"ubigeo": "040301",
+"nombre": "Caravelí",
+"provincia": "0403"
+},
+{
+"ubigeo": "040302",
+"nombre": "Acarí",
+"provincia": "0403"
+},
+{
+"ubigeo": "040303",
+"nombre": "Atico",
+"provincia": "0403"
+},
+{
+"ubigeo": "040304",
+"nombre": "Atiquipa",
+"provincia": "0403"
+},
+{
+"ubigeo": "040305",
+"nombre": "Bella Unión",
+"provincia": "0403"
+},
+{
+"ubigeo": "040306",
+"nombre": "Cahuacho",
+"provincia": "0403"
+},
+{
+"ubigeo": "040307",
+"nombre": "Chala",
+"provincia": "0403"
+},
+{
+"ubigeo": "040308",
+"nombre": "Chaparra",
+"provincia": "0403"
+},
+{
+"ubigeo": "040309",
+"nombre": "Huanuhuanu",
+"provincia": "0403"
+},
+{
+"ubigeo": "040310",
+"nombre": "Jaqui",
+"provincia": "0403"
+},
+{
+"ubigeo": "040311",
+"nombre": "Lomas",
+"provincia": "0403"
+},
+{
+"ubigeo": "040312",
+"nombre": "Quicacha",
+"provincia": "0403"
+},
+{
+"ubigeo": "040313",
+"nombre": "Yauca",
+"provincia": "0403"
+},
+{
+"ubigeo": "040401",
+"nombre": "Aplao",
+"provincia": "0404"
+},
+{
+"ubigeo": "040402",
+"nombre": "Andagua",
+"provincia": "0404"
+},
+{
+"ubigeo": "040403",
+"nombre": "Ayo",
+"provincia": "0404"
+},
+{
+"ubigeo": "040404",
+"nombre": "Chachas",
+"provincia": "0404"
+},
+{
+"ubigeo": "040405",
+"nombre": "Chilcaymarca",
+"provincia": "0404"
+},
+{
+"ubigeo": "040406",
+"nombre": "Choco",
+"provincia": "0404"
+},
+{
+"ubigeo": "040407",
+"nombre": "Huancarqui",
+"provincia": "0404"
+},
+{
+"ubigeo": "040408",
+"nombre": "Machaguay",
+"provincia": "0404"
+},
+{
+"ubigeo": "040409",
+"nombre": "Orcopampa",
+"provincia": "0404"
+},
+{
+"ubigeo": "040410",
+"nombre": "Pampacolca",
+"provincia": "0404"
+},
+{
+"ubigeo": "040411",
+"nombre": "Tipan",
+"provincia": "0404"
+},
+{
+"ubigeo": "040412",
+"nombre": "Uñon",
+"provincia": "0404"
+},
+{
+"ubigeo": "040413",
+"nombre": "Uraca",
+"provincia": "0404"
+},
+{
+"ubigeo": "040414",
+"nombre": "Viraco",
+"provincia": "0404"
+},
+{
+"ubigeo": "040501",
+"nombre": "Chivay",
+"provincia": "0405"
+},
+{
+"ubigeo": "040502",
+"nombre": "Achoma",
+"provincia": "0405"
+},
+{
+"ubigeo": "040503",
+"nombre": "Cabanaconde",
+"provincia": "0405"
+},
+{
+"ubigeo": "040504",
+"nombre": "Callalli",
+"provincia": "0405"
+},
+{
+"ubigeo": "040505",
+"nombre": "Caylloma",
+"provincia": "0405"
+},
+{
+"ubigeo": "040506",
+"nombre": "Coporaque",
+"provincia": "0405"
+},
+{
+"ubigeo": "040507",
+"nombre": "Huambo",
+"provincia": "0405"
+},
+{
+"ubigeo": "040508",
+"nombre": "Huanca",
+"provincia": "0405"
+},
+{
+"ubigeo": "040509",
+"nombre": "Ichupampa",
+"provincia": "0405"
+},
+{
+"ubigeo": "040510",
+"nombre": "Lari",
+"provincia": "0405"
+},
+{
+"ubigeo": "040511",
+"nombre": "Lluta",
+"provincia": "0405"
+},
+{
+"ubigeo": "040512",
+"nombre": "Maca",
+"provincia": "0405"
+},
+{
+"ubigeo": "040513",
+"nombre": "Madrigal",
+"provincia": "0405"
+},
+{
+"ubigeo": "040514",
+"nombre": "San Antonio de Chuca",
+"provincia": "0405"
+},
+{
+"ubigeo": "040515",
+"nombre": "Sibayo",
+"provincia": "0405"
+},
+{
+"ubigeo": "040516",
+"nombre": "Tapay",
+"provincia": "0405"
+},
+{
+"ubigeo": "040517",
+"nombre": "Tisco",
+"provincia": "0405"
+},
+{
+"ubigeo": "040518",
+"nombre": "Tuti",
+"provincia": "0405"
+},
+{
+"ubigeo": "040519",
+"nombre": "Yanque",
+"provincia": "0405"
+},
+{
+"ubigeo": "040520",
+"nombre": "Majes",
+"provincia": "0405"
+},
+{
+"ubigeo": "040601",
+"nombre": "Chuquibamba",
+"provincia": "0406"
+},
+{
+"ubigeo": "040602",
+"nombre": "Andaray",
+"provincia": "0406"
+},
+{
+"ubigeo": "040603",
+"nombre": "Cayarani",
+"provincia": "0406"
+},
+{
+"ubigeo": "040604",
+"nombre": "Chichas",
+"provincia": "0406"
+},
+{
+"ubigeo": "040605",
+"nombre": "Iray",
+"provincia": "0406"
+},
+{
+"ubigeo": "040606",
+"nombre": "Río Grande",
+"provincia": "0406"
+},
+{
+"ubigeo": "040607",
+"nombre": "Salamanca",
+"provincia": "0406"
+},
+{
+"ubigeo": "040608",
+"nombre": "Yanaquihua",
+"provincia": "0406"
+},
+{
+"ubigeo": "040701",
+"nombre": "Mollendo",
+"provincia": "0407"
+},
+{
+"ubigeo": "040702",
+"nombre": "Cocachacra",
+"provincia": "0407"
+},
+{
+"ubigeo": "040703",
+"nombre": "Dean Valdivia",
+"provincia": "0407"
+},
+{
+"ubigeo": "040704",
+"nombre": "Islay",
+"provincia": "0407"
+},
+{
+"ubigeo": "040705",
+"nombre": "Mejia",
+"provincia": "0407"
+},
+{
+"ubigeo": "040706",
+"nombre": "Punta de Bombón",
+"provincia": "0407"
+},
+{
+"ubigeo": "040801",
+"nombre": "Cotahuasi",
+"provincia": "0408"
+},
+{
+"ubigeo": "040802",
+"nombre": "Alca",
+"provincia": "0408"
+},
+{
+"ubigeo": "040803",
+"nombre": "Charcana",
+"provincia": "0408"
+},
+{
+"ubigeo": "040804",
+"nombre": "Huaynacotas",
+"provincia": "0408"
+},
+{
+"ubigeo": "040805",
+"nombre": "Pampamarca",
+"provincia": "0408"
+},
+{
+"ubigeo": "040806",
+"nombre": "Puyca",
+"provincia": "0408"
+},
+{
+"ubigeo": "040807",
+"nombre": "Quechualla",
+"provincia": "0408"
+},
+{
+"ubigeo": "040808",
+"nombre": "Sayla",
+"provincia": "0408"
+},
+{
+"ubigeo": "040809",
+"nombre": "Tauria",
+"provincia": "0408"
+},
+{
+"ubigeo": "040810",
+"nombre": "Tomepampa",
+"provincia": "0408"
+},
+{
+"ubigeo": "040811",
+"nombre": "Toro",
+"provincia": "0408"
+},
+{
+"ubigeo": "050101",
+"nombre": "Ayacucho",
+"provincia": "0501"
+},
+{
+"ubigeo": "050102",
+"nombre": "Acocro",
+"provincia": "0501"
+},
+{
+"ubigeo": "050103",
+"nombre": "Acos Vinchos",
+"provincia": "0501"
+},
+{
+"ubigeo": "050104",
+"nombre": "Carmen Alto",
+"provincia": "0501"
+},
+{
+"ubigeo": "050105",
+"nombre": "Chiara",
+"provincia": "0501"
+},
+{
+"ubigeo": "050106",
+"nombre": "Ocros",
+"provincia": "0501"
+},
+{
+"ubigeo": "050107",
+"nombre": "Pacaycasa",
+"provincia": "0501"
+},
+{
+"ubigeo": "050108",
+"nombre": "Quinua",
+"provincia": "0501"
+},
+{
+"ubigeo": "050109",
+"nombre": "San José de Ticllas",
+"provincia": "0501"
+},
+{
+"ubigeo": "050110",
+"nombre": "San Juan Bautista",
+"provincia": "0501"
+},
+{
+"ubigeo": "050111",
+"nombre": "Santiago de Pischa",
+"provincia": "0501"
+},
+{
+"ubigeo": "050112",
+"nombre": "Socos",
+"provincia": "0501"
+},
+{
+"ubigeo": "050113",
+"nombre": "Tambillo",
+"provincia": "0501"
+},
+{
+"ubigeo": "050114",
+"nombre": "Vinchos",
+"provincia": "0501"
+},
+{
+"ubigeo": "050115",
+"nombre": "Jesús Nazareno",
+"provincia": "0501"
+},
+{
+"ubigeo": "050116",
+"nombre": "Andrés Avelino Cáceres Dorregaray",
+"provincia": "0501"
+},
+{
+"ubigeo": "050201",
+"nombre": "Cangallo",
+"provincia": "0502"
+},
+{
+"ubigeo": "050202",
+"nombre": "Chuschi",
+"provincia": "0502"
+},
+{
+"ubigeo": "050203",
+"nombre": "Los Morochucos",
+"provincia": "0502"
+},
+{
+"ubigeo": "050204",
+"nombre": "María Parado de Bellido",
+"provincia": "0502"
+},
+{
+"ubigeo": "050205",
+"nombre": "Paras",
+"provincia": "0502"
+},
+{
+"ubigeo": "050206",
+"nombre": "Totos",
+"provincia": "0502"
+},
+{
+"ubigeo": "050301",
+"nombre": "Sancos",
+"provincia": "0503"
+},
+{
+"ubigeo": "050302",
+"nombre": "Carapo",
+"provincia": "0503"
+},
+{
+"ubigeo": "050303",
+"nombre": "Sacsamarca",
+"provincia": "0503"
+},
+{
+"ubigeo": "050304",
+"nombre": "Santiago de Lucanamarca",
+"provincia": "0503"
+},
+{
+"ubigeo": "050401",
+"nombre": "Huanta",
+"provincia": "0504"
+},
+{
+"ubigeo": "050402",
+"nombre": "Ayahuanco",
+"provincia": "0504"
+},
+{
+"ubigeo": "050403",
+"nombre": "Huamanguilla",
+"provincia": "0504"
+},
+{
+"ubigeo": "050404",
+"nombre": "Iguain",
+"provincia": "0504"
+},
+{
+"ubigeo": "050405",
+"nombre": "Luricocha",
+"provincia": "0504"
+},
+{
+"ubigeo": "050406",
+"nombre": "Santillana",
+"provincia": "0504"
+},
+{
+"ubigeo": "050407",
+"nombre": "Sivia",
+"provincia": "0504"
+},
+{
+"ubigeo": "050408",
+"nombre": "Llochegua",
+"provincia": "0504"
+},
+{
+"ubigeo": "050409",
+"nombre": "Canayre",
+"provincia": "0504"
+},
+{
+"ubigeo": "050410",
+"nombre": "Uchuraccay",
+"provincia": "0504"
+},
+{
+"ubigeo": "050411",
+"nombre": "Pucacolpa",
+"provincia": "0504"
+},
+{
+"ubigeo": "050412",
+"nombre": "Chaca",
+"provincia": "0504"
+},
+{
+"ubigeo": "050501",
+"nombre": "San Miguel",
+"provincia": "0505"
+},
+{
+"ubigeo": "050502",
+"nombre": "Anco",
+"provincia": "0505"
+},
+{
+"ubigeo": "050503",
+"nombre": "Ayna",
+"provincia": "0505"
+},
+{
+"ubigeo": "050504",
+"nombre": "Chilcas",
+"provincia": "0505"
+},
+{
+"ubigeo": "050505",
+"nombre": "Chungui",
+"provincia": "0505"
+},
+{
+"ubigeo": "050506",
+"nombre": "Luis Carranza",
+"provincia": "0505"
+},
+{
+"ubigeo": "050507",
+"nombre": "Santa Rosa",
+"provincia": "0505"
+},
+{
+"ubigeo": "050508",
+"nombre": "Tambo",
+"provincia": "0505"
+},
+{
+"ubigeo": "050509",
+"nombre": "Samugari",
+"provincia": "0505"
+},
+{
+"ubigeo": "050510",
+"nombre": "Anchihuay",
+"provincia": "0505"
+},
+{
+"ubigeo": "050511",
+"nombre": "Oronccoy",
+"provincia": "0505"
+},
+{
+"ubigeo": "050601",
+"nombre": "Puquio",
+"provincia": "0506"
+},
+{
+"ubigeo": "050602",
+"nombre": "Aucara",
+"provincia": "0506"
+},
+{
+"ubigeo": "050603",
+"nombre": "Cabana",
+"provincia": "0506"
+},
+{
+"ubigeo": "050604",
+"nombre": "Carmen Salcedo",
+"provincia": "0506"
+},
+{
+"ubigeo": "050605",
+"nombre": "Chaviña",
+"provincia": "0506"
+},
+{
+"ubigeo": "050606",
+"nombre": "Chipao",
+"provincia": "0506"
+},
+{
+"ubigeo": "050607",
+"nombre": "Huac-Huas",
+"provincia": "0506"
+},
+{
+"ubigeo": "050608",
+"nombre": "Laramate",
+"provincia": "0506"
+},
+{
+"ubigeo": "050609",
+"nombre": "Leoncio Prado",
+"provincia": "0506"
+},
+{
+"ubigeo": "050610",
+"nombre": "Llauta",
+"provincia": "0506"
+},
+{
+"ubigeo": "050611",
+"nombre": "Lucanas",
+"provincia": "0506"
+},
+{
+"ubigeo": "050612",
+"nombre": "Ocaña",
+"provincia": "0506"
+},
+{
+"ubigeo": "050613",
+"nombre": "Otoca",
+"provincia": "0506"
+},
+{
+"ubigeo": "050614",
+"nombre": "Saisa",
+"provincia": "0506"
+},
+{
+"ubigeo": "050615",
+"nombre": "San Cristóbal",
+"provincia": "0506"
+},
+{
+"ubigeo": "050616",
+"nombre": "San Juan",
+"provincia": "0506"
+},
+{
+"ubigeo": "050617",
+"nombre": "San Pedro",
+"provincia": "0506"
+},
+{
+"ubigeo": "050618",
+"nombre": "San Pedro de Palco",
+"provincia": "0506"
+},
+{
+"ubigeo": "050619",
+"nombre": "Sancos",
+"provincia": "0506"
+},
+{
+"ubigeo": "050620",
+"nombre": "Santa Ana de Huaycahuacho",
+"provincia": "0506"
+},
+{
+"ubigeo": "050621",
+"nombre": "Santa Lucia",
+"provincia": "0506"
+},
+{
+"ubigeo": "050701",
+"nombre": "Coracora",
+"provincia": "0507"
+},
+{
+"ubigeo": "050702",
+"nombre": "Chumpi",
+"provincia": "0507"
+},
+{
+"ubigeo": "050703",
+"nombre": "Coronel Castañeda",
+"provincia": "0507"
+},
+{
+"ubigeo": "050704",
+"nombre": "Pacapausa",
+"provincia": "0507"
+},
+{
+"ubigeo": "050705",
+"nombre": "Pullo",
+"provincia": "0507"
+},
+{
+"ubigeo": "050706",
+"nombre": "Puyusca",
+"provincia": "0507"
+},
+{
+"ubigeo": "050707",
+"nombre": "San Francisco de Ravacayco",
+"provincia": "0507"
+},
+{
+"ubigeo": "050708",
+"nombre": "Upahuacho",
+"provincia": "0507"
+},
+{
+"ubigeo": "050801",
+"nombre": "Pausa",
+"provincia": "0508"
+},
+{
+"ubigeo": "050802",
+"nombre": "Colta",
+"provincia": "0508"
+},
+{
+"ubigeo": "050803",
+"nombre": "Corculla",
+"provincia": "0508"
+},
+{
+"ubigeo": "050804",
+"nombre": "Lampa",
+"provincia": "0508"
+},
+{
+"ubigeo": "050805",
+"nombre": "Marcabamba",
+"provincia": "0508"
+},
+{
+"ubigeo": "050806",
+"nombre": "Oyolo",
+"provincia": "0508"
+},
+{
+"ubigeo": "050807",
+"nombre": "Pararca",
+"provincia": "0508"
+},
+{
+"ubigeo": "050808",
+"nombre": "San Javier de Alpabamba",
+"provincia": "0508"
+},
+{
+"ubigeo": "050809",
+"nombre": "San José de Ushua",
+"provincia": "0508"
+},
+{
+"ubigeo": "050810",
+"nombre": "Sara Sara",
+"provincia": "0508"
+},
+{
+"ubigeo": "050901",
+"nombre": "Querobamba",
+"provincia": "0509"
+},
+{
+"ubigeo": "050902",
+"nombre": "Belén",
+"provincia": "0509"
+},
+{
+"ubigeo": "050903",
+"nombre": "Chalcos",
+"provincia": "0509"
+},
+{
+"ubigeo": "050904",
+"nombre": "Chilcayoc",
+"provincia": "0509"
+},
+{
+"ubigeo": "050905",
+"nombre": "Huacaña",
+"provincia": "0509"
+},
+{
+"ubigeo": "050906",
+"nombre": "Morcolla",
+"provincia": "0509"
+},
+{
+"ubigeo": "050907",
+"nombre": "Paico",
+"provincia": "0509"
+},
+{
+"ubigeo": "050908",
+"nombre": "San Pedro de Larcay",
+"provincia": "0509"
+},
+{
+"ubigeo": "050909",
+"nombre": "San Salvador de Quije",
+"provincia": "0509"
+},
+{
+"ubigeo": "050910",
+"nombre": "Santiago de Paucaray",
+"provincia": "0509"
+},
+{
+"ubigeo": "050911",
+"nombre": "Soras",
+"provincia": "0509"
+},
+{
+"ubigeo": "051001",
+"nombre": "Huancapi",
+"provincia": "0510"
+},
+{
+"ubigeo": "051002",
+"nombre": "Alcamenca",
+"provincia": "0510"
+},
+{
+"ubigeo": "051003",
+"nombre": "Apongo",
+"provincia": "0510"
+},
+{
+"ubigeo": "051004",
+"nombre": "Asquipata",
+"provincia": "0510"
+},
+{
+"ubigeo": "051005",
+"nombre": "Canaria",
+"provincia": "0510"
+},
+{
+"ubigeo": "051006",
+"nombre": "Cayara",
+"provincia": "0510"
+},
+{
+"ubigeo": "051007",
+"nombre": "Colca",
+"provincia": "0510"
+},
+{
+"ubigeo": "051008",
+"nombre": "Huamanquiquia",
+"provincia": "0510"
+},
+{
+"ubigeo": "051009",
+"nombre": "Huancaraylla",
+"provincia": "0510"
+},
+{
+"ubigeo": "051010",
+"nombre": "Hualla",
+"provincia": "0510"
+},
+{
+"ubigeo": "051011",
+"nombre": "Sarhua",
+"provincia": "0510"
+},
+{
+"ubigeo": "051012",
+"nombre": "Vilcanchos",
+"provincia": "0510"
+},
+{
+"ubigeo": "051101",
+"nombre": "Vilcas Huaman",
+"provincia": "0511"
+},
+{
+"ubigeo": "051102",
+"nombre": "Accomarca",
+"provincia": "0511"
+},
+{
+"ubigeo": "051103",
+"nombre": "Carhuanca",
+"provincia": "0511"
+},
+{
+"ubigeo": "051104",
+"nombre": "Concepción",
+"provincia": "0511"
+},
+{
+"ubigeo": "051105",
+"nombre": "Huambalpa",
+"provincia": "0511"
+},
+{
+"ubigeo": "051106",
+"nombre": "Independencia",
+"provincia": "0511"
+},
+{
+"ubigeo": "051107",
+"nombre": "Saurama",
+"provincia": "0511"
+},
+{
+"ubigeo": "051108",
+"nombre": "Vischongo",
+"provincia": "0511"
+},
+{
+"ubigeo": "060101",
+"nombre": "Cajamarca",
+"provincia": "0601"
+},
+{
+"ubigeo": "060102",
+"nombre": "Asunción",
+"provincia": "0601"
+},
+{
+"ubigeo": "060103",
+"nombre": "Chetilla",
+"provincia": "0601"
+},
+{
+"ubigeo": "060104",
+"nombre": "Cospan",
+"provincia": "0601"
+},
+{
+"ubigeo": "060105",
+"nombre": "Encañada",
+"provincia": "0601"
+},
+{
+"ubigeo": "060106",
+"nombre": "Jesús",
+"provincia": "0601"
+},
+{
+"ubigeo": "060107",
+"nombre": "Llacanora",
+"provincia": "0601"
+},
+{
+"ubigeo": "060108",
+"nombre": "Los Baños del Inca",
+"provincia": "0601"
+},
+{
+"ubigeo": "060109",
+"nombre": "Magdalena",
+"provincia": "0601"
+},
+{
+"ubigeo": "060110",
+"nombre": "Matara",
+"provincia": "0601"
+},
+{
+"ubigeo": "060111",
+"nombre": "Namora",
+"provincia": "0601"
+},
+{
+"ubigeo": "060112",
+"nombre": "San Juan",
+"provincia": "0601"
+},
+{
+"ubigeo": "060201",
+"nombre": "Cajabamba",
+"provincia": "0602"
+},
+{
+"ubigeo": "060202",
+"nombre": "Cachachi",
+"provincia": "0602"
+},
+{
+"ubigeo": "060203",
+"nombre": "Condebamba",
+"provincia": "0602"
+},
+{
+"ubigeo": "060204",
+"nombre": "Sitacocha",
+"provincia": "0602"
+},
+{
+"ubigeo": "060301",
+"nombre": "Celendín",
+"provincia": "0603"
+},
+{
+"ubigeo": "060302",
+"nombre": "Chumuch",
+"provincia": "0603"
+},
+{
+"ubigeo": "060303",
+"nombre": "Cortegana",
+"provincia": "0603"
+},
+{
+"ubigeo": "060304",
+"nombre": "Huasmin",
+"provincia": "0603"
+},
+{
+"ubigeo": "060305",
+"nombre": "Jorge Chávez",
+"provincia": "0603"
+},
+{
+"ubigeo": "060306",
+"nombre": "José Gálvez",
+"provincia": "0603"
+},
+{
+"ubigeo": "060307",
+"nombre": "Miguel Iglesias",
+"provincia": "0603"
+},
+{
+"ubigeo": "060308",
+"nombre": "Oxamarca",
+"provincia": "0603"
+},
+{
+"ubigeo": "060309",
+"nombre": "Sorochuco",
+"provincia": "0603"
+},
+{
+"ubigeo": "060310",
+"nombre": "Sucre",
+"provincia": "0603"
+},
+{
+"ubigeo": "060311",
+"nombre": "Utco",
+"provincia": "0603"
+},
+{
+"ubigeo": "060312",
+"nombre": "La Libertad de Pallan",
+"provincia": "0603"
+},
+{
+"ubigeo": "060401",
+"nombre": "Chota",
+"provincia": "0604"
+},
+{
+"ubigeo": "060402",
+"nombre": "Anguia",
+"provincia": "0604"
+},
+{
+"ubigeo": "060403",
+"nombre": "Chadin",
+"provincia": "0604"
+},
+{
+"ubigeo": "060404",
+"nombre": "Chiguirip",
+"provincia": "0604"
+},
+{
+"ubigeo": "060405",
+"nombre": "Chimban",
+"provincia": "0604"
+},
+{
+"ubigeo": "060406",
+"nombre": "Choropampa",
+"provincia": "0604"
+},
+{
+"ubigeo": "060407",
+"nombre": "Cochabamba",
+"provincia": "0604"
+},
+{
+"ubigeo": "060408",
+"nombre": "Conchan",
+"provincia": "0604"
+},
+{
+"ubigeo": "060409",
+"nombre": "Huambos",
+"provincia": "0604"
+},
+{
+"ubigeo": "060410",
+"nombre": "Lajas",
+"provincia": "0604"
+},
+{
+"ubigeo": "060411",
+"nombre": "Llama",
+"provincia": "0604"
+},
+{
+"ubigeo": "060412",
+"nombre": "Miracosta",
+"provincia": "0604"
+},
+{
+"ubigeo": "060413",
+"nombre": "Paccha",
+"provincia": "0604"
+},
+{
+"ubigeo": "060414",
+"nombre": "Pion",
+"provincia": "0604"
+},
+{
+"ubigeo": "060415",
+"nombre": "Querocoto",
+"provincia": "0604"
+},
+{
+"ubigeo": "060416",
+"nombre": "San Juan de Licupis",
+"provincia": "0604"
+},
+{
+"ubigeo": "060417",
+"nombre": "Tacabamba",
+"provincia": "0604"
+},
+{
+"ubigeo": "060418",
+"nombre": "Tocmoche",
+"provincia": "0604"
+},
+{
+"ubigeo": "060419",
+"nombre": "Chalamarca",
+"provincia": "0604"
+},
+{
+"ubigeo": "060501",
+"nombre": "Contumaza",
+"provincia": "0605"
+},
+{
+"ubigeo": "060502",
+"nombre": "Chilete",
+"provincia": "0605"
+},
+{
+"ubigeo": "060503",
+"nombre": "Cupisnique",
+"provincia": "0605"
+},
+{
+"ubigeo": "060504",
+"nombre": "Guzmango",
+"provincia": "0605"
+},
+{
+"ubigeo": "060505",
+"nombre": "San Benito",
+"provincia": "0605"
+},
+{
+"ubigeo": "060506",
+"nombre": "Santa Cruz de Toledo",
+"provincia": "0605"
+},
+{
+"ubigeo": "060507",
+"nombre": "Tantarica",
+"provincia": "0605"
+},
+{
+"ubigeo": "060508",
+"nombre": "Yonan",
+"provincia": "0605"
+},
+{
+"ubigeo": "060601",
+"nombre": "Cutervo",
+"provincia": "0606"
+},
+{
+"ubigeo": "060602",
+"nombre": "Callayuc",
+"provincia": "0606"
+},
+{
+"ubigeo": "060603",
+"nombre": "Choros",
+"provincia": "0606"
+},
+{
+"ubigeo": "060604",
+"nombre": "Cujillo",
+"provincia": "0606"
+},
+{
+"ubigeo": "060605",
+"nombre": "La Ramada",
+"provincia": "0606"
+},
+{
+"ubigeo": "060606",
+"nombre": "Pimpingos",
+"provincia": "0606"
+},
+{
+"ubigeo": "060607",
+"nombre": "Querocotillo",
+"provincia": "0606"
+},
+{
+"ubigeo": "060608",
+"nombre": "San Andrés de Cutervo",
+"provincia": "0606"
+},
+{
+"ubigeo": "060609",
+"nombre": "San Juan de Cutervo",
+"provincia": "0606"
+},
+{
+"ubigeo": "060610",
+"nombre": "San Luis de Lucma",
+"provincia": "0606"
+},
+{
+"ubigeo": "060611",
+"nombre": "Santa Cruz",
+"provincia": "0606"
+},
+{
+"ubigeo": "060612",
+"nombre": "Santo Domingo de la Capilla",
+"provincia": "0606"
+},
+{
+"ubigeo": "060613",
+"nombre": "Santo Tomas",
+"provincia": "0606"
+},
+{
+"ubigeo": "060614",
+"nombre": "Socota",
+"provincia": "0606"
+},
+{
+"ubigeo": "060615",
+"nombre": "Toribio Casanova",
+"provincia": "0606"
+},
+{
+"ubigeo": "060701",
+"nombre": "Bambamarca",
+"provincia": "0607"
+},
+{
+"ubigeo": "060702",
+"nombre": "Chugur",
+"provincia": "0607"
+},
+{
+"ubigeo": "060703",
+"nombre": "Hualgayoc",
+"provincia": "0607"
+},
+{
+"ubigeo": "060801",
+"nombre": "Jaén",
+"provincia": "0608"
+},
+{
+"ubigeo": "060802",
+"nombre": "Bellavista",
+"provincia": "0608"
+},
+{
+"ubigeo": "060803",
+"nombre": "Chontali",
+"provincia": "0608"
+},
+{
+"ubigeo": "060804",
+"nombre": "Colasay",
+"provincia": "0608"
+},
+{
+"ubigeo": "060805",
+"nombre": "Huabal",
+"provincia": "0608"
+},
+{
+"ubigeo": "060806",
+"nombre": "Las Pirias",
+"provincia": "0608"
+},
+{
+"ubigeo": "060807",
+"nombre": "Pomahuaca",
+"provincia": "0608"
+},
+{
+"ubigeo": "060808",
+"nombre": "Pucara",
+"provincia": "0608"
+},
+{
+"ubigeo": "060809",
+"nombre": "Sallique",
+"provincia": "0608"
+},
+{
+"ubigeo": "060810",
+"nombre": "San Felipe",
+"provincia": "0608"
+},
+{
+"ubigeo": "060811",
+"nombre": "San José del Alto",
+"provincia": "0608"
+},
+{
+"ubigeo": "060812",
+"nombre": "Santa Rosa",
+"provincia": "0608"
+},
+{
+"ubigeo": "060901",
+"nombre": "San Ignacio",
+"provincia": "0609"
+},
+{
+"ubigeo": "060902",
+"nombre": "Chirinos",
+"provincia": "0609"
+},
+{
+"ubigeo": "060903",
+"nombre": "Huarango",
+"provincia": "0609"
+},
+{
+"ubigeo": "060904",
+"nombre": "La Coipa",
+"provincia": "0609"
+},
+{
+"ubigeo": "060905",
+"nombre": "Namballe",
+"provincia": "0609"
+},
+{
+"ubigeo": "060906",
+"nombre": "San José de Lourdes",
+"provincia": "0609"
+},
+{
+"ubigeo": "060907",
+"nombre": "Tabaconas",
+"provincia": "0609"
+},
+{
+"ubigeo": "061001",
+"nombre": "Pedro Gálvez",
+"provincia": "0610"
+},
+{
+"ubigeo": "061002",
+"nombre": "Chancay",
+"provincia": "0610"
+},
+{
+"ubigeo": "061003",
+"nombre": "Eduardo Villanueva",
+"provincia": "0610"
+},
+{
+"ubigeo": "061004",
+"nombre": "Gregorio Pita",
+"provincia": "0610"
+},
+{
+"ubigeo": "061005",
+"nombre": "Ichocan",
+"provincia": "0610"
+},
+{
+"ubigeo": "061006",
+"nombre": "José Manuel Quiroz",
+"provincia": "0610"
+},
+{
+"ubigeo": "061007",
+"nombre": "José Sabogal",
+"provincia": "0610"
+},
+{
+"ubigeo": "061101",
+"nombre": "San Miguel",
+"provincia": "0611"
+},
+{
+"ubigeo": "061102",
+"nombre": "Bolívar",
+"provincia": "0611"
+},
+{
+"ubigeo": "061103",
+"nombre": "Calquis",
+"provincia": "0611"
+},
+{
+"ubigeo": "061104",
+"nombre": "Catilluc",
+"provincia": "0611"
+},
+{
+"ubigeo": "061105",
+"nombre": "El Prado",
+"provincia": "0611"
+},
+{
+"ubigeo": "061106",
+"nombre": "La Florida",
+"provincia": "0611"
+},
+{
+"ubigeo": "061107",
+"nombre": "Llapa",
+"provincia": "0611"
+},
+{
+"ubigeo": "061108",
+"nombre": "Nanchoc",
+"provincia": "0611"
+},
+{
+"ubigeo": "061109",
+"nombre": "Niepos",
+"provincia": "0611"
+},
+{
+"ubigeo": "061110",
+"nombre": "San Gregorio",
+"provincia": "0611"
+},
+{
+"ubigeo": "061111",
+"nombre": "San Silvestre de Cochan",
+"provincia": "0611"
+},
+{
+"ubigeo": "061112",
+"nombre": "Tongod",
+"provincia": "0611"
+},
+{
+"ubigeo": "061113",
+"nombre": "Unión Agua Blanca",
+"provincia": "0611"
+},
+{
+"ubigeo": "061201",
+"nombre": "San Pablo",
+"provincia": "0612"
+},
+{
+"ubigeo": "061202",
+"nombre": "San Bernardino",
+"provincia": "0612"
+},
+{
+"ubigeo": "061203",
+"nombre": "San Luis",
+"provincia": "0612"
+},
+{
+"ubigeo": "061204",
+"nombre": "Tumbaden",
+"provincia": "0612"
+},
+{
+"ubigeo": "061301",
+"nombre": "Santa Cruz",
+"provincia": "0613"
+},
+{
+"ubigeo": "061302",
+"nombre": "Andabamba",
+"provincia": "0613"
+},
+{
+"ubigeo": "061303",
+"nombre": "Catache",
+"provincia": "0613"
+},
+{
+"ubigeo": "061304",
+"nombre": "Chancaybaños",
+"provincia": "0613"
+},
+{
+"ubigeo": "061305",
+"nombre": "La Esperanza",
+"provincia": "0613"
+},
+{
+"ubigeo": "061306",
+"nombre": "Ninabamba",
+"provincia": "0613"
+},
+{
+"ubigeo": "061307",
+"nombre": "Pulan",
+"provincia": "0613"
+},
+{
+"ubigeo": "061308",
+"nombre": "Saucepampa",
+"provincia": "0613"
+},
+{
+"ubigeo": "061309",
+"nombre": "Sexi",
+"provincia": "0613"
+},
+{
+"ubigeo": "061310",
+"nombre": "Uticyacu",
+"provincia": "0613"
+},
+{
+"ubigeo": "061311",
+"nombre": "Yauyucan",
+"provincia": "0613"
+},
+{
+"ubigeo": "070101",
+"nombre": "Callao",
+"provincia": "0701"
+},
+{
+"ubigeo": "070102",
+"nombre": "Bellavista",
+"provincia": "0701"
+},
+{
+"ubigeo": "070103",
+"nombre": "Carmen de la Legua Reynoso",
+"provincia": "0701"
+},
+{
+"ubigeo": "070104",
+"nombre": "La Perla",
+"provincia": "0701"
+},
+{
+"ubigeo": "070105",
+"nombre": "La Punta",
+"provincia": "0701"
+},
+{
+"ubigeo": "070106",
+"nombre": "Ventanilla",
+"provincia": "0701"
+},
+{
+"ubigeo": "070107",
+"nombre": "Mi Perú",
+"provincia": "0701"
+},
+{
+"ubigeo": "080101",
+"nombre": "Cusco",
+"provincia": "0801"
+},
+{
+"ubigeo": "080102",
+"nombre": "Ccorca",
+"provincia": "0801"
+},
+{
+"ubigeo": "080103",
+"nombre": "Poroy",
+"provincia": "0801"
+},
+{
+"ubigeo": "080104",
+"nombre": "San Jerónimo",
+"provincia": "0801"
+},
+{
+"ubigeo": "080105",
+"nombre": "San Sebastian",
+"provincia": "0801"
+},
+{
+"ubigeo": "080106",
+"nombre": "Santiago",
+"provincia": "0801"
+},
+{
+"ubigeo": "080107",
+"nombre": "Saylla",
+"provincia": "0801"
+},
+{
+"ubigeo": "080108",
+"nombre": "Wanchaq",
+"provincia": "0801"
+},
+{
+"ubigeo": "080201",
+"nombre": "Acomayo",
+"provincia": "0802"
+},
+{
+"ubigeo": "080202",
+"nombre": "Acopia",
+"provincia": "0802"
+},
+{
+"ubigeo": "080203",
+"nombre": "Acos",
+"provincia": "0802"
+},
+{
+"ubigeo": "080204",
+"nombre": "Mosoc Llacta",
+"provincia": "0802"
+},
+{
+"ubigeo": "080205",
+"nombre": "Pomacanchi",
+"provincia": "0802"
+},
+{
+"ubigeo": "080206",
+"nombre": "Rondocan",
+"provincia": "0802"
+},
+{
+"ubigeo": "080207",
+"nombre": "Sangarara",
+"provincia": "0802"
+},
+{
+"ubigeo": "080301",
+"nombre": "Anta",
+"provincia": "0803"
+},
+{
+"ubigeo": "080302",
+"nombre": "Ancahuasi",
+"provincia": "0803"
+},
+{
+"ubigeo": "080303",
+"nombre": "Cachimayo",
+"provincia": "0803"
+},
+{
+"ubigeo": "080304",
+"nombre": "Chinchaypujio",
+"provincia": "0803"
+},
+{
+"ubigeo": "080305",
+"nombre": "Huarocondo",
+"provincia": "0803"
+},
+{
+"ubigeo": "080306",
+"nombre": "Limatambo",
+"provincia": "0803"
+},
+{
+"ubigeo": "080307",
+"nombre": "Mollepata",
+"provincia": "0803"
+},
+{
+"ubigeo": "080308",
+"nombre": "Pucyura",
+"provincia": "0803"
+},
+{
+"ubigeo": "080309",
+"nombre": "Zurite",
+"provincia": "0803"
+},
+{
+"ubigeo": "080401",
+"nombre": "Calca",
+"provincia": "0804"
+},
+{
+"ubigeo": "080402",
+"nombre": "Coya",
+"provincia": "0804"
+},
+{
+"ubigeo": "080403",
+"nombre": "Lamay",
+"provincia": "0804"
+},
+{
+"ubigeo": "080404",
+"nombre": "Lares",
+"provincia": "0804"
+},
+{
+"ubigeo": "080405",
+"nombre": "Pisac",
+"provincia": "0804"
+},
+{
+"ubigeo": "080406",
+"nombre": "San Salvador",
+"provincia": "0804"
+},
+{
+"ubigeo": "080407",
+"nombre": "Taray",
+"provincia": "0804"
+},
+{
+"ubigeo": "080408",
+"nombre": "Yanatile",
+"provincia": "0804"
+},
+{
+"ubigeo": "080501",
+"nombre": "Yanaoca",
+"provincia": "0805"
+},
+{
+"ubigeo": "080502",
+"nombre": "Checca",
+"provincia": "0805"
+},
+{
+"ubigeo": "080503",
+"nombre": "Kunturkanki",
+"provincia": "0805"
+},
+{
+"ubigeo": "080504",
+"nombre": "Langui",
+"provincia": "0805"
+},
+{
+"ubigeo": "080505",
+"nombre": "Layo",
+"provincia": "0805"
+},
+{
+"ubigeo": "080506",
+"nombre": "Pampamarca",
+"provincia": "0805"
+},
+{
+"ubigeo": "080507",
+"nombre": "Quehue",
+"provincia": "0805"
+},
+{
+"ubigeo": "080508",
+"nombre": "Tupac Amaru",
+"provincia": "0805"
+},
+{
+"ubigeo": "080601",
+"nombre": "Sicuani",
+"provincia": "0806"
+},
+{
+"ubigeo": "080602",
+"nombre": "Checacupe",
+"provincia": "0806"
+},
+{
+"ubigeo": "080603",
+"nombre": "Combapata",
+"provincia": "0806"
+},
+{
+"ubigeo": "080604",
+"nombre": "Marangani",
+"provincia": "0806"
+},
+{
+"ubigeo": "080605",
+"nombre": "Pitumarca",
+"provincia": "0806"
+},
+{
+"ubigeo": "080606",
+"nombre": "San Pablo",
+"provincia": "0806"
+},
+{
+"ubigeo": "080607",
+"nombre": "San Pedro",
+"provincia": "0806"
+},
+{
+"ubigeo": "080608",
+"nombre": "Tinta",
+"provincia": "0806"
+},
+{
+"ubigeo": "080701",
+"nombre": "Santo Tomas",
+"provincia": "0807"
+},
+{
+"ubigeo": "080702",
+"nombre": "Capacmarca",
+"provincia": "0807"
+},
+{
+"ubigeo": "080703",
+"nombre": "Chamaca",
+"provincia": "0807"
+},
+{
+"ubigeo": "080704",
+"nombre": "Colquemarca",
+"provincia": "0807"
+},
+{
+"ubigeo": "080705",
+"nombre": "Livitaca",
+"provincia": "0807"
+},
+{
+"ubigeo": "080706",
+"nombre": "Llusco",
+"provincia": "0807"
+},
+{
+"ubigeo": "080707",
+"nombre": "Quiñota",
+"provincia": "0807"
+},
+{
+"ubigeo": "080708",
+"nombre": "Velille",
+"provincia": "0807"
+},
+{
+"ubigeo": "080801",
+"nombre": "Espinar",
+"provincia": "0808"
+},
+{
+"ubigeo": "080802",
+"nombre": "Condoroma",
+"provincia": "0808"
+},
+{
+"ubigeo": "080803",
+"nombre": "Coporaque",
+"provincia": "0808"
+},
+{
+"ubigeo": "080804",
+"nombre": "Ocoruro",
+"provincia": "0808"
+},
+{
+"ubigeo": "080805",
+"nombre": "Pallpata",
+"provincia": "0808"
+},
+{
+"ubigeo": "080806",
+"nombre": "Pichigua",
+"provincia": "0808"
+},
+{
+"ubigeo": "080807",
+"nombre": "Suyckutambo",
+"provincia": "0808"
+},
+{
+"ubigeo": "080808",
+"nombre": "Alto Pichigua",
+"provincia": "0808"
+},
+{
+"ubigeo": "080901",
+"nombre": "Santa Ana",
+"provincia": "0809"
+},
+{
+"ubigeo": "080902",
+"nombre": "Echarate",
+"provincia": "0809"
+},
+{
+"ubigeo": "080903",
+"nombre": "Huayopata",
+"provincia": "0809"
+},
+{
+"ubigeo": "080904",
+"nombre": "Maranura",
+"provincia": "0809"
+},
+{
+"ubigeo": "080905",
+"nombre": "Ocobamba",
+"provincia": "0809"
+},
+{
+"ubigeo": "080906",
+"nombre": "Quellouno",
+"provincia": "0809"
+},
+{
+"ubigeo": "080907",
+"nombre": "Kimbiri",
+"provincia": "0809"
+},
+{
+"ubigeo": "080908",
+"nombre": "Santa Teresa",
+"provincia": "0809"
+},
+{
+"ubigeo": "080909",
+"nombre": "Vilcabamba",
+"provincia": "0809"
+},
+{
+"ubigeo": "080910",
+"nombre": "Pichari",
+"provincia": "0809"
+},
+{
+"ubigeo": "080911",
+"nombre": "Inkawasi",
+"provincia": "0809"
+},
+{
+"ubigeo": "080912",
+"nombre": "Villa Virgen",
+"provincia": "0809"
+},
+{
+"ubigeo": "080913",
+"nombre": "Villa Kintiarina",
+"provincia": "0809"
+},
+{
+"ubigeo": "080914",
+"nombre": "Megantoni",
+"provincia": "0809"
+},
+{
+"ubigeo": "081001",
+"nombre": "Paruro",
+"provincia": "0810"
+},
+{
+"ubigeo": "081002",
+"nombre": "Accha",
+"provincia": "0810"
+},
+{
+"ubigeo": "081003",
+"nombre": "Ccapi",
+"provincia": "0810"
+},
+{
+"ubigeo": "081004",
+"nombre": "Colcha",
+"provincia": "0810"
+},
+{
+"ubigeo": "081005",
+"nombre": "Huanoquite",
+"provincia": "0810"
+},
+{
+"ubigeo": "081006",
+"nombre": "Omachaç",
+"provincia": "0810"
+},
+{
+"ubigeo": "081007",
+"nombre": "Paccaritambo",
+"provincia": "0810"
+},
+{
+"ubigeo": "081008",
+"nombre": "Pillpinto",
+"provincia": "0810"
+},
+{
+"ubigeo": "081009",
+"nombre": "Yaurisque",
+"provincia": "0810"
+},
+{
+"ubigeo": "081101",
+"nombre": "Paucartambo",
+"provincia": "0811"
+},
+{
+"ubigeo": "081102",
+"nombre": "Caicay",
+"provincia": "0811"
+},
+{
+"ubigeo": "081103",
+"nombre": "Challabamba",
+"provincia": "0811"
+},
+{
+"ubigeo": "081104",
+"nombre": "Colquepata",
+"provincia": "0811"
+},
+{
+"ubigeo": "081105",
+"nombre": "Huancarani",
+"provincia": "0811"
+},
+{
+"ubigeo": "081106",
+"nombre": "Kosñipata",
+"provincia": "0811"
+},
+{
+"ubigeo": "081201",
+"nombre": "Urcos",
+"provincia": "0812"
+},
+{
+"ubigeo": "081202",
+"nombre": "Andahuaylillas",
+"provincia": "0812"
+},
+{
+"ubigeo": "081203",
+"nombre": "Camanti",
+"provincia": "0812"
+},
+{
+"ubigeo": "081204",
+"nombre": "Ccarhuayo",
+"provincia": "0812"
+},
+{
+"ubigeo": "081205",
+"nombre": "Ccatca",
+"provincia": "0812"
+},
+{
+"ubigeo": "081206",
+"nombre": "Cusipata",
+"provincia": "0812"
+},
+{
+"ubigeo": "081207",
+"nombre": "Huaro",
+"provincia": "0812"
+},
+{
+"ubigeo": "081208",
+"nombre": "Lucre",
+"provincia": "0812"
+},
+{
+"ubigeo": "081209",
+"nombre": "Marcapata",
+"provincia": "0812"
+},
+{
+"ubigeo": "081210",
+"nombre": "Ocongate",
+"provincia": "0812"
+},
+{
+"ubigeo": "081211",
+"nombre": "Oropesa",
+"provincia": "0812"
+},
+{
+"ubigeo": "081212",
+"nombre": "Quiquijana",
+"provincia": "0812"
+},
+{
+"ubigeo": "081301",
+"nombre": "Urubamba",
+"provincia": "0813"
+},
+{
+"ubigeo": "081302",
+"nombre": "Chinchero",
+"provincia": "0813"
+},
+{
+"ubigeo": "081303",
+"nombre": "Huayllabamba",
+"provincia": "0813"
+},
+{
+"ubigeo": "081304",
+"nombre": "Machupicchu",
+"provincia": "0813"
+},
+{
+"ubigeo": "081305",
+"nombre": "Maras",
+"provincia": "0813"
+},
+{
+"ubigeo": "081306",
+"nombre": "Ollantaytambo",
+"provincia": "0813"
+},
+{
+"ubigeo": "081307",
+"nombre": "Yucay",
+"provincia": "0813"
+},
+{
+"ubigeo": "090101",
+"nombre": "Huancavelica",
+"provincia": "0901"
+},
+{
+"ubigeo": "090102",
+"nombre": "Acobambilla",
+"provincia": "0901"
+},
+{
+"ubigeo": "090103",
+"nombre": "Acoria",
+"provincia": "0901"
+},
+{
+"ubigeo": "090104",
+"nombre": "Conayca",
+"provincia": "0901"
+},
+{
+"ubigeo": "090105",
+"nombre": "Cuenca",
+"provincia": "0901"
+},
+{
+"ubigeo": "090106",
+"nombre": "Huachocolpa",
+"provincia": "0901"
+},
+{
+"ubigeo": "090107",
+"nombre": "Huayllahuara",
+"provincia": "0901"
+},
+{
+"ubigeo": "090108",
+"nombre": "Izcuchaca",
+"provincia": "0901"
+},
+{
+"ubigeo": "090109",
+"nombre": "Laria",
+"provincia": "0901"
+},
+{
+"ubigeo": "090110",
+"nombre": "Manta",
+"provincia": "0901"
+},
+{
+"ubigeo": "090111",
+"nombre": "Mariscal Cáceres",
+"provincia": "0901"
+},
+{
+"ubigeo": "090112",
+"nombre": "Moya",
+"provincia": "0901"
+},
+{
+"ubigeo": "090113",
+"nombre": "Nuevo Occoro",
+"provincia": "0901"
+},
+{
+"ubigeo": "090114",
+"nombre": "Palca",
+"provincia": "0901"
+},
+{
+"ubigeo": "090115",
+"nombre": "Pilchaca",
+"provincia": "0901"
+},
+{
+"ubigeo": "090116",
+"nombre": "Vilca",
+"provincia": "0901"
+},
+{
+"ubigeo": "090117",
+"nombre": "Yauli",
+"provincia": "0901"
+},
+{
+"ubigeo": "090118",
+"nombre": "Ascensión",
+"provincia": "0901"
+},
+{
+"ubigeo": "090119",
+"nombre": "Huando",
+"provincia": "0901"
+},
+{
+"ubigeo": "090201",
+"nombre": "Acobamba",
+"provincia": "0902"
+},
+{
+"ubigeo": "090202",
+"nombre": "Andabamba",
+"provincia": "0902"
+},
+{
+"ubigeo": "090203",
+"nombre": "Anta",
+"provincia": "0902"
+},
+{
+"ubigeo": "090204",
+"nombre": "Caja",
+"provincia": "0902"
+},
+{
+"ubigeo": "090205",
+"nombre": "Marcas",
+"provincia": "0902"
+},
+{
+"ubigeo": "090206",
+"nombre": "Paucara",
+"provincia": "0902"
+},
+{
+"ubigeo": "090207",
+"nombre": "Pomacocha",
+"provincia": "0902"
+},
+{
+"ubigeo": "090208",
+"nombre": "Rosario",
+"provincia": "0902"
+},
+{
+"ubigeo": "090301",
+"nombre": "Lircay",
+"provincia": "0903"
+},
+{
+"ubigeo": "090302",
+"nombre": "Anchonga",
+"provincia": "0903"
+},
+{
+"ubigeo": "090303",
+"nombre": "Callanmarca",
+"provincia": "0903"
+},
+{
+"ubigeo": "090304",
+"nombre": "Ccochaccasa",
+"provincia": "0903"
+},
+{
+"ubigeo": "090305",
+"nombre": "Chincho",
+"provincia": "0903"
+},
+{
+"ubigeo": "090306",
+"nombre": "Congalla",
+"provincia": "0903"
+},
+{
+"ubigeo": "090307",
+"nombre": "Huanca-Huanca",
+"provincia": "0903"
+},
+{
+"ubigeo": "090308",
+"nombre": "Huayllay Grande",
+"provincia": "0903"
+},
+{
+"ubigeo": "090309",
+"nombre": "Julcamarca",
+"provincia": "0903"
+},
+{
+"ubigeo": "090310",
+"nombre": "San Antonio de Antaparco",
+"provincia": "0903"
+},
+{
+"ubigeo": "090311",
+"nombre": "Santo Tomas de Pata",
+"provincia": "0903"
+},
+{
+"ubigeo": "090312",
+"nombre": "Secclla",
+"provincia": "0903"
+},
+{
+"ubigeo": "090401",
+"nombre": "Castrovirreyna",
+"provincia": "0904"
+},
+{
+"ubigeo": "090402",
+"nombre": "Arma",
+"provincia": "0904"
+},
+{
+"ubigeo": "090403",
+"nombre": "Aurahua",
+"provincia": "0904"
+},
+{
+"ubigeo": "090404",
+"nombre": "Capillas",
+"provincia": "0904"
+},
+{
+"ubigeo": "090405",
+"nombre": "Chupamarca",
+"provincia": "0904"
+},
+{
+"ubigeo": "090406",
+"nombre": "Cocas",
+"provincia": "0904"
+},
+{
+"ubigeo": "090407",
+"nombre": "Huachos",
+"provincia": "0904"
+},
+{
+"ubigeo": "090408",
+"nombre": "Huamatambo",
+"provincia": "0904"
+},
+{
+"ubigeo": "090409",
+"nombre": "Mollepampa",
+"provincia": "0904"
+},
+{
+"ubigeo": "090410",
+"nombre": "San Juan",
+"provincia": "0904"
+},
+{
+"ubigeo": "090411",
+"nombre": "Santa Ana",
+"provincia": "0904"
+},
+{
+"ubigeo": "090412",
+"nombre": "Tantara",
+"provincia": "0904"
+},
+{
+"ubigeo": "090413",
+"nombre": "Ticrapo",
+"provincia": "0904"
+},
+{
+"ubigeo": "090501",
+"nombre": "Churcampa",
+"provincia": "0905"
+},
+{
+"ubigeo": "090502",
+"nombre": "Anco",
+"provincia": "0905"
+},
+{
+"ubigeo": "090503",
+"nombre": "Chinchihuasi",
+"provincia": "0905"
+},
+{
+"ubigeo": "090504",
+"nombre": "El Carmen",
+"provincia": "0905"
+},
+{
+"ubigeo": "090505",
+"nombre": "La Merced",
+"provincia": "0905"
+},
+{
+"ubigeo": "090506",
+"nombre": "Locroja",
+"provincia": "0905"
+},
+{
+"ubigeo": "090507",
+"nombre": "Paucarbamba",
+"provincia": "0905"
+},
+{
+"ubigeo": "090508",
+"nombre": "San Miguel de Mayocc",
+"provincia": "0905"
+},
+{
+"ubigeo": "090509",
+"nombre": "San Pedro de Coris",
+"provincia": "0905"
+},
+{
+"ubigeo": "090510",
+"nombre": "Pachamarca",
+"provincia": "0905"
+},
+{
+"ubigeo": "090511",
+"nombre": "Cosme",
+"provincia": "0905"
+},
+{
+"ubigeo": "090601",
+"nombre": "Huaytara",
+"provincia": "0906"
+},
+{
+"ubigeo": "090602",
+"nombre": "Ayavi",
+"provincia": "0906"
+},
+{
+"ubigeo": "090603",
+"nombre": "Córdova",
+"provincia": "0906"
+},
+{
+"ubigeo": "090604",
+"nombre": "Huayacundo Arma",
+"provincia": "0906"
+},
+{
+"ubigeo": "090605",
+"nombre": "Laramarca",
+"provincia": "0906"
+},
+{
+"ubigeo": "090606",
+"nombre": "Ocoyo",
+"provincia": "0906"
+},
+{
+"ubigeo": "090607",
+"nombre": "Pilpichaca",
+"provincia": "0906"
+},
+{
+"ubigeo": "090608",
+"nombre": "Querco",
+"provincia": "0906"
+},
+{
+"ubigeo": "090609",
+"nombre": "Quito-Arma",
+"provincia": "0906"
+},
+{
+"ubigeo": "090610",
+"nombre": "San Antonio de Cusicancha",
+"provincia": "0906"
+},
+{
+"ubigeo": "090611",
+"nombre": "San Francisco de Sangayaico",
+"provincia": "0906"
+},
+{
+"ubigeo": "090612",
+"nombre": "San Isidro",
+"provincia": "0906"
+},
+{
+"ubigeo": "090613",
+"nombre": "Santiago de Chocorvos",
+"provincia": "0906"
+},
+{
+"ubigeo": "090614",
+"nombre": "Santiago de Quirahuara",
+"provincia": "0906"
+},
+{
+"ubigeo": "090615",
+"nombre": "Santo Domingo de Capillas",
+"provincia": "0906"
+},
+{
+"ubigeo": "090616",
+"nombre": "Tambo",
+"provincia": "0906"
+},
+{
+"ubigeo": "090701",
+"nombre": "Pampas",
+"provincia": "0907"
+},
+{
+"ubigeo": "090702",
+"nombre": "Acostambo",
+"provincia": "0907"
+},
+{
+"ubigeo": "090703",
+"nombre": "Acraquia",
+"provincia": "0907"
+},
+{
+"ubigeo": "090704",
+"nombre": "Ahuaycha",
+"provincia": "0907"
+},
+{
+"ubigeo": "090705",
+"nombre": "Colcabamba",
+"provincia": "0907"
+},
+{
+"ubigeo": "090706",
+"nombre": "Daniel Hernández",
+"provincia": "0907"
+},
+{
+"ubigeo": "090707",
+"nombre": "Huachocolpa",
+"provincia": "0907"
+},
+{
+"ubigeo": "090709",
+"nombre": "Huaribamba",
+"provincia": "0907"
+},
+{
+"ubigeo": "090710",
+"nombre": "Ñahuimpuquio",
+"provincia": "0907"
+},
+{
+"ubigeo": "090711",
+"nombre": "Pazos",
+"provincia": "0907"
+},
+{
+"ubigeo": "090713",
+"nombre": "Quishuar",
+"provincia": "0907"
+},
+{
+"ubigeo": "090714",
+"nombre": "Salcabamba",
+"provincia": "0907"
+},
+{
+"ubigeo": "090715",
+"nombre": "Salcahuasi",
+"provincia": "0907"
+},
+{
+"ubigeo": "090716",
+"nombre": "San Marcos de Rocchac",
+"provincia": "0907"
+},
+{
+"ubigeo": "090717",
+"nombre": "Surcubamba",
+"provincia": "0907"
+},
+{
+"ubigeo": "090718",
+"nombre": "Tintay Puncu",
+"provincia": "0907"
+},
+{
+"ubigeo": "090719",
+"nombre": "Quichuas",
+"provincia": "0907"
+},
+{
+"ubigeo": "090720",
+"nombre": "Andaymarca",
+"provincia": "0907"
+},
+{
+"ubigeo": "090721",
+"nombre": "Roble",
+"provincia": "0907"
+},
+{
+"ubigeo": "090722",
+"nombre": "Pichos",
+"provincia": "0907"
+},
+{
+"ubigeo": "090723",
+"nombre": "Santiago de Tucuma",
+"provincia": "0907"
+},
+{
+"ubigeo": "100101",
+"nombre": "Huanuco",
+"provincia": "1001"
+},
+{
+"ubigeo": "100102",
+"nombre": "Amarilis",
+"provincia": "1001"
+},
+{
+"ubigeo": "100103",
+"nombre": "Chinchao",
+"provincia": "1001"
+},
+{
+"ubigeo": "100104",
+"nombre": "Churubamba",
+"provincia": "1001"
+},
+{
+"ubigeo": "100105",
+"nombre": "Margos",
+"provincia": "1001"
+},
+{
+"ubigeo": "100106",
+"nombre": "Quisqui (Kichki)",
+"provincia": "1001"
+},
+{
+"ubigeo": "100107",
+"nombre": "San Francisco de Cayran",
+"provincia": "1001"
+},
+{
+"ubigeo": "100108",
+"nombre": "San Pedro de Chaulan",
+"provincia": "1001"
+},
+{
+"ubigeo": "100109",
+"nombre": "Santa María del Valle",
+"provincia": "1001"
+},
+{
+"ubigeo": "100110",
+"nombre": "Yarumayo",
+"provincia": "1001"
+},
+{
+"ubigeo": "100111",
+"nombre": "Pillco Marca",
+"provincia": "1001"
+},
+{
+"ubigeo": "100112",
+"nombre": "Yacus",
+"provincia": "1001"
+},
+{
+"ubigeo": "100113",
+"nombre": "San Pablo de Pillao",
+"provincia": "1001"
+},
+{
+"ubigeo": "100201",
+"nombre": "Ambo",
+"provincia": "1002"
+},
+{
+"ubigeo": "100202",
+"nombre": "Cayna",
+"provincia": "1002"
+},
+{
+"ubigeo": "100203",
+"nombre": "Colpas",
+"provincia": "1002"
+},
+{
+"ubigeo": "100204",
+"nombre": "Conchamarca",
+"provincia": "1002"
+},
+{
+"ubigeo": "100205",
+"nombre": "Huacar",
+"provincia": "1002"
+},
+{
+"ubigeo": "100206",
+"nombre": "San Francisco",
+"provincia": "1002"
+},
+{
+"ubigeo": "100207",
+"nombre": "San Rafael",
+"provincia": "1002"
+},
+{
+"ubigeo": "100208",
+"nombre": "Tomay Kichwa",
+"provincia": "1002"
+},
+{
+"ubigeo": "100301",
+"nombre": "La Unión",
+"provincia": "1003"
+},
+{
+"ubigeo": "100307",
+"nombre": "Chuquis",
+"provincia": "1003"
+},
+{
+"ubigeo": "100311",
+"nombre": "Marías",
+"provincia": "1003"
+},
+{
+"ubigeo": "100313",
+"nombre": "Pachas",
+"provincia": "1003"
+},
+{
+"ubigeo": "100316",
+"nombre": "Quivilla",
+"provincia": "1003"
+},
+{
+"ubigeo": "100317",
+"nombre": "Ripan",
+"provincia": "1003"
+},
+{
+"ubigeo": "100321",
+"nombre": "Shunqui",
+"provincia": "1003"
+},
+{
+"ubigeo": "100322",
+"nombre": "Sillapata",
+"provincia": "1003"
+},
+{
+"ubigeo": "100323",
+"nombre": "Yanas",
+"provincia": "1003"
+},
+{
+"ubigeo": "100401",
+"nombre": "Huacaybamba",
+"provincia": "1004"
+},
+{
+"ubigeo": "100402",
+"nombre": "Canchabamba",
+"provincia": "1004"
+},
+{
+"ubigeo": "100403",
+"nombre": "Cochabamba",
+"provincia": "1004"
+},
+{
+"ubigeo": "100404",
+"nombre": "Pinra",
+"provincia": "1004"
+},
+{
+"ubigeo": "100501",
+"nombre": "Llata",
+"provincia": "1005"
+},
+{
+"ubigeo": "100502",
+"nombre": "Arancay",
+"provincia": "1005"
+},
+{
+"ubigeo": "100503",
+"nombre": "Chavín de Pariarca",
+"provincia": "1005"
+},
+{
+"ubigeo": "100504",
+"nombre": "Jacas Grande",
+"provincia": "1005"
+},
+{
+"ubigeo": "100505",
+"nombre": "Jircan",
+"provincia": "1005"
+},
+{
+"ubigeo": "100506",
+"nombre": "Miraflores",
+"provincia": "1005"
+},
+{
+"ubigeo": "100507",
+"nombre": "Monzón",
+"provincia": "1005"
+},
+{
+"ubigeo": "100508",
+"nombre": "Punchao",
+"provincia": "1005"
+},
+{
+"ubigeo": "100509",
+"nombre": "Puños",
+"provincia": "1005"
+},
+{
+"ubigeo": "100510",
+"nombre": "Singa",
+"provincia": "1005"
+},
+{
+"ubigeo": "100511",
+"nombre": "Tantamayo",
+"provincia": "1005"
+},
+{
+"ubigeo": "100601",
+"nombre": "Rupa-Rupa",
+"provincia": "1006"
+},
+{
+"ubigeo": "100602",
+"nombre": "Daniel Alomía Robles",
+"provincia": "1006"
+},
+{
+"ubigeo": "100603",
+"nombre": "Hermílio Valdizan",
+"provincia": "1006"
+},
+{
+"ubigeo": "100604",
+"nombre": "José Crespo y Castillo",
+"provincia": "1006"
+},
+{
+"ubigeo": "100605",
+"nombre": "Luyando",
+"provincia": "1006"
+},
+{
+"ubigeo": "100606",
+"nombre": "Mariano Damaso Beraun",
+"provincia": "1006"
+},
+{
+"ubigeo": "100607",
+"nombre": "Pucayacu",
+"provincia": "1006"
+},
+{
+"ubigeo": "100608",
+"nombre": "Castillo Grande",
+"provincia": "1006"
+},
+{
+"ubigeo": "100609",
+"nombre": "Pueblo Nuevo",
+"provincia": "1006"
+},
+{
+"ubigeo": "100610",
+"nombre": "Santo Domingo de Anda",
+"provincia": "1006"
+},
+{
+"ubigeo": "100701",
+"nombre": "Huacrachuco",
+"provincia": "1007"
+},
+{
+"ubigeo": "100702",
+"nombre": "Cholon",
+"provincia": "1007"
+},
+{
+"ubigeo": "100703",
+"nombre": "San Buenaventura",
+"provincia": "1007"
+},
+{
+"ubigeo": "100704",
+"nombre": "La Morada",
+"provincia": "1007"
+},
+{
+"ubigeo": "100705",
+"nombre": "Santa Rosa de Alto Yanajanca",
+"provincia": "1007"
+},
+{
+"ubigeo": "100801",
+"nombre": "Panao",
+"provincia": "1008"
+},
+{
+"ubigeo": "100802",
+"nombre": "Chaglla",
+"provincia": "1008"
+},
+{
+"ubigeo": "100803",
+"nombre": "Molino",
+"provincia": "1008"
+},
+{
+"ubigeo": "100804",
+"nombre": "Umari",
+"provincia": "1008"
+},
+{
+"ubigeo": "100901",
+"nombre": "Puerto Inca",
+"provincia": "1009"
+},
+{
+"ubigeo": "100902",
+"nombre": "Codo del Pozuzo",
+"provincia": "1009"
+},
+{
+"ubigeo": "100903",
+"nombre": "Honoria",
+"provincia": "1009"
+},
+{
+"ubigeo": "100904",
+"nombre": "Tournavista",
+"provincia": "1009"
+},
+{
+"ubigeo": "100905",
+"nombre": "Yuyapichis",
+"provincia": "1009"
+},
+{
+"ubigeo": "101001",
+"nombre": "Jesús",
+"provincia": "1010"
+},
+{
+"ubigeo": "101002",
+"nombre": "Baños",
+"provincia": "1010"
+},
+{
+"ubigeo": "101003",
+"nombre": "Jivia",
+"provincia": "1010"
+},
+{
+"ubigeo": "101004",
+"nombre": "Queropalca",
+"provincia": "1010"
+},
+{
+"ubigeo": "101005",
+"nombre": "Rondos",
+"provincia": "1010"
+},
+{
+"ubigeo": "101006",
+"nombre": "San Francisco de Asís",
+"provincia": "1010"
+},
+{
+"ubigeo": "101007",
+"nombre": "San Miguel de Cauri",
+"provincia": "1010"
+},
+{
+"ubigeo": "101101",
+"nombre": "Chavinillo",
+"provincia": "1011"
+},
+{
+"ubigeo": "101102",
+"nombre": "Cahuac",
+"provincia": "1011"
+},
+{
+"ubigeo": "101103",
+"nombre": "Chacabamba",
+"provincia": "1011"
+},
+{
+"ubigeo": "101104",
+"nombre": "Aparicio Pomares",
+"provincia": "1011"
+},
+{
+"ubigeo": "101105",
+"nombre": "Jacas Chico",
+"provincia": "1011"
+},
+{
+"ubigeo": "101106",
+"nombre": "Obas",
+"provincia": "1011"
+},
+{
+"ubigeo": "101107",
+"nombre": "Pampamarca",
+"provincia": "1011"
+},
+{
+"ubigeo": "101108",
+"nombre": "Choras",
+"provincia": "1011"
+},
+{
+"ubigeo": "110101",
+"nombre": "Ica",
+"provincia": "1101"
+},
+{
+"ubigeo": "110102",
+"nombre": "La Tinguiña",
+"provincia": "1101"
+},
+{
+"ubigeo": "110103",
+"nombre": "Los Aquijes",
+"provincia": "1101"
+},
+{
+"ubigeo": "110104",
+"nombre": "Ocucaje",
+"provincia": "1101"
+},
+{
+"ubigeo": "110105",
+"nombre": "Pachacutec",
+"provincia": "1101"
+},
+{
+"ubigeo": "110106",
+"nombre": "Parcona",
+"provincia": "1101"
+},
+{
+"ubigeo": "110107",
+"nombre": "Pueblo Nuevo",
+"provincia": "1101"
+},
+{
+"ubigeo": "110108",
+"nombre": "Salas",
+"provincia": "1101"
+},
+{
+"ubigeo": "110109",
+"nombre": "San José de Los Molinos",
+"provincia": "1101"
+},
+{
+"ubigeo": "110110",
+"nombre": "San Juan Bautista",
+"provincia": "1101"
+},
+{
+"ubigeo": "110111",
+"nombre": "Santiago",
+"provincia": "1101"
+},
+{
+"ubigeo": "110112",
+"nombre": "Subtanjalla",
+"provincia": "1101"
+},
+{
+"ubigeo": "110113",
+"nombre": "Tate",
+"provincia": "1101"
+},
+{
+"ubigeo": "110114",
+"nombre": "Yauca del Rosario",
+"provincia": "1101"
+},
+{
+"ubigeo": "110201",
+"nombre": "Chincha Alta",
+"provincia": "1102"
+},
+{
+"ubigeo": "110202",
+"nombre": "Alto Laran",
+"provincia": "1102"
+},
+{
+"ubigeo": "110203",
+"nombre": "Chavin",
+"provincia": "1102"
+},
+{
+"ubigeo": "110204",
+"nombre": "Chincha Baja",
+"provincia": "1102"
+},
+{
+"ubigeo": "110205",
+"nombre": "El Carmen",
+"provincia": "1102"
+},
+{
+"ubigeo": "110206",
+"nombre": "Grocio Prado",
+"provincia": "1102"
+},
+{
+"ubigeo": "110207",
+"nombre": "Pueblo Nuevo",
+"provincia": "1102"
+},
+{
+"ubigeo": "110208",
+"nombre": "San Juan de Yanac",
+"provincia": "1102"
+},
+{
+"ubigeo": "110209",
+"nombre": "San Pedro de Huacarpana",
+"provincia": "1102"
+},
+{
+"ubigeo": "110210",
+"nombre": "Sunampe",
+"provincia": "1102"
+},
+{
+"ubigeo": "110211",
+"nombre": "Tambo de Mora",
+"provincia": "1102"
+},
+{
+"ubigeo": "110301",
+"nombre": "Nasca",
+"provincia": "1103"
+},
+{
+"ubigeo": "110302",
+"nombre": "Changuillo",
+"provincia": "1103"
+},
+{
+"ubigeo": "110303",
+"nombre": "El Ingenio",
+"provincia": "1103"
+},
+{
+"ubigeo": "110304",
+"nombre": "Marcona",
+"provincia": "1103"
+},
+{
+"ubigeo": "110305",
+"nombre": "Vista Alegre",
+"provincia": "1103"
+},
+{
+"ubigeo": "110401",
+"nombre": "Palpa",
+"provincia": "1104"
+},
+{
+"ubigeo": "110402",
+"nombre": "Llipata",
+"provincia": "1104"
+},
+{
+"ubigeo": "110403",
+"nombre": "Río Grande",
+"provincia": "1104"
+},
+{
+"ubigeo": "110404",
+"nombre": "Santa Cruz",
+"provincia": "1104"
+},
+{
+"ubigeo": "110405",
+"nombre": "Tibillo",
+"provincia": "1104"
+},
+{
+"ubigeo": "110501",
+"nombre": "Pisco",
+"provincia": "1105"
+},
+{
+"ubigeo": "110502",
+"nombre": "Huancano",
+"provincia": "1105"
+},
+{
+"ubigeo": "110503",
+"nombre": "Humay",
+"provincia": "1105"
+},
+{
+"ubigeo": "110504",
+"nombre": "Independencia",
+"provincia": "1105"
+},
+{
+"ubigeo": "110505",
+"nombre": "Paracas",
+"provincia": "1105"
+},
+{
+"ubigeo": "110506",
+"nombre": "San Andrés",
+"provincia": "1105"
+},
+{
+"ubigeo": "110507",
+"nombre": "San Clemente",
+"provincia": "1105"
+},
+{
+"ubigeo": "110508",
+"nombre": "Tupac Amaru Inca",
+"provincia": "1105"
+},
+{
+"ubigeo": "120101",
+"nombre": "Huancayo",
+"provincia": "1201"
+},
+{
+"ubigeo": "120104",
+"nombre": "Carhuacallanga",
+"provincia": "1201"
+},
+{
+"ubigeo": "120105",
+"nombre": "Chacapampa",
+"provincia": "1201"
+},
+{
+"ubigeo": "120106",
+"nombre": "Chicche",
+"provincia": "1201"
+},
+{
+"ubigeo": "120107",
+"nombre": "Chilca",
+"provincia": "1201"
+},
+{
+"ubigeo": "120108",
+"nombre": "Chongos Alto",
+"provincia": "1201"
+},
+{
+"ubigeo": "120111",
+"nombre": "Chupuro",
+"provincia": "1201"
+},
+{
+"ubigeo": "120112",
+"nombre": "Colca",
+"provincia": "1201"
+},
+{
+"ubigeo": "120113",
+"nombre": "Cullhuas",
+"provincia": "1201"
+},
+{
+"ubigeo": "120114",
+"nombre": "El Tambo",
+"provincia": "1201"
+},
+{
+"ubigeo": "120116",
+"nombre": "Huacrapuquio",
+"provincia": "1201"
+},
+{
+"ubigeo": "120117",
+"nombre": "Hualhuas",
+"provincia": "1201"
+},
+{
+"ubigeo": "120119",
+"nombre": "Huancan",
+"provincia": "1201"
+},
+{
+"ubigeo": "120120",
+"nombre": "Huasicancha",
+"provincia": "1201"
+},
+{
+"ubigeo": "120121",
+"nombre": "Huayucachi",
+"provincia": "1201"
+},
+{
+"ubigeo": "120122",
+"nombre": "Ingenio",
+"provincia": "1201"
+},
+{
+"ubigeo": "120124",
+"nombre": "Pariahuanca",
+"provincia": "1201"
+},
+{
+"ubigeo": "120125",
+"nombre": "Pilcomayo",
+"provincia": "1201"
+},
+{
+"ubigeo": "120126",
+"nombre": "Pucara",
+"provincia": "1201"
+},
+{
+"ubigeo": "120127",
+"nombre": "Quichuay",
+"provincia": "1201"
+},
+{
+"ubigeo": "120128",
+"nombre": "Quilcas",
+"provincia": "1201"
+},
+{
+"ubigeo": "120129",
+"nombre": "San Agustín",
+"provincia": "1201"
+},
+{
+"ubigeo": "120130",
+"nombre": "San Jerónimo de Tunan",
+"provincia": "1201"
+},
+{
+"ubigeo": "120132",
+"nombre": "Saño",
+"provincia": "1201"
+},
+{
+"ubigeo": "120133",
+"nombre": "Sapallanga",
+"provincia": "1201"
+},
+{
+"ubigeo": "120134",
+"nombre": "Sicaya",
+"provincia": "1201"
+},
+{
+"ubigeo": "120135",
+"nombre": "Santo Domingo de Acobamba",
+"provincia": "1201"
+},
+{
+"ubigeo": "120136",
+"nombre": "Viques",
+"provincia": "1201"
+},
+{
+"ubigeo": "120201",
+"nombre": "Concepción",
+"provincia": "1202"
+},
+{
+"ubigeo": "120202",
+"nombre": "Aco",
+"provincia": "1202"
+},
+{
+"ubigeo": "120203",
+"nombre": "Andamarca",
+"provincia": "1202"
+},
+{
+"ubigeo": "120204",
+"nombre": "Chambara",
+"provincia": "1202"
+},
+{
+"ubigeo": "120205",
+"nombre": "Cochas",
+"provincia": "1202"
+},
+{
+"ubigeo": "120206",
+"nombre": "Comas",
+"provincia": "1202"
+},
+{
+"ubigeo": "120207",
+"nombre": "Heroínas Toledo",
+"provincia": "1202"
+},
+{
+"ubigeo": "120208",
+"nombre": "Manzanares",
+"provincia": "1202"
+},
+{
+"ubigeo": "120209",
+"nombre": "Mariscal Castilla",
+"provincia": "1202"
+},
+{
+"ubigeo": "120210",
+"nombre": "Matahuasi",
+"provincia": "1202"
+},
+{
+"ubigeo": "120211",
+"nombre": "Mito",
+"provincia": "1202"
+},
+{
+"ubigeo": "120212",
+"nombre": "Nueve de Julio",
+"provincia": "1202"
+},
+{
+"ubigeo": "120213",
+"nombre": "Orcotuna",
+"provincia": "1202"
+},
+{
+"ubigeo": "120214",
+"nombre": "San José de Quero",
+"provincia": "1202"
+},
+{
+"ubigeo": "120215",
+"nombre": "Santa Rosa de Ocopa",
+"provincia": "1202"
+},
+{
+"ubigeo": "120301",
+"nombre": "Chanchamayo",
+"provincia": "1203"
+},
+{
+"ubigeo": "120302",
+"nombre": "Perene",
+"provincia": "1203"
+},
+{
+"ubigeo": "120303",
+"nombre": "Pichanaqui",
+"provincia": "1203"
+},
+{
+"ubigeo": "120304",
+"nombre": "San Luis de Shuaro",
+"provincia": "1203"
+},
+{
+"ubigeo": "120305",
+"nombre": "San Ramón",
+"provincia": "1203"
+},
+{
+"ubigeo": "120306",
+"nombre": "Vitoc",
+"provincia": "1203"
+},
+{
+"ubigeo": "120401",
+"nombre": "Jauja",
+"provincia": "1204"
+},
+{
+"ubigeo": "120402",
+"nombre": "Acolla",
+"provincia": "1204"
+},
+{
+"ubigeo": "120403",
+"nombre": "Apata",
+"provincia": "1204"
+},
+{
+"ubigeo": "120404",
+"nombre": "Ataura",
+"provincia": "1204"
+},
+{
+"ubigeo": "120405",
+"nombre": "Canchayllo",
+"provincia": "1204"
+},
+{
+"ubigeo": "120406",
+"nombre": "Curicaca",
+"provincia": "1204"
+},
+{
+"ubigeo": "120407",
+"nombre": "El Mantaro",
+"provincia": "1204"
+},
+{
+"ubigeo": "120408",
+"nombre": "Huamali",
+"provincia": "1204"
+},
+{
+"ubigeo": "120409",
+"nombre": "Huaripampa",
+"provincia": "1204"
+},
+{
+"ubigeo": "120410",
+"nombre": "Huertas",
+"provincia": "1204"
+},
+{
+"ubigeo": "120411",
+"nombre": "Janjaillo",
+"provincia": "1204"
+},
+{
+"ubigeo": "120412",
+"nombre": "Julcán",
+"provincia": "1204"
+},
+{
+"ubigeo": "120413",
+"nombre": "Leonor Ordóñez",
+"provincia": "1204"
+},
+{
+"ubigeo": "120414",
+"nombre": "Llocllapampa",
+"provincia": "1204"
+},
+{
+"ubigeo": "120415",
+"nombre": "Marco",
+"provincia": "1204"
+},
+{
+"ubigeo": "120416",
+"nombre": "Masma",
+"provincia": "1204"
+},
+{
+"ubigeo": "120417",
+"nombre": "Masma Chicche",
+"provincia": "1204"
+},
+{
+"ubigeo": "120418",
+"nombre": "Molinos",
+"provincia": "1204"
+},
+{
+"ubigeo": "120419",
+"nombre": "Monobamba",
+"provincia": "1204"
+},
+{
+"ubigeo": "120420",
+"nombre": "Muqui",
+"provincia": "1204"
+},
+{
+"ubigeo": "120421",
+"nombre": "Muquiyauyo",
+"provincia": "1204"
+},
+{
+"ubigeo": "120422",
+"nombre": "Paca",
+"provincia": "1204"
+},
+{
+"ubigeo": "120423",
+"nombre": "Paccha",
+"provincia": "1204"
+},
+{
+"ubigeo": "120424",
+"nombre": "Pancan",
+"provincia": "1204"
+},
+{
+"ubigeo": "120425",
+"nombre": "Parco",
+"provincia": "1204"
+},
+{
+"ubigeo": "120426",
+"nombre": "Pomacancha",
+"provincia": "1204"
+},
+{
+"ubigeo": "120427",
+"nombre": "Ricran",
+"provincia": "1204"
+},
+{
+"ubigeo": "120428",
+"nombre": "San Lorenzo",
+"provincia": "1204"
+},
+{
+"ubigeo": "120429",
+"nombre": "San Pedro de Chunan",
+"provincia": "1204"
+},
+{
+"ubigeo": "120430",
+"nombre": "Sausa",
+"provincia": "1204"
+},
+{
+"ubigeo": "120431",
+"nombre": "Sincos",
+"provincia": "1204"
+},
+{
+"ubigeo": "120432",
+"nombre": "Tunan Marca",
+"provincia": "1204"
+},
+{
+"ubigeo": "120433",
+"nombre": "Yauli",
+"provincia": "1204"
+},
+{
+"ubigeo": "120434",
+"nombre": "Yauyos",
+"provincia": "1204"
+},
+{
+"ubigeo": "120501",
+"nombre": "Junin",
+"provincia": "1205"
+},
+{
+"ubigeo": "120502",
+"nombre": "Carhuamayo",
+"provincia": "1205"
+},
+{
+"ubigeo": "120503",
+"nombre": "Ondores",
+"provincia": "1205"
+},
+{
+"ubigeo": "120504",
+"nombre": "Ulcumayo",
+"provincia": "1205"
+},
+{
+"ubigeo": "120601",
+"nombre": "Satipo",
+"provincia": "1206"
+},
+{
+"ubigeo": "120602",
+"nombre": "Coviriali",
+"provincia": "1206"
+},
+{
+"ubigeo": "120603",
+"nombre": "Llaylla",
+"provincia": "1206"
+},
+{
+"ubigeo": "120604",
+"nombre": "Mazamari",
+"provincia": "1206"
+},
+{
+"ubigeo": "120605",
+"nombre": "Pampa Hermosa",
+"provincia": "1206"
+},
+{
+"ubigeo": "120606",
+"nombre": "Pangoa",
+"provincia": "1206"
+},
+{
+"ubigeo": "120607",
+"nombre": "Río Negro",
+"provincia": "1206"
+},
+{
+"ubigeo": "120608",
+"nombre": "Río Tambo",
+"provincia": "1206"
+},
+{
+"ubigeo": "120609",
+"nombre": "Vizcatan del Ene",
+"provincia": "1206"
+},
+{
+"ubigeo": "120701",
+"nombre": "Tarma",
+"provincia": "1207"
+},
+{
+"ubigeo": "120702",
+"nombre": "Acobamba",
+"provincia": "1207"
+},
+{
+"ubigeo": "120703",
+"nombre": "Huaricolca",
+"provincia": "1207"
+},
+{
+"ubigeo": "120704",
+"nombre": "Huasahuasi",
+"provincia": "1207"
+},
+{
+"ubigeo": "120705",
+"nombre": "La Unión",
+"provincia": "1207"
+},
+{
+"ubigeo": "120706",
+"nombre": "Palca",
+"provincia": "1207"
+},
+{
+"ubigeo": "120707",
+"nombre": "Palcamayo",
+"provincia": "1207"
+},
+{
+"ubigeo": "120708",
+"nombre": "San Pedro de Cajas",
+"provincia": "1207"
+},
+{
+"ubigeo": "120709",
+"nombre": "Tapo",
+"provincia": "1207"
+},
+{
+"ubigeo": "120801",
+"nombre": "La Oroya",
+"provincia": "1208"
+},
+{
+"ubigeo": "120802",
+"nombre": "Chacapalpa",
+"provincia": "1208"
+},
+{
+"ubigeo": "120803",
+"nombre": "Huay-Huay",
+"provincia": "1208"
+},
+{
+"ubigeo": "120804",
+"nombre": "Marcapomacocha",
+"provincia": "1208"
+},
+{
+"ubigeo": "120805",
+"nombre": "Morococha",
+"provincia": "1208"
+},
+{
+"ubigeo": "120806",
+"nombre": "Paccha",
+"provincia": "1208"
+},
+{
+"ubigeo": "120807",
+"nombre": "Santa Bárbara de Carhuacayan",
+"provincia": "1208"
+},
+{
+"ubigeo": "120808",
+"nombre": "Santa Rosa de Sacco",
+"provincia": "1208"
+},
+{
+"ubigeo": "120809",
+"nombre": "Suitucancha",
+"provincia": "1208"
+},
+{
+"ubigeo": "120810",
+"nombre": "Yauli",
+"provincia": "1208"
+},
+{
+"ubigeo": "120901",
+"nombre": "Chupaca",
+"provincia": "1209"
+},
+{
+"ubigeo": "120902",
+"nombre": "Ahuac",
+"provincia": "1209"
+},
+{
+"ubigeo": "120903",
+"nombre": "Chongos Bajo",
+"provincia": "1209"
+},
+{
+"ubigeo": "120904",
+"nombre": "Huachac",
+"provincia": "1209"
+},
+{
+"ubigeo": "120905",
+"nombre": "Huamancaca Chico",
+"provincia": "1209"
+},
+{
+"ubigeo": "120906",
+"nombre": "San Juan de Iscos",
+"provincia": "1209"
+},
+{
+"ubigeo": "120907",
+"nombre": "San Juan de Jarpa",
+"provincia": "1209"
+},
+{
+"ubigeo": "120908",
+"nombre": "Tres de Diciembre",
+"provincia": "1209"
+},
+{
+"ubigeo": "120909",
+"nombre": "Yanacancha",
+"provincia": "1209"
+},
+{
+"ubigeo": "130101",
+"nombre": "Trujillo",
+"provincia": "1301"
+},
+{
+"ubigeo": "130102",
+"nombre": "El Porvenir",
+"provincia": "1301"
+},
+{
+"ubigeo": "130103",
+"nombre": "Florencia de Mora",
+"provincia": "1301"
+},
+{
+"ubigeo": "130104",
+"nombre": "Huanchaco",
+"provincia": "1301"
+},
+{
+"ubigeo": "130105",
+"nombre": "La Esperanza",
+"provincia": "1301"
+},
+{
+"ubigeo": "130106",
+"nombre": "Laredo",
+"provincia": "1301"
+},
+{
+"ubigeo": "130107",
+"nombre": "Moche",
+"provincia": "1301"
+},
+{
+"ubigeo": "130108",
+"nombre": "Poroto",
+"provincia": "1301"
+},
+{
+"ubigeo": "130109",
+"nombre": "Salaverry",
+"provincia": "1301"
+},
+{
+"ubigeo": "130110",
+"nombre": "Simbal",
+"provincia": "1301"
+},
+{
+"ubigeo": "130111",
+"nombre": "Victor Larco Herrera",
+"provincia": "1301"
+},
+{
+"ubigeo": "130201",
+"nombre": "Ascope",
+"provincia": "1302"
+},
+{
+"ubigeo": "130202",
+"nombre": "Chicama",
+"provincia": "1302"
+},
+{
+"ubigeo": "130203",
+"nombre": "Chocope",
+"provincia": "1302"
+},
+{
+"ubigeo": "130204",
+"nombre": "Magdalena de Cao",
+"provincia": "1302"
+},
+{
+"ubigeo": "130205",
+"nombre": "Paijan",
+"provincia": "1302"
+},
+{
+"ubigeo": "130206",
+"nombre": "Rázuri",
+"provincia": "1302"
+},
+{
+"ubigeo": "130207",
+"nombre": "Santiago de Cao",
+"provincia": "1302"
+},
+{
+"ubigeo": "130208",
+"nombre": "Casa Grande",
+"provincia": "1302"
+},
+{
+"ubigeo": "130301",
+"nombre": "Bolívar",
+"provincia": "1303"
+},
+{
+"ubigeo": "130302",
+"nombre": "Bambamarca",
+"provincia": "1303"
+},
+{
+"ubigeo": "130303",
+"nombre": "Condormarca",
+"provincia": "1303"
+},
+{
+"ubigeo": "130304",
+"nombre": "Longotea",
+"provincia": "1303"
+},
+{
+"ubigeo": "130305",
+"nombre": "Uchumarca",
+"provincia": "1303"
+},
+{
+"ubigeo": "130306",
+"nombre": "Ucuncha",
+"provincia": "1303"
+},
+{
+"ubigeo": "130401",
+"nombre": "Chepen",
+"provincia": "1304"
+},
+{
+"ubigeo": "130402",
+"nombre": "Pacanga",
+"provincia": "1304"
+},
+{
+"ubigeo": "130403",
+"nombre": "Pueblo Nuevo",
+"provincia": "1304"
+},
+{
+"ubigeo": "130501",
+"nombre": "Julcan",
+"provincia": "1305"
+},
+{
+"ubigeo": "130502",
+"nombre": "Calamarca",
+"provincia": "1305"
+},
+{
+"ubigeo": "130503",
+"nombre": "Carabamba",
+"provincia": "1305"
+},
+{
+"ubigeo": "130504",
+"nombre": "Huaso",
+"provincia": "1305"
+},
+{
+"ubigeo": "130601",
+"nombre": "Otuzco",
+"provincia": "1306"
+},
+{
+"ubigeo": "130602",
+"nombre": "Agallpampa",
+"provincia": "1306"
+},
+{
+"ubigeo": "130604",
+"nombre": "Charat",
+"provincia": "1306"
+},
+{
+"ubigeo": "130605",
+"nombre": "Huaranchal",
+"provincia": "1306"
+},
+{
+"ubigeo": "130606",
+"nombre": "La Cuesta",
+"provincia": "1306"
+},
+{
+"ubigeo": "130608",
+"nombre": "Mache",
+"provincia": "1306"
+},
+{
+"ubigeo": "130610",
+"nombre": "Paranday",
+"provincia": "1306"
+},
+{
+"ubigeo": "130611",
+"nombre": "Salpo",
+"provincia": "1306"
+},
+{
+"ubigeo": "130613",
+"nombre": "Sinsicap",
+"provincia": "1306"
+},
+{
+"ubigeo": "130614",
+"nombre": "Usquil",
+"provincia": "1306"
+},
+{
+"ubigeo": "130701",
+"nombre": "San Pedro de Lloc",
+"provincia": "1307"
+},
+{
+"ubigeo": "130702",
+"nombre": "Guadalupe",
+"provincia": "1307"
+},
+{
+"ubigeo": "130703",
+"nombre": "Jequetepeque",
+"provincia": "1307"
+},
+{
+"ubigeo": "130704",
+"nombre": "Pacasmayo",
+"provincia": "1307"
+},
+{
+"ubigeo": "130705",
+"nombre": "San José",
+"provincia": "1307"
+},
+{
+"ubigeo": "130801",
+"nombre": "Tayabamba",
+"provincia": "1308"
+},
+{
+"ubigeo": "130802",
+"nombre": "Buldibuyo",
+"provincia": "1308"
+},
+{
+"ubigeo": "130803",
+"nombre": "Chillia",
+"provincia": "1308"
+},
+{
+"ubigeo": "130804",
+"nombre": "Huancaspata",
+"provincia": "1308"
+},
+{
+"ubigeo": "130805",
+"nombre": "Huaylillas",
+"provincia": "1308"
+},
+{
+"ubigeo": "130806",
+"nombre": "Huayo",
+"provincia": "1308"
+},
+{
+"ubigeo": "130807",
+"nombre": "Ongon",
+"provincia": "1308"
+},
+{
+"ubigeo": "130808",
+"nombre": "Parcoy",
+"provincia": "1308"
+},
+{
+"ubigeo": "130809",
+"nombre": "Pataz",
+"provincia": "1308"
+},
+{
+"ubigeo": "130810",
+"nombre": "Pias",
+"provincia": "1308"
+},
+{
+"ubigeo": "130811",
+"nombre": "Santiago de Challas",
+"provincia": "1308"
+},
+{
+"ubigeo": "130812",
+"nombre": "Taurija",
+"provincia": "1308"
+},
+{
+"ubigeo": "130813",
+"nombre": "Urpay",
+"provincia": "1308"
+},
+{
+"ubigeo": "130901",
+"nombre": "Huamachuco",
+"provincia": "1309"
+},
+{
+"ubigeo": "130902",
+"nombre": "Chugay",
+"provincia": "1309"
+},
+{
+"ubigeo": "130903",
+"nombre": "Cochorco",
+"provincia": "1309"
+},
+{
+"ubigeo": "130904",
+"nombre": "Curgos",
+"provincia": "1309"
+},
+{
+"ubigeo": "130905",
+"nombre": "Marcabal",
+"provincia": "1309"
+},
+{
+"ubigeo": "130906",
+"nombre": "Sanagoran",
+"provincia": "1309"
+},
+{
+"ubigeo": "130907",
+"nombre": "Sarin",
+"provincia": "1309"
+},
+{
+"ubigeo": "130908",
+"nombre": "Sartimbamba",
+"provincia": "1309"
+},
+{
+"ubigeo": "131001",
+"nombre": "Santiago de Chuco",
+"provincia": "1310"
+},
+{
+"ubigeo": "131002",
+"nombre": "Angasmarca",
+"provincia": "1310"
+},
+{
+"ubigeo": "131003",
+"nombre": "Cachicadan",
+"provincia": "1310"
+},
+{
+"ubigeo": "131004",
+"nombre": "Mollebamba",
+"provincia": "1310"
+},
+{
+"ubigeo": "131005",
+"nombre": "Mollepata",
+"provincia": "1310"
+},
+{
+"ubigeo": "131006",
+"nombre": "Quiruvilca",
+"provincia": "1310"
+},
+{
+"ubigeo": "131007",
+"nombre": "Santa Cruz de Chuca",
+"provincia": "1310"
+},
+{
+"ubigeo": "131008",
+"nombre": "Sitabamba",
+"provincia": "1310"
+},
+{
+"ubigeo": "131101",
+"nombre": "Cascas",
+"provincia": "1311"
+},
+{
+"ubigeo": "131102",
+"nombre": "Lucma",
+"provincia": "1311"
+},
+{
+"ubigeo": "131103",
+"nombre": "Marmot",
+"provincia": "1311"
+},
+{
+"ubigeo": "131104",
+"nombre": "Sayapullo",
+"provincia": "1311"
+},
+{
+"ubigeo": "131201",
+"nombre": "Viru",
+"provincia": "1312"
+},
+{
+"ubigeo": "131202",
+"nombre": "Chao",
+"provincia": "1312"
+},
+{
+"ubigeo": "131203",
+"nombre": "Guadalupito",
+"provincia": "1312"
+},
+{
+"ubigeo": "140101",
+"nombre": "Chiclayo",
+"provincia": "1401"
+},
+{
+"ubigeo": "140102",
+"nombre": "Chongoyape",
+"provincia": "1401"
+},
+{
+"ubigeo": "140103",
+"nombre": "Eten",
+"provincia": "1401"
+},
+{
+"ubigeo": "140104",
+"nombre": "Eten Puerto",
+"provincia": "1401"
+},
+{
+"ubigeo": "140105",
+"nombre": "José Leonardo Ortiz",
+"provincia": "1401"
+},
+{
+"ubigeo": "140106",
+"nombre": "La Victoria",
+"provincia": "1401"
+},
+{
+"ubigeo": "140107",
+"nombre": "Lagunas",
+"provincia": "1401"
+},
+{
+"ubigeo": "140108",
+"nombre": "Monsefu",
+"provincia": "1401"
+},
+{
+"ubigeo": "140109",
+"nombre": "Nueva Arica",
+"provincia": "1401"
+},
+{
+"ubigeo": "140110",
+"nombre": "Oyotun",
+"provincia": "1401"
+},
+{
+"ubigeo": "140111",
+"nombre": "Picsi",
+"provincia": "1401"
+},
+{
+"ubigeo": "140112",
+"nombre": "Pimentel",
+"provincia": "1401"
+},
+{
+"ubigeo": "140113",
+"nombre": "Reque",
+"provincia": "1401"
+},
+{
+"ubigeo": "140114",
+"nombre": "Santa Rosa",
+"provincia": "1401"
+},
+{
+"ubigeo": "140115",
+"nombre": "Saña",
+"provincia": "1401"
+},
+{
+"ubigeo": "140116",
+"nombre": "Cayalti",
+"provincia": "1401"
+},
+{
+"ubigeo": "140117",
+"nombre": "Patapo",
+"provincia": "1401"
+},
+{
+"ubigeo": "140118",
+"nombre": "Pomalca",
+"provincia": "1401"
+},
+{
+"ubigeo": "140119",
+"nombre": "Pucala",
+"provincia": "1401"
+},
+{
+"ubigeo": "140120",
+"nombre": "Tuman",
+"provincia": "1401"
+},
+{
+"ubigeo": "140201",
+"nombre": "Ferreñafe",
+"provincia": "1402"
+},
+{
+"ubigeo": "140202",
+"nombre": "Cañaris",
+"provincia": "1402"
+},
+{
+"ubigeo": "140203",
+"nombre": "Incahuasi",
+"provincia": "1402"
+},
+{
+"ubigeo": "140204",
+"nombre": "Manuel Antonio Mesones Muro",
+"provincia": "1402"
+},
+{
+"ubigeo": "140205",
+"nombre": "Pitipo",
+"provincia": "1402"
+},
+{
+"ubigeo": "140206",
+"nombre": "Pueblo Nuevo",
+"provincia": "1402"
+},
+{
+"ubigeo": "140301",
+"nombre": "Lambayeque",
+"provincia": "1403"
+},
+{
+"ubigeo": "140302",
+"nombre": "Chochope",
+"provincia": "1403"
+},
+{
+"ubigeo": "140303",
+"nombre": "Illimo",
+"provincia": "1403"
+},
+{
+"ubigeo": "140304",
+"nombre": "Jayanca",
+"provincia": "1403"
+},
+{
+"ubigeo": "140305",
+"nombre": "Mochumi",
+"provincia": "1403"
+},
+{
+"ubigeo": "140306",
+"nombre": "Morrope",
+"provincia": "1403"
+},
+{
+"ubigeo": "140307",
+"nombre": "Motupe",
+"provincia": "1403"
+},
+{
+"ubigeo": "140308",
+"nombre": "Olmos",
+"provincia": "1403"
+},
+{
+"ubigeo": "140309",
+"nombre": "Pacora",
+"provincia": "1403"
+},
+{
+"ubigeo": "140310",
+"nombre": "Salas",
+"provincia": "1403"
+},
+{
+"ubigeo": "140311",
+"nombre": "San José",
+"provincia": "1403"
+},
+{
+"ubigeo": "140312",
+"nombre": "Tucume",
+"provincia": "1403"
+},
+{
+"ubigeo": "150101",
+"nombre": "Lima",
+"provincia": "1501"
+},
+{
+"ubigeo": "150102",
+"nombre": "Ancón",
+"provincia": "1501"
+},
+{
+"ubigeo": "150103",
+"nombre": "Ate",
+"provincia": "1501"
+},
+{
+"ubigeo": "150104",
+"nombre": "Barranco",
+"provincia": "1501"
+},
+{
+"ubigeo": "150105",
+"nombre": "Breña",
+"provincia": "1501"
+},
+{
+"ubigeo": "150106",
+"nombre": "Carabayllo",
+"provincia": "1501"
+},
+{
+"ubigeo": "150107",
+"nombre": "Chaclacayo",
+"provincia": "1501"
+},
+{
+"ubigeo": "150108",
+"nombre": "Chorrillos",
+"provincia": "1501"
+},
+{
+"ubigeo": "150109",
+"nombre": "Cieneguilla",
+"provincia": "1501"
+},
+{
+"ubigeo": "150110",
+"nombre": "Comas",
+"provincia": "1501"
+},
+{
+"ubigeo": "150111",
+"nombre": "El Agustino",
+"provincia": "1501"
+},
+{
+"ubigeo": "150112",
+"nombre": "Independencia",
+"provincia": "1501"
+},
+{
+"ubigeo": "150113",
+"nombre": "Jesús María",
+"provincia": "1501"
+},
+{
+"ubigeo": "150114",
+"nombre": "La Molina",
+"provincia": "1501"
+},
+{
+"ubigeo": "150115",
+"nombre": "La Victoria",
+"provincia": "1501"
+},
+{
+"ubigeo": "150116",
+"nombre": "Lince",
+"provincia": "1501"
+},
+{
+"ubigeo": "150117",
+"nombre": "Los Olivos",
+"provincia": "1501"
+},
+{
+"ubigeo": "150118",
+"nombre": "Lurigancho",
+"provincia": "1501"
+},
+{
+"ubigeo": "150119",
+"nombre": "Lurin",
+"provincia": "1501"
+},
+{
+"ubigeo": "150120",
+"nombre": "Magdalena del Mar",
+"provincia": "1501"
+},
+{
+"ubigeo": "150121",
+"nombre": "Pueblo Libre",
+"provincia": "1501"
+},
+{
+"ubigeo": "150122",
+"nombre": "Miraflores",
+"provincia": "1501"
+},
+{
+"ubigeo": "150123",
+"nombre": "Pachacamac",
+"provincia": "1501"
+},
+{
+"ubigeo": "150124",
+"nombre": "Pucusana",
+"provincia": "1501"
+},
+{
+"ubigeo": "150125",
+"nombre": "Puente Piedra",
+"provincia": "1501"
+},
+{
+"ubigeo": "150126",
+"nombre": "Punta Hermosa",
+"provincia": "1501"
+},
+{
+"ubigeo": "150127",
+"nombre": "Punta Negra",
+"provincia": "1501"
+},
+{
+"ubigeo": "150128",
+"nombre": "Rímac",
+"provincia": "1501"
+},
+{
+"ubigeo": "150129",
+"nombre": "San Bartolo",
+"provincia": "1501"
+},
+{
+"ubigeo": "150130",
+"nombre": "San Borja",
+"provincia": "1501"
+},
+{
+"ubigeo": "150131",
+"nombre": "San Isidro",
+"provincia": "1501"
+},
+{
+"ubigeo": "150132",
+"nombre": "San Juan de Lurigancho",
+"provincia": "1501"
+},
+{
+"ubigeo": "150133",
+"nombre": "San Juan de Miraflores",
+"provincia": "1501"
+},
+{
+"ubigeo": "150134",
+"nombre": "San Luis",
+"provincia": "1501"
+},
+{
+"ubigeo": "150135",
+"nombre": "San Martín de Porres",
+"provincia": "1501"
+},
+{
+"ubigeo": "150136",
+"nombre": "San Miguel",
+"provincia": "1501"
+},
+{
+"ubigeo": "150137",
+"nombre": "Santa Anita",
+"provincia": "1501"
+},
+{
+"ubigeo": "150138",
+"nombre": "Santa María del Mar",
+"provincia": "1501"
+},
+{
+"ubigeo": "150139",
+"nombre": "Santa Rosa",
+"provincia": "1501"
+},
+{
+"ubigeo": "150140",
+"nombre": "Santiago de Surco",
+"provincia": "1501"
+},
+{
+"ubigeo": "150141",
+"nombre": "Surquillo",
+"provincia": "1501"
+},
+{
+"ubigeo": "150142",
+"nombre": "Villa El Salvador",
+"provincia": "1501"
+},
+{
+"ubigeo": "150143",
+"nombre": "Villa María del Triunfo",
+"provincia": "1501"
+},
+{
+"ubigeo": "150201",
+"nombre": "Barranca",
+"provincia": "1502"
+},
+{
+"ubigeo": "150202",
+"nombre": "Paramonga",
+"provincia": "1502"
+},
+{
+"ubigeo": "150203",
+"nombre": "Pativilca",
+"provincia": "1502"
+},
+{
+"ubigeo": "150204",
+"nombre": "Supe",
+"provincia": "1502"
+},
+{
+"ubigeo": "150205",
+"nombre": "Supe Puerto",
+"provincia": "1502"
+},
+{
+"ubigeo": "150301",
+"nombre": "Cajatambo",
+"provincia": "1503"
+},
+{
+"ubigeo": "150302",
+"nombre": "Copa",
+"provincia": "1503"
+},
+{
+"ubigeo": "150303",
+"nombre": "Gorgor",
+"provincia": "1503"
+},
+{
+"ubigeo": "150304",
+"nombre": "Huancapon",
+"provincia": "1503"
+},
+{
+"ubigeo": "150305",
+"nombre": "Manas",
+"provincia": "1503"
+},
+{
+"ubigeo": "150401",
+"nombre": "Canta",
+"provincia": "1504"
+},
+{
+"ubigeo": "150402",
+"nombre": "Arahuay",
+"provincia": "1504"
+},
+{
+"ubigeo": "150403",
+"nombre": "Huamantanga",
+"provincia": "1504"
+},
+{
+"ubigeo": "150404",
+"nombre": "Huaros",
+"provincia": "1504"
+},
+{
+"ubigeo": "150405",
+"nombre": "Lachaqui",
+"provincia": "1504"
+},
+{
+"ubigeo": "150406",
+"nombre": "San Buenaventura",
+"provincia": "1504"
+},
+{
+"ubigeo": "150407",
+"nombre": "Santa Rosa de Quives",
+"provincia": "1504"
+},
+{
+"ubigeo": "150501",
+"nombre": "San Vicente de Cañete",
+"provincia": "1505"
+},
+{
+"ubigeo": "150502",
+"nombre": "Asia",
+"provincia": "1505"
+},
+{
+"ubigeo": "150503",
+"nombre": "Calango",
+"provincia": "1505"
+},
+{
+"ubigeo": "150504",
+"nombre": "Cerro Azul",
+"provincia": "1505"
+},
+{
+"ubigeo": "150505",
+"nombre": "Chilca",
+"provincia": "1505"
+},
+{
+"ubigeo": "150506",
+"nombre": "Coayllo",
+"provincia": "1505"
+},
+{
+"ubigeo": "150507",
+"nombre": "Imperial",
+"provincia": "1505"
+},
+{
+"ubigeo": "150508",
+"nombre": "Lunahuana",
+"provincia": "1505"
+},
+{
+"ubigeo": "150509",
+"nombre": "Mala",
+"provincia": "1505"
+},
+{
+"ubigeo": "150510",
+"nombre": "Nuevo Imperial",
+"provincia": "1505"
+},
+{
+"ubigeo": "150511",
+"nombre": "Pacaran",
+"provincia": "1505"
+},
+{
+"ubigeo": "150512",
+"nombre": "Quilmana",
+"provincia": "1505"
+},
+{
+"ubigeo": "150513",
+"nombre": "San Antonio",
+"provincia": "1505"
+},
+{
+"ubigeo": "150514",
+"nombre": "San Luis",
+"provincia": "1505"
+},
+{
+"ubigeo": "150515",
+"nombre": "Santa Cruz de Flores",
+"provincia": "1505"
+},
+{
+"ubigeo": "150516",
+"nombre": "Zúñiga",
+"provincia": "1505"
+},
+{
+"ubigeo": "150601",
+"nombre": "Huaral",
+"provincia": "1506"
+},
+{
+"ubigeo": "150602",
+"nombre": "Atavillos Alto",
+"provincia": "1506"
+},
+{
+"ubigeo": "150603",
+"nombre": "Atavillos Bajo",
+"provincia": "1506"
+},
+{
+"ubigeo": "150604",
+"nombre": "Aucallama",
+"provincia": "1506"
+},
+{
+"ubigeo": "150605",
+"nombre": "Chancay",
+"provincia": "1506"
+},
+{
+"ubigeo": "150606",
+"nombre": "Ihuari",
+"provincia": "1506"
+},
+{
+"ubigeo": "150607",
+"nombre": "Lampian",
+"provincia": "1506"
+},
+{
+"ubigeo": "150608",
+"nombre": "Pacaraos",
+"provincia": "1506"
+},
+{
+"ubigeo": "150609",
+"nombre": "San Miguel de Acos",
+"provincia": "1506"
+},
+{
+"ubigeo": "150610",
+"nombre": "Santa Cruz de Andamarca",
+"provincia": "1506"
+},
+{
+"ubigeo": "150611",
+"nombre": "Sumbilca",
+"provincia": "1506"
+},
+{
+"ubigeo": "150612",
+"nombre": "Veintisiete de Noviembre",
+"provincia": "1506"
+},
+{
+"ubigeo": "150701",
+"nombre": "Matucana",
+"provincia": "1507"
+},
+{
+"ubigeo": "150702",
+"nombre": "Antioquia",
+"provincia": "1507"
+},
+{
+"ubigeo": "150703",
+"nombre": "Callahuanca",
+"provincia": "1507"
+},
+{
+"ubigeo": "150704",
+"nombre": "Carampoma",
+"provincia": "1507"
+},
+{
+"ubigeo": "150705",
+"nombre": "Chicla",
+"provincia": "1507"
+},
+{
+"ubigeo": "150706",
+"nombre": "Cuenca",
+"provincia": "1507"
+},
+{
+"ubigeo": "150707",
+"nombre": "Huachupampa",
+"provincia": "1507"
+},
+{
+"ubigeo": "150708",
+"nombre": "Huanza",
+"provincia": "1507"
+},
+{
+"ubigeo": "150709",
+"nombre": "Huarochiri",
+"provincia": "1507"
+},
+{
+"ubigeo": "150710",
+"nombre": "Lahuaytambo",
+"provincia": "1507"
+},
+{
+"ubigeo": "150711",
+"nombre": "Langa",
+"provincia": "1507"
+},
+{
+"ubigeo": "150712",
+"nombre": "Laraos",
+"provincia": "1507"
+},
+{
+"ubigeo": "150713",
+"nombre": "Mariatana",
+"provincia": "1507"
+},
+{
+"ubigeo": "150714",
+"nombre": "Ricardo Palma",
+"provincia": "1507"
+},
+{
+"ubigeo": "150715",
+"nombre": "San Andrés de Tupicocha",
+"provincia": "1507"
+},
+{
+"ubigeo": "150716",
+"nombre": "San Antonio",
+"provincia": "1507"
+},
+{
+"ubigeo": "150717",
+"nombre": "San Bartolomé",
+"provincia": "1507"
+},
+{
+"ubigeo": "150718",
+"nombre": "San Damian",
+"provincia": "1507"
+},
+{
+"ubigeo": "150719",
+"nombre": "San Juan de Iris",
+"provincia": "1507"
+},
+{
+"ubigeo": "150720",
+"nombre": "San Juan de Tantaranche",
+"provincia": "1507"
+},
+{
+"ubigeo": "150721",
+"nombre": "San Lorenzo de Quinti",
+"provincia": "1507"
+},
+{
+"ubigeo": "150722",
+"nombre": "San Mateo",
+"provincia": "1507"
+},
+{
+"ubigeo": "150723",
+"nombre": "San Mateo de Otao",
+"provincia": "1507"
+},
+{
+"ubigeo": "150724",
+"nombre": "San Pedro de Casta",
+"provincia": "1507"
+},
+{
+"ubigeo": "150725",
+"nombre": "San Pedro de Huancayre",
+"provincia": "1507"
+},
+{
+"ubigeo": "150726",
+"nombre": "Sangallaya",
+"provincia": "1507"
+},
+{
+"ubigeo": "150727",
+"nombre": "Santa Cruz de Cocachacra",
+"provincia": "1507"
+},
+{
+"ubigeo": "150728",
+"nombre": "Santa Eulalia",
+"provincia": "1507"
+},
+{
+"ubigeo": "150729",
+"nombre": "Santiago de Anchucaya",
+"provincia": "1507"
+},
+{
+"ubigeo": "150730",
+"nombre": "Santiago de Tuna",
+"provincia": "1507"
+},
+{
+"ubigeo": "150731",
+"nombre": "Santo Domingo de Los Olleros",
+"provincia": "1507"
+},
+{
+"ubigeo": "150732",
+"nombre": "Surco",
+"provincia": "1507"
+},
+{
+"ubigeo": "150801",
+"nombre": "Huacho",
+"provincia": "1508"
+},
+{
+"ubigeo": "150802",
+"nombre": "Ambar",
+"provincia": "1508"
+},
+{
+"ubigeo": "150803",
+"nombre": "Caleta de Carquin",
+"provincia": "1508"
+},
+{
+"ubigeo": "150804",
+"nombre": "Checras",
+"provincia": "1508"
+},
+{
+"ubigeo": "150805",
+"nombre": "Hualmay",
+"provincia": "1508"
+},
+{
+"ubigeo": "150806",
+"nombre": "Huaura",
+"provincia": "1508"
+},
+{
+"ubigeo": "150807",
+"nombre": "Leoncio Prado",
+"provincia": "1508"
+},
+{
+"ubigeo": "150808",
+"nombre": "Paccho",
+"provincia": "1508"
+},
+{
+"ubigeo": "150809",
+"nombre": "Santa Leonor",
+"provincia": "1508"
+},
+{
+"ubigeo": "150810",
+"nombre": "Santa María",
+"provincia": "1508"
+},
+{
+"ubigeo": "150811",
+"nombre": "Sayan",
+"provincia": "1508"
+},
+{
+"ubigeo": "150812",
+"nombre": "Vegueta",
+"provincia": "1508"
+},
+{
+"ubigeo": "150901",
+"nombre": "Oyon",
+"provincia": "1509"
+},
+{
+"ubigeo": "150902",
+"nombre": "Andajes",
+"provincia": "1509"
+},
+{
+"ubigeo": "150903",
+"nombre": "Caujul",
+"provincia": "1509"
+},
+{
+"ubigeo": "150904",
+"nombre": "Cochamarca",
+"provincia": "1509"
+},
+{
+"ubigeo": "150905",
+"nombre": "Navan",
+"provincia": "1509"
+},
+{
+"ubigeo": "150906",
+"nombre": "Pachangara",
+"provincia": "1509"
+},
+{
+"ubigeo": "151001",
+"nombre": "Yauyos",
+"provincia": "1510"
+},
+{
+"ubigeo": "151002",
+"nombre": "Alis",
+"provincia": "1510"
+},
+{
+"ubigeo": "151003",
+"nombre": "Allauca",
+"provincia": "1510"
+},
+{
+"ubigeo": "151004",
+"nombre": "Ayaviri",
+"provincia": "1510"
+},
+{
+"ubigeo": "151005",
+"nombre": "Azángaro",
+"provincia": "1510"
+},
+{
+"ubigeo": "151006",
+"nombre": "Cacra",
+"provincia": "1510"
+},
+{
+"ubigeo": "151007",
+"nombre": "Carania",
+"provincia": "1510"
+},
+{
+"ubigeo": "151008",
+"nombre": "Catahuasi",
+"provincia": "1510"
+},
+{
+"ubigeo": "151009",
+"nombre": "Chocos",
+"provincia": "1510"
+},
+{
+"ubigeo": "151010",
+"nombre": "Cochas",
+"provincia": "1510"
+},
+{
+"ubigeo": "151011",
+"nombre": "Colonia",
+"provincia": "1510"
+},
+{
+"ubigeo": "151012",
+"nombre": "Hongos",
+"provincia": "1510"
+},
+{
+"ubigeo": "151013",
+"nombre": "Huampara",
+"provincia": "1510"
+},
+{
+"ubigeo": "151014",
+"nombre": "Huancaya",
+"provincia": "1510"
+},
+{
+"ubigeo": "151015",
+"nombre": "Huangascar",
+"provincia": "1510"
+},
+{
+"ubigeo": "151016",
+"nombre": "Huantan",
+"provincia": "1510"
+},
+{
+"ubigeo": "151017",
+"nombre": "Huañec",
+"provincia": "1510"
+},
+{
+"ubigeo": "151018",
+"nombre": "Laraos",
+"provincia": "1510"
+},
+{
+"ubigeo": "151019",
+"nombre": "Lincha",
+"provincia": "1510"
+},
+{
+"ubigeo": "151020",
+"nombre": "Madean",
+"provincia": "1510"
+},
+{
+"ubigeo": "151021",
+"nombre": "Miraflores",
+"provincia": "1510"
+},
+{
+"ubigeo": "151022",
+"nombre": "Omas",
+"provincia": "1510"
+},
+{
+"ubigeo": "151023",
+"nombre": "Putinza",
+"provincia": "1510"
+},
+{
+"ubigeo": "151024",
+"nombre": "Quinches",
+"provincia": "1510"
+},
+{
+"ubigeo": "151025",
+"nombre": "Quinocay",
+"provincia": "1510"
+},
+{
+"ubigeo": "151026",
+"nombre": "San Joaquín",
+"provincia": "1510"
+},
+{
+"ubigeo": "151027",
+"nombre": "San Pedro de Pilas",
+"provincia": "1510"
+},
+{
+"ubigeo": "151028",
+"nombre": "Tanta",
+"provincia": "1510"
+},
+{
+"ubigeo": "151029",
+"nombre": "Tauripampa",
+"provincia": "1510"
+},
+{
+"ubigeo": "151030",
+"nombre": "Tomas",
+"provincia": "1510"
+},
+{
+"ubigeo": "151031",
+"nombre": "Tupe",
+"provincia": "1510"
+},
+{
+"ubigeo": "151032",
+"nombre": "Viñac",
+"provincia": "1510"
+},
+{
+"ubigeo": "151033",
+"nombre": "Vitis",
+"provincia": "1510"
+},
+{
+"ubigeo": "160101",
+"nombre": "Iquitos",
+"provincia": "1601"
+},
+{
+"ubigeo": "160102",
+"nombre": "Alto Nanay",
+"provincia": "1601"
+},
+{
+"ubigeo": "160103",
+"nombre": "Fernando Lores",
+"provincia": "1601"
+},
+{
+"ubigeo": "160104",
+"nombre": "Indiana",
+"provincia": "1601"
+},
+{
+"ubigeo": "160105",
+"nombre": "Las Amazonas",
+"provincia": "1601"
+},
+{
+"ubigeo": "160106",
+"nombre": "Mazan",
+"provincia": "1601"
+},
+{
+"ubigeo": "160107",
+"nombre": "Napo",
+"provincia": "1601"
+},
+{
+"ubigeo": "160108",
+"nombre": "Punchana",
+"provincia": "1601"
+},
+{
+"ubigeo": "160110",
+"nombre": "Torres Causana",
+"provincia": "1601"
+},
+{
+"ubigeo": "160112",
+"nombre": "Belén",
+"provincia": "1601"
+},
+{
+"ubigeo": "160113",
+"nombre": "San Juan Bautista",
+"provincia": "1601"
+},
+{
+"ubigeo": "160201",
+"nombre": "Yurimaguas",
+"provincia": "1602"
+},
+{
+"ubigeo": "160202",
+"nombre": "Balsapuerto",
+"provincia": "1602"
+},
+{
+"ubigeo": "160205",
+"nombre": "Jeberos",
+"provincia": "1602"
+},
+{
+"ubigeo": "160206",
+"nombre": "Lagunas",
+"provincia": "1602"
+},
+{
+"ubigeo": "160210",
+"nombre": "Santa Cruz",
+"provincia": "1602"
+},
+{
+"ubigeo": "160211",
+"nombre": "Teniente Cesar López Rojas",
+"provincia": "1602"
+},
+{
+"ubigeo": "160301",
+"nombre": "Nauta",
+"provincia": "1603"
+},
+{
+"ubigeo": "160302",
+"nombre": "Parinari",
+"provincia": "1603"
+},
+{
+"ubigeo": "160303",
+"nombre": "Tigre",
+"provincia": "1603"
+},
+{
+"ubigeo": "160304",
+"nombre": "Trompeteros",
+"provincia": "1603"
+},
+{
+"ubigeo": "160305",
+"nombre": "Urarinas",
+"provincia": "1603"
+},
+{
+"ubigeo": "160401",
+"nombre": "Ramón Castilla",
+"provincia": "1604"
+},
+{
+"ubigeo": "160402",
+"nombre": "Pebas",
+"provincia": "1604"
+},
+{
+"ubigeo": "160403",
+"nombre": "Yavari",
+"provincia": "1604"
+},
+{
+"ubigeo": "160404",
+"nombre": "San Pablo",
+"provincia": "1604"
+},
+{
+"ubigeo": "160501",
+"nombre": "Requena",
+"provincia": "1605"
+},
+{
+"ubigeo": "160502",
+"nombre": "Alto Tapiche",
+"provincia": "1605"
+},
+{
+"ubigeo": "160503",
+"nombre": "Capelo",
+"provincia": "1605"
+},
+{
+"ubigeo": "160504",
+"nombre": "Emilio San Martín",
+"provincia": "1605"
+},
+{
+"ubigeo": "160505",
+"nombre": "Maquia",
+"provincia": "1605"
+},
+{
+"ubigeo": "160506",
+"nombre": "Puinahua",
+"provincia": "1605"
+},
+{
+"ubigeo": "160507",
+"nombre": "Saquena",
+"provincia": "1605"
+},
+{
+"ubigeo": "160508",
+"nombre": "Soplin",
+"provincia": "1605"
+},
+{
+"ubigeo": "160509",
+"nombre": "Tapiche",
+"provincia": "1605"
+},
+{
+"ubigeo": "160510",
+"nombre": "Jenaro Herrera",
+"provincia": "1605"
+},
+{
+"ubigeo": "160511",
+"nombre": "Yaquerana",
+"provincia": "1605"
+},
+{
+"ubigeo": "160601",
+"nombre": "Contamana",
+"provincia": "1606"
+},
+{
+"ubigeo": "160602",
+"nombre": "Inahuaya",
+"provincia": "1606"
+},
+{
+"ubigeo": "160603",
+"nombre": "Padre Márquez",
+"provincia": "1606"
+},
+{
+"ubigeo": "160604",
+"nombre": "Pampa Hermosa",
+"provincia": "1606"
+},
+{
+"ubigeo": "160605",
+"nombre": "Sarayacu",
+"provincia": "1606"
+},
+{
+"ubigeo": "160606",
+"nombre": "Vargas Guerra",
+"provincia": "1606"
+},
+{
+"ubigeo": "160701",
+"nombre": "Barranca",
+"provincia": "1607"
+},
+{
+"ubigeo": "160702",
+"nombre": "Cahuapanas",
+"provincia": "1607"
+},
+{
+"ubigeo": "160703",
+"nombre": "Manseriche",
+"provincia": "1607"
+},
+{
+"ubigeo": "160704",
+"nombre": "Morona",
+"provincia": "1607"
+},
+{
+"ubigeo": "160705",
+"nombre": "Pastaza",
+"provincia": "1607"
+},
+{
+"ubigeo": "160706",
+"nombre": "Andoas",
+"provincia": "1607"
+},
+{
+"ubigeo": "160801",
+"nombre": "Putumayo",
+"provincia": "1608"
+},
+{
+"ubigeo": "160802",
+"nombre": "Rosa Panduro",
+"provincia": "1608"
+},
+{
+"ubigeo": "160803",
+"nombre": "Teniente Manuel Clavero",
+"provincia": "1608"
+},
+{
+"ubigeo": "160804",
+"nombre": "Yaguas",
+"provincia": "1608"
+},
+{
+"ubigeo": "170101",
+"nombre": "Tambopata",
+"provincia": "1701"
+},
+{
+"ubigeo": "170102",
+"nombre": "Inambari",
+"provincia": "1701"
+},
+{
+"ubigeo": "170103",
+"nombre": "Las Piedras",
+"provincia": "1701"
+},
+{
+"ubigeo": "170104",
+"nombre": "Laberinto",
+"provincia": "1701"
+},
+{
+"ubigeo": "170201",
+"nombre": "Manu",
+"provincia": "1702"
+},
+{
+"ubigeo": "170202",
+"nombre": "Fitzcarrald",
+"provincia": "1702"
+},
+{
+"ubigeo": "170203",
+"nombre": "Madre de Dios",
+"provincia": "1702"
+},
+{
+"ubigeo": "170204",
+"nombre": "Huepetuhe",
+"provincia": "1702"
+},
+{
+"ubigeo": "170301",
+"nombre": "Iñapari",
+"provincia": "1703"
+},
+{
+"ubigeo": "170302",
+"nombre": "Iberia",
+"provincia": "1703"
+},
+{
+"ubigeo": "170303",
+"nombre": "Tahuamanu",
+"provincia": "1703"
+},
+{
+"ubigeo": "180101",
+"nombre": "Moquegua",
+"provincia": "1801"
+},
+{
+"ubigeo": "180102",
+"nombre": "Carumas",
+"provincia": "1801"
+},
+{
+"ubigeo": "180103",
+"nombre": "Cuchumbaya",
+"provincia": "1801"
+},
+{
+"ubigeo": "180104",
+"nombre": "Samegua",
+"provincia": "1801"
+},
+{
+"ubigeo": "180105",
+"nombre": "San Cristóbal",
+"provincia": "1801"
+},
+{
+"ubigeo": "180106",
+"nombre": "Torata",
+"provincia": "1801"
+},
+{
+"ubigeo": "180201",
+"nombre": "Omate",
+"provincia": "1802"
+},
+{
+"ubigeo": "180202",
+"nombre": "Chojata",
+"provincia": "1802"
+},
+{
+"ubigeo": "180203",
+"nombre": "Coalaque",
+"provincia": "1802"
+},
+{
+"ubigeo": "180204",
+"nombre": "Ichuña",
+"provincia": "1802"
+},
+{
+"ubigeo": "180205",
+"nombre": "La Capilla",
+"provincia": "1802"
+},
+{
+"ubigeo": "180206",
+"nombre": "Lloque",
+"provincia": "1802"
+},
+{
+"ubigeo": "180207",
+"nombre": "Matalaque",
+"provincia": "1802"
+},
+{
+"ubigeo": "180208",
+"nombre": "Puquina",
+"provincia": "1802"
+},
+{
+"ubigeo": "180209",
+"nombre": "Quinistaquillas",
+"provincia": "1802"
+},
+{
+"ubigeo": "180210",
+"nombre": "Ubinas",
+"provincia": "1802"
+},
+{
+"ubigeo": "180211",
+"nombre": "Yunga",
+"provincia": "1802"
+},
+{
+"ubigeo": "180301",
+"nombre": "Ilo",
+"provincia": "1803"
+},
+{
+"ubigeo": "180302",
+"nombre": "El Algarrobal",
+"provincia": "1803"
+},
+{
+"ubigeo": "180303",
+"nombre": "Pacocha",
+"provincia": "1803"
+},
+{
+"ubigeo": "190101",
+"nombre": "Chaupimarca",
+"provincia": "1901"
+},
+{
+"ubigeo": "190102",
+"nombre": "Huachon",
+"provincia": "1901"
+},
+{
+"ubigeo": "190103",
+"nombre": "Huariaca",
+"provincia": "1901"
+},
+{
+"ubigeo": "190104",
+"nombre": "Huayllay",
+"provincia": "1901"
+},
+{
+"ubigeo": "190105",
+"nombre": "Ninacaca",
+"provincia": "1901"
+},
+{
+"ubigeo": "190106",
+"nombre": "Pallanchacra",
+"provincia": "1901"
+},
+{
+"ubigeo": "190107",
+"nombre": "Paucartambo",
+"provincia": "1901"
+},
+{
+"ubigeo": "190108",
+"nombre": "San Francisco de Asís de Yarusyacan",
+"provincia": "1901"
+},
+{
+"ubigeo": "190109",
+"nombre": "Simon Bolívar",
+"provincia": "1901"
+},
+{
+"ubigeo": "190110",
+"nombre": "Ticlacayan",
+"provincia": "1901"
+},
+{
+"ubigeo": "190111",
+"nombre": "Tinyahuarco",
+"provincia": "1901"
+},
+{
+"ubigeo": "190112",
+"nombre": "Vicco",
+"provincia": "1901"
+},
+{
+"ubigeo": "190113",
+"nombre": "Yanacancha",
+"provincia": "1901"
+},
+{
+"ubigeo": "190201",
+"nombre": "Yanahuanca",
+"provincia": "1902"
+},
+{
+"ubigeo": "190202",
+"nombre": "Chacayan",
+"provincia": "1902"
+},
+{
+"ubigeo": "190203",
+"nombre": "Goyllarisquizga",
+"provincia": "1902"
+},
+{
+"ubigeo": "190204",
+"nombre": "Paucar",
+"provincia": "1902"
+},
+{
+"ubigeo": "190205",
+"nombre": "San Pedro de Pillao",
+"provincia": "1902"
+},
+{
+"ubigeo": "190206",
+"nombre": "Santa Ana de Tusi",
+"provincia": "1902"
+},
+{
+"ubigeo": "190207",
+"nombre": "Tapuc",
+"provincia": "1902"
+},
+{
+"ubigeo": "190208",
+"nombre": "Vilcabamba",
+"provincia": "1902"
+},
+{
+"ubigeo": "190301",
+"nombre": "Oxapampa",
+"provincia": "1903"
+},
+{
+"ubigeo": "190302",
+"nombre": "Chontabamba",
+"provincia": "1903"
+},
+{
+"ubigeo": "190303",
+"nombre": "Huancabamba",
+"provincia": "1903"
+},
+{
+"ubigeo": "190304",
+"nombre": "Palcazu",
+"provincia": "1903"
+},
+{
+"ubigeo": "190305",
+"nombre": "Pozuzo",
+"provincia": "1903"
+},
+{
+"ubigeo": "190306",
+"nombre": "Puerto Bermúdez",
+"provincia": "1903"
+},
+{
+"ubigeo": "190307",
+"nombre": "Villa Rica",
+"provincia": "1903"
+},
+{
+"ubigeo": "190308",
+"nombre": "Constitución",
+"provincia": "1903"
+},
+{
+"ubigeo": "200101",
+"nombre": "Piura",
+"provincia": "2001"
+},
+{
+"ubigeo": "200104",
+"nombre": "Castilla",
+"provincia": "2001"
+},
+{
+"ubigeo": "200105",
+"nombre": "Catacaos",
+"provincia": "2001"
+},
+{
+"ubigeo": "200107",
+"nombre": "Cura Mori",
+"provincia": "2001"
+},
+{
+"ubigeo": "200108",
+"nombre": "El Tallan",
+"provincia": "2001"
+},
+{
+"ubigeo": "200109",
+"nombre": "La Arena",
+"provincia": "2001"
+},
+{
+"ubigeo": "200110",
+"nombre": "La Unión",
+"provincia": "2001"
+},
+{
+"ubigeo": "200111",
+"nombre": "Las Lomas",
+"provincia": "2001"
+},
+{
+"ubigeo": "200114",
+"nombre": "Tambo Grande",
+"provincia": "2001"
+},
+{
+"ubigeo": "200115",
+"nombre": "Veintiseis de Octubre",
+"provincia": "2001"
+},
+{
+"ubigeo": "200201",
+"nombre": "Ayabaca",
+"provincia": "2002"
+},
+{
+"ubigeo": "200202",
+"nombre": "Frias",
+"provincia": "2002"
+},
+{
+"ubigeo": "200203",
+"nombre": "Jilili",
+"provincia": "2002"
+},
+{
+"ubigeo": "200204",
+"nombre": "Lagunas",
+"provincia": "2002"
+},
+{
+"ubigeo": "200205",
+"nombre": "Montero",
+"provincia": "2002"
+},
+{
+"ubigeo": "200206",
+"nombre": "Pacaipampa",
+"provincia": "2002"
+},
+{
+"ubigeo": "200207",
+"nombre": "Paimas",
+"provincia": "2002"
+},
+{
+"ubigeo": "200208",
+"nombre": "Sapillica",
+"provincia": "2002"
+},
+{
+"ubigeo": "200209",
+"nombre": "Sicchez",
+"provincia": "2002"
+},
+{
+"ubigeo": "200210",
+"nombre": "Suyo",
+"provincia": "2002"
+},
+{
+"ubigeo": "200301",
+"nombre": "Huancabamba",
+"provincia": "2003"
+},
+{
+"ubigeo": "200302",
+"nombre": "Canchaque",
+"provincia": "2003"
+},
+{
+"ubigeo": "200303",
+"nombre": "El Carmen de la Frontera",
+"provincia": "2003"
+},
+{
+"ubigeo": "200304",
+"nombre": "Huarmaca",
+"provincia": "2003"
+},
+{
+"ubigeo": "200305",
+"nombre": "Lalaquiz",
+"provincia": "2003"
+},
+{
+"ubigeo": "200306",
+"nombre": "San Miguel de El Faique",
+"provincia": "2003"
+},
+{
+"ubigeo": "200307",
+"nombre": "Sondor",
+"provincia": "2003"
+},
+{
+"ubigeo": "200308",
+"nombre": "Sondorillo",
+"provincia": "2003"
+},
+{
+"ubigeo": "200401",
+"nombre": "Chulucanas",
+"provincia": "2004"
+},
+{
+"ubigeo": "200402",
+"nombre": "Buenos Aires",
+"provincia": "2004"
+},
+{
+"ubigeo": "200403",
+"nombre": "Chalaco",
+"provincia": "2004"
+},
+{
+"ubigeo": "200404",
+"nombre": "La Matanza",
+"provincia": "2004"
+},
+{
+"ubigeo": "200405",
+"nombre": "Morropon",
+"provincia": "2004"
+},
+{
+"ubigeo": "200406",
+"nombre": "Salitral",
+"provincia": "2004"
+},
+{
+"ubigeo": "200407",
+"nombre": "San Juan de Bigote",
+"provincia": "2004"
+},
+{
+"ubigeo": "200408",
+"nombre": "Santa Catalina de Mossa",
+"provincia": "2004"
+},
+{
+"ubigeo": "200409",
+"nombre": "Santo Domingo",
+"provincia": "2004"
+},
+{
+"ubigeo": "200410",
+"nombre": "Yamango",
+"provincia": "2004"
+},
+{
+"ubigeo": "200501",
+"nombre": "Paita",
+"provincia": "2005"
+},
+{
+"ubigeo": "200502",
+"nombre": "Amotape",
+"provincia": "2005"
+},
+{
+"ubigeo": "200503",
+"nombre": "Arenal",
+"provincia": "2005"
+},
+{
+"ubigeo": "200504",
+"nombre": "Colan",
+"provincia": "2005"
+},
+{
+"ubigeo": "200505",
+"nombre": "La Huaca",
+"provincia": "2005"
+},
+{
+"ubigeo": "200506",
+"nombre": "Tamarindo",
+"provincia": "2005"
+},
+{
+"ubigeo": "200507",
+"nombre": "Vichayal",
+"provincia": "2005"
+},
+{
+"ubigeo": "200601",
+"nombre": "Sullana",
+"provincia": "2006"
+},
+{
+"ubigeo": "200602",
+"nombre": "Bellavista",
+"provincia": "2006"
+},
+{
+"ubigeo": "200603",
+"nombre": "Ignacio Escudero",
+"provincia": "2006"
+},
+{
+"ubigeo": "200604",
+"nombre": "Lancones",
+"provincia": "2006"
+},
+{
+"ubigeo": "200605",
+"nombre": "Marcavelica",
+"provincia": "2006"
+},
+{
+"ubigeo": "200606",
+"nombre": "Miguel Checa",
+"provincia": "2006"
+},
+{
+"ubigeo": "200607",
+"nombre": "Querecotillo",
+"provincia": "2006"
+},
+{
+"ubigeo": "200608",
+"nombre": "Salitral",
+"provincia": "2006"
+},
+{
+"ubigeo": "200701",
+"nombre": "Pariñas",
+"provincia": "2007"
+},
+{
+"ubigeo": "200702",
+"nombre": "El Alto",
+"provincia": "2007"
+},
+{
+"ubigeo": "200703",
+"nombre": "La Brea",
+"provincia": "2007"
+},
+{
+"ubigeo": "200704",
+"nombre": "Lobitos",
+"provincia": "2007"
+},
+{
+"ubigeo": "200705",
+"nombre": "Los Organos",
+"provincia": "2007"
+},
+{
+"ubigeo": "200706",
+"nombre": "Mancora",
+"provincia": "2007"
+},
+{
+"ubigeo": "200801",
+"nombre": "Sechura",
+"provincia": "2008"
+},
+{
+"ubigeo": "200802",
+"nombre": "Bellavista de la Unión",
+"provincia": "2008"
+},
+{
+"ubigeo": "200803",
+"nombre": "Bernal",
+"provincia": "2008"
+},
+{
+"ubigeo": "200804",
+"nombre": "Cristo Nos Valga",
+"provincia": "2008"
+},
+{
+"ubigeo": "200805",
+"nombre": "Vice",
+"provincia": "2008"
+},
+{
+"ubigeo": "200806",
+"nombre": "Rinconada Llicuar",
+"provincia": "2008"
+},
+{
+"ubigeo": "210101",
+"nombre": "Puno",
+"provincia": "2101"
+},
+{
+"ubigeo": "210102",
+"nombre": "Acora",
+"provincia": "2101"
+},
+{
+"ubigeo": "210103",
+"nombre": "Amantani",
+"provincia": "2101"
+},
+{
+"ubigeo": "210104",
+"nombre": "Atuncolla",
+"provincia": "2101"
+},
+{
+"ubigeo": "210105",
+"nombre": "Capachica",
+"provincia": "2101"
+},
+{
+"ubigeo": "210106",
+"nombre": "Chucuito",
+"provincia": "2101"
+},
+{
+"ubigeo": "210107",
+"nombre": "Coata",
+"provincia": "2101"
+},
+{
+"ubigeo": "210108",
+"nombre": "Huata",
+"provincia": "2101"
+},
+{
+"ubigeo": "210109",
+"nombre": "Mañazo",
+"provincia": "2101"
+},
+{
+"ubigeo": "210110",
+"nombre": "Paucarcolla",
+"provincia": "2101"
+},
+{
+"ubigeo": "210111",
+"nombre": "Pichacani",
+"provincia": "2101"
+},
+{
+"ubigeo": "210112",
+"nombre": "Plateria",
+"provincia": "2101"
+},
+{
+"ubigeo": "210113",
+"nombre": "San Antonio",
+"provincia": "2101"
+},
+{
+"ubigeo": "210114",
+"nombre": "Tiquillaca",
+"provincia": "2101"
+},
+{
+"ubigeo": "210115",
+"nombre": "Vilque",
+"provincia": "2101"
+},
+{
+"ubigeo": "210201",
+"nombre": "Azángaro",
+"provincia": "2102"
+},
+{
+"ubigeo": "210202",
+"nombre": "Achaya",
+"provincia": "2102"
+},
+{
+"ubigeo": "210203",
+"nombre": "Arapa",
+"provincia": "2102"
+},
+{
+"ubigeo": "210204",
+"nombre": "Asillo",
+"provincia": "2102"
+},
+{
+"ubigeo": "210205",
+"nombre": "Caminaca",
+"provincia": "2102"
+},
+{
+"ubigeo": "210206",
+"nombre": "Chupa",
+"provincia": "2102"
+},
+{
+"ubigeo": "210207",
+"nombre": "José Domingo Choquehuanca",
+"provincia": "2102"
+},
+{
+"ubigeo": "210208",
+"nombre": "Muñani",
+"provincia": "2102"
+},
+{
+"ubigeo": "210209",
+"nombre": "Potoni",
+"provincia": "2102"
+},
+{
+"ubigeo": "210210",
+"nombre": "Saman",
+"provincia": "2102"
+},
+{
+"ubigeo": "210211",
+"nombre": "San Anton",
+"provincia": "2102"
+},
+{
+"ubigeo": "210212",
+"nombre": "San José",
+"provincia": "2102"
+},
+{
+"ubigeo": "210213",
+"nombre": "San Juan de Salinas",
+"provincia": "2102"
+},
+{
+"ubigeo": "210214",
+"nombre": "Santiago de Pupuja",
+"provincia": "2102"
+},
+{
+"ubigeo": "210215",
+"nombre": "Tirapata",
+"provincia": "2102"
+},
+{
+"ubigeo": "210301",
+"nombre": "Macusani",
+"provincia": "2103"
+},
+{
+"ubigeo": "210302",
+"nombre": "Ajoyani",
+"provincia": "2103"
+},
+{
+"ubigeo": "210303",
+"nombre": "Ayapata",
+"provincia": "2103"
+},
+{
+"ubigeo": "210304",
+"nombre": "Coasa",
+"provincia": "2103"
+},
+{
+"ubigeo": "210305",
+"nombre": "Corani",
+"provincia": "2103"
+},
+{
+"ubigeo": "210306",
+"nombre": "Crucero",
+"provincia": "2103"
+},
+{
+"ubigeo": "210307",
+"nombre": "Ituata",
+"provincia": "2103"
+},
+{
+"ubigeo": "210308",
+"nombre": "Ollachea",
+"provincia": "2103"
+},
+{
+"ubigeo": "210309",
+"nombre": "San Gaban",
+"provincia": "2103"
+},
+{
+"ubigeo": "210310",
+"nombre": "Usicayos",
+"provincia": "2103"
+},
+{
+"ubigeo": "210401",
+"nombre": "Juli",
+"provincia": "2104"
+},
+{
+"ubigeo": "210402",
+"nombre": "Desaguadero",
+"provincia": "2104"
+},
+{
+"ubigeo": "210403",
+"nombre": "Huacullani",
+"provincia": "2104"
+},
+{
+"ubigeo": "210404",
+"nombre": "Kelluyo",
+"provincia": "2104"
+},
+{
+"ubigeo": "210405",
+"nombre": "Pisacoma",
+"provincia": "2104"
+},
+{
+"ubigeo": "210406",
+"nombre": "Pomata",
+"provincia": "2104"
+},
+{
+"ubigeo": "210407",
+"nombre": "Zepita",
+"provincia": "2104"
+},
+{
+"ubigeo": "210501",
+"nombre": "Ilave",
+"provincia": "2105"
+},
+{
+"ubigeo": "210502",
+"nombre": "Capazo",
+"provincia": "2105"
+},
+{
+"ubigeo": "210503",
+"nombre": "Pilcuyo",
+"provincia": "2105"
+},
+{
+"ubigeo": "210504",
+"nombre": "Santa Rosa",
+"provincia": "2105"
+},
+{
+"ubigeo": "210505",
+"nombre": "Conduriri",
+"provincia": "2105"
+},
+{
+"ubigeo": "210601",
+"nombre": "Huancane",
+"provincia": "2106"
+},
+{
+"ubigeo": "210602",
+"nombre": "Cojata",
+"provincia": "2106"
+},
+{
+"ubigeo": "210603",
+"nombre": "Huatasani",
+"provincia": "2106"
+},
+{
+"ubigeo": "210604",
+"nombre": "Inchupalla",
+"provincia": "2106"
+},
+{
+"ubigeo": "210605",
+"nombre": "Pusi",
+"provincia": "2106"
+},
+{
+"ubigeo": "210606",
+"nombre": "Rosaspata",
+"provincia": "2106"
+},
+{
+"ubigeo": "210607",
+"nombre": "Taraco",
+"provincia": "2106"
+},
+{
+"ubigeo": "210608",
+"nombre": "Vilque Chico",
+"provincia": "2106"
+},
+{
+"ubigeo": "210701",
+"nombre": "Lampa",
+"provincia": "2107"
+},
+{
+"ubigeo": "210702",
+"nombre": "Cabanilla",
+"provincia": "2107"
+},
+{
+"ubigeo": "210703",
+"nombre": "Calapuja",
+"provincia": "2107"
+},
+{
+"ubigeo": "210704",
+"nombre": "Nicasio",
+"provincia": "2107"
+},
+{
+"ubigeo": "210705",
+"nombre": "Ocuviri",
+"provincia": "2107"
+},
+{
+"ubigeo": "210706",
+"nombre": "Palca",
+"provincia": "2107"
+},
+{
+"ubigeo": "210707",
+"nombre": "Paratia",
+"provincia": "2107"
+},
+{
+"ubigeo": "210708",
+"nombre": "Pucara",
+"provincia": "2107"
+},
+{
+"ubigeo": "210709",
+"nombre": "Santa Lucia",
+"provincia": "2107"
+},
+{
+"ubigeo": "210710",
+"nombre": "Vilavila",
+"provincia": "2107"
+},
+{
+"ubigeo": "210801",
+"nombre": "Ayaviri",
+"provincia": "2108"
+},
+{
+"ubigeo": "210802",
+"nombre": "Antauta",
+"provincia": "2108"
+},
+{
+"ubigeo": "210803",
+"nombre": "Cupi",
+"provincia": "2108"
+},
+{
+"ubigeo": "210804",
+"nombre": "Llalli",
+"provincia": "2108"
+},
+{
+"ubigeo": "210805",
+"nombre": "Macari",
+"provincia": "2108"
+},
+{
+"ubigeo": "210806",
+"nombre": "Nuñoa",
+"provincia": "2108"
+},
+{
+"ubigeo": "210807",
+"nombre": "Orurillo",
+"provincia": "2108"
+},
+{
+"ubigeo": "210808",
+"nombre": "Santa Rosa",
+"provincia": "2108"
+},
+{
+"ubigeo": "210809",
+"nombre": "Umachiri",
+"provincia": "2108"
+},
+{
+"ubigeo": "210901",
+"nombre": "Moho",
+"provincia": "2109"
+},
+{
+"ubigeo": "210902",
+"nombre": "Conima",
+"provincia": "2109"
+},
+{
+"ubigeo": "210903",
+"nombre": "Huayrapata",
+"provincia": "2109"
+},
+{
+"ubigeo": "210904",
+"nombre": "Tilali",
+"provincia": "2109"
+},
+{
+"ubigeo": "211001",
+"nombre": "Putina",
+"provincia": "2110"
+},
+{
+"ubigeo": "211002",
+"nombre": "Ananea",
+"provincia": "2110"
+},
+{
+"ubigeo": "211003",
+"nombre": "Pedro Vilca Apaza",
+"provincia": "2110"
+},
+{
+"ubigeo": "211004",
+"nombre": "Quilcapuncu",
+"provincia": "2110"
+},
+{
+"ubigeo": "211005",
+"nombre": "Sina",
+"provincia": "2110"
+},
+{
+"ubigeo": "211101",
+"nombre": "Juliaca",
+"provincia": "2111"
+},
+{
+"ubigeo": "211102",
+"nombre": "Cabana",
+"provincia": "2111"
+},
+{
+"ubigeo": "211103",
+"nombre": "Cabanillas",
+"provincia": "2111"
+},
+{
+"ubigeo": "211104",
+"nombre": "Caracoto",
+"provincia": "2111"
+},
+{
+"ubigeo": "211105",
+"nombre": "San Miguel",
+"provincia": "2111"
+},
+{
+"ubigeo": "211201",
+"nombre": "Sandia",
+"provincia": "2112"
+},
+{
+"ubigeo": "211202",
+"nombre": "Cuyocuyo",
+"provincia": "2112"
+},
+{
+"ubigeo": "211203",
+"nombre": "Limbani",
+"provincia": "2112"
+},
+{
+"ubigeo": "211204",
+"nombre": "Patambuco",
+"provincia": "2112"
+},
+{
+"ubigeo": "211205",
+"nombre": "Phara",
+"provincia": "2112"
+},
+{
+"ubigeo": "211206",
+"nombre": "Quiaca",
+"provincia": "2112"
+},
+{
+"ubigeo": "211207",
+"nombre": "San Juan del Oro",
+"provincia": "2112"
+},
+{
+"ubigeo": "211208",
+"nombre": "Yanahuaya",
+"provincia": "2112"
+},
+{
+"ubigeo": "211209",
+"nombre": "Alto Inambari",
+"provincia": "2112"
+},
+{
+"ubigeo": "211210",
+"nombre": "San Pedro de Putina Punco",
+"provincia": "2112"
+},
+{
+"ubigeo": "211301",
+"nombre": "Yunguyo",
+"provincia": "2113"
+},
+{
+"ubigeo": "211302",
+"nombre": "Anapia",
+"provincia": "2113"
+},
+{
+"ubigeo": "211303",
+"nombre": "Copani",
+"provincia": "2113"
+},
+{
+"ubigeo": "211304",
+"nombre": "Cuturapi",
+"provincia": "2113"
+},
+{
+"ubigeo": "211305",
+"nombre": "Ollaraya",
+"provincia": "2113"
+},
+{
+"ubigeo": "211306",
+"nombre": "Tinicachi",
+"provincia": "2113"
+},
+{
+"ubigeo": "211307",
+"nombre": "Unicachi",
+"provincia": "2113"
+},
+{
+"ubigeo": "220101",
+"nombre": "Moyobamba",
+"provincia": "2201"
+},
+{
+"ubigeo": "220102",
+"nombre": "Calzada",
+"provincia": "2201"
+},
+{
+"ubigeo": "220103",
+"nombre": "Habana",
+"provincia": "2201"
+},
+{
+"ubigeo": "220104",
+"nombre": "Jepelacio",
+"provincia": "2201"
+},
+{
+"ubigeo": "220105",
+"nombre": "Soritor",
+"provincia": "2201"
+},
+{
+"ubigeo": "220106",
+"nombre": "Yantalo",
+"provincia": "2201"
+},
+{
+"ubigeo": "220201",
+"nombre": "Bellavista",
+"provincia": "2202"
+},
+{
+"ubigeo": "220202",
+"nombre": "Alto Biavo",
+"provincia": "2202"
+},
+{
+"ubigeo": "220203",
+"nombre": "Bajo Biavo",
+"provincia": "2202"
+},
+{
+"ubigeo": "220204",
+"nombre": "Huallaga",
+"provincia": "2202"
+},
+{
+"ubigeo": "220205",
+"nombre": "San Pablo",
+"provincia": "2202"
+},
+{
+"ubigeo": "220206",
+"nombre": "San Rafael",
+"provincia": "2202"
+},
+{
+"ubigeo": "220301",
+"nombre": "San José de Sisa",
+"provincia": "2203"
+},
+{
+"ubigeo": "220302",
+"nombre": "Agua Blanca",
+"provincia": "2203"
+},
+{
+"ubigeo": "220303",
+"nombre": "San Martín",
+"provincia": "2203"
+},
+{
+"ubigeo": "220304",
+"nombre": "Santa Rosa",
+"provincia": "2203"
+},
+{
+"ubigeo": "220305",
+"nombre": "Shatoja",
+"provincia": "2203"
+},
+{
+"ubigeo": "220401",
+"nombre": "Saposoa",
+"provincia": "2204"
+},
+{
+"ubigeo": "220402",
+"nombre": "Alto Saposoa",
+"provincia": "2204"
+},
+{
+"ubigeo": "220403",
+"nombre": "El Eslabón",
+"provincia": "2204"
+},
+{
+"ubigeo": "220404",
+"nombre": "Piscoyacu",
+"provincia": "2204"
+},
+{
+"ubigeo": "220405",
+"nombre": "Sacanche",
+"provincia": "2204"
+},
+{
+"ubigeo": "220406",
+"nombre": "Tingo de Saposoa",
+"provincia": "2204"
+},
+{
+"ubigeo": "220501",
+"nombre": "Lamas",
+"provincia": "2205"
+},
+{
+"ubigeo": "220502",
+"nombre": "Alonso de Alvarado",
+"provincia": "2205"
+},
+{
+"ubigeo": "220503",
+"nombre": "Barranquita",
+"provincia": "2205"
+},
+{
+"ubigeo": "220504",
+"nombre": "Caynarachi",
+"provincia": "2205"
+},
+{
+"ubigeo": "220505",
+"nombre": "Cuñumbuqui",
+"provincia": "2205"
+},
+{
+"ubigeo": "220506",
+"nombre": "Pinto Recodo",
+"provincia": "2205"
+},
+{
+"ubigeo": "220507",
+"nombre": "Rumisapa",
+"provincia": "2205"
+},
+{
+"ubigeo": "220508",
+"nombre": "San Roque de Cumbaza",
+"provincia": "2205"
+},
+{
+"ubigeo": "220509",
+"nombre": "Shanao",
+"provincia": "2205"
+},
+{
+"ubigeo": "220510",
+"nombre": "Tabalosos",
+"provincia": "2205"
+},
+{
+"ubigeo": "220511",
+"nombre": "Zapatero",
+"provincia": "2205"
+},
+{
+"ubigeo": "220601",
+"nombre": "Juanjuí",
+"provincia": "2206"
+},
+{
+"ubigeo": "220602",
+"nombre": "Campanilla",
+"provincia": "2206"
+},
+{
+"ubigeo": "220603",
+"nombre": "Huicungo",
+"provincia": "2206"
+},
+{
+"ubigeo": "220604",
+"nombre": "Pachiza",
+"provincia": "2206"
+},
+{
+"ubigeo": "220605",
+"nombre": "Pajarillo",
+"provincia": "2206"
+},
+{
+"ubigeo": "220701",
+"nombre": "Picota",
+"provincia": "2207"
+},
+{
+"ubigeo": "220702",
+"nombre": "Buenos Aires",
+"provincia": "2207"
+},
+{
+"ubigeo": "220703",
+"nombre": "Caspisapa",
+"provincia": "2207"
+},
+{
+"ubigeo": "220704",
+"nombre": "Pilluana",
+"provincia": "2207"
+},
+{
+"ubigeo": "220705",
+"nombre": "Pucacaca",
+"provincia": "2207"
+},
+{
+"ubigeo": "220706",
+"nombre": "San Cristóbal",
+"provincia": "2207"
+},
+{
+"ubigeo": "220707",
+"nombre": "San Hilarión",
+"provincia": "2207"
+},
+{
+"ubigeo": "220708",
+"nombre": "Shamboyacu",
+"provincia": "2207"
+},
+{
+"ubigeo": "220709",
+"nombre": "Tingo de Ponasa",
+"provincia": "2207"
+},
+{
+"ubigeo": "220710",
+"nombre": "Tres Unidos",
+"provincia": "2207"
+},
+{
+"ubigeo": "220801",
+"nombre": "Rioja",
+"provincia": "2208"
+},
+{
+"ubigeo": "220802",
+"nombre": "Awajun",
+"provincia": "2208"
+},
+{
+"ubigeo": "220803",
+"nombre": "Elías Soplin Vargas",
+"provincia": "2208"
+},
+{
+"ubigeo": "220804",
+"nombre": "Nueva Cajamarca",
+"provincia": "2208"
+},
+{
+"ubigeo": "220805",
+"nombre": "Pardo Miguel",
+"provincia": "2208"
+},
+{
+"ubigeo": "220806",
+"nombre": "Posic",
+"provincia": "2208"
+},
+{
+"ubigeo": "220807",
+"nombre": "San Fernando",
+"provincia": "2208"
+},
+{
+"ubigeo": "220808",
+"nombre": "Yorongos",
+"provincia": "2208"
+},
+{
+"ubigeo": "220809",
+"nombre": "Yuracyacu",
+"provincia": "2208"
+},
+{
+"ubigeo": "220901",
+"nombre": "Tarapoto",
+"provincia": "2209"
+},
+{
+"ubigeo": "220902",
+"nombre": "Alberto Leveau",
+"provincia": "2209"
+},
+{
+"ubigeo": "220903",
+"nombre": "Cacatachi",
+"provincia": "2209"
+},
+{
+"ubigeo": "220904",
+"nombre": "Chazuta",
+"provincia": "2209"
+},
+{
+"ubigeo": "220905",
+"nombre": "Chipurana",
+"provincia": "2209"
+},
+{
+"ubigeo": "220906",
+"nombre": "El Porvenir",
+"provincia": "2209"
+},
+{
+"ubigeo": "220907",
+"nombre": "Huimbayoc",
+"provincia": "2209"
+},
+{
+"ubigeo": "220908",
+"nombre": "Juan Guerra",
+"provincia": "2209"
+},
+{
+"ubigeo": "220909",
+"nombre": "La Banda de Shilcayo",
+"provincia": "2209"
+},
+{
+"ubigeo": "220910",
+"nombre": "Morales",
+"provincia": "2209"
+},
+{
+"ubigeo": "220911",
+"nombre": "Papaplaya",
+"provincia": "2209"
+},
+{
+"ubigeo": "220912",
+"nombre": "San Antonio",
+"provincia": "2209"
+},
+{
+"ubigeo": "220913",
+"nombre": "Sauce",
+"provincia": "2209"
+},
+{
+"ubigeo": "220914",
+"nombre": "Shapaja",
+"provincia": "2209"
+},
+{
+"ubigeo": "221001",
+"nombre": "Tocache",
+"provincia": "2210"
+},
+{
+"ubigeo": "221002",
+"nombre": "Nuevo Progreso",
+"provincia": "2210"
+},
+{
+"ubigeo": "221003",
+"nombre": "Polvora",
+"provincia": "2210"
+},
+{
+"ubigeo": "221004",
+"nombre": "Shunte",
+"provincia": "2210"
+},
+{
+"ubigeo": "221005",
+"nombre": "Uchiza",
+"provincia": "2210"
+},
+{
+"ubigeo": "230101",
+"nombre": "Tacna",
+"provincia": "2301"
+},
+{
+"ubigeo": "230102",
+"nombre": "Alto de la Alianza",
+"provincia": "2301"
+},
+{
+"ubigeo": "230103",
+"nombre": "Calana",
+"provincia": "2301"
+},
+{
+"ubigeo": "230104",
+"nombre": "Ciudad Nueva",
+"provincia": "2301"
+},
+{
+"ubigeo": "230105",
+"nombre": "Inclan",
+"provincia": "2301"
+},
+{
+"ubigeo": "230106",
+"nombre": "Pachia",
+"provincia": "2301"
+},
+{
+"ubigeo": "230107",
+"nombre": "Palca",
+"provincia": "2301"
+},
+{
+"ubigeo": "230108",
+"nombre": "Pocollay",
+"provincia": "2301"
+},
+{
+"ubigeo": "230109",
+"nombre": "Sama",
+"provincia": "2301"
+},
+{
+"ubigeo": "230110",
+"nombre": "Coronel Gregorio Albarracín Lanchipa",
+"provincia": "2301"
+},
+{
+"ubigeo": "230111",
+"nombre": "La Yarada los Palos",
+"provincia": "2301"
+},
+{
+"ubigeo": "230201",
+"nombre": "Candarave",
+"provincia": "2302"
+},
+{
+"ubigeo": "230202",
+"nombre": "Cairani",
+"provincia": "2302"
+},
+{
+"ubigeo": "230203",
+"nombre": "Camilaca",
+"provincia": "2302"
+},
+{
+"ubigeo": "230204",
+"nombre": "Curibaya",
+"provincia": "2302"
+},
+{
+"ubigeo": "230205",
+"nombre": "Huanuara",
+"provincia": "2302"
+},
+{
+"ubigeo": "230206",
+"nombre": "Quilahuani",
+"provincia": "2302"
+},
+{
+"ubigeo": "230301",
+"nombre": "Locumba",
+"provincia": "2303"
+},
+{
+"ubigeo": "230302",
+"nombre": "Ilabaya",
+"provincia": "2303"
+},
+{
+"ubigeo": "230303",
+"nombre": "Ite",
+"provincia": "2303"
+},
+{
+"ubigeo": "230401",
+"nombre": "Tarata",
+"provincia": "2304"
+},
+{
+"ubigeo": "230402",
+"nombre": "Héroes Albarracín",
+"provincia": "2304"
+},
+{
+"ubigeo": "230403",
+"nombre": "Estique",
+"provincia": "2304"
+},
+{
+"ubigeo": "230404",
+"nombre": "Estique-Pampa",
+"provincia": "2304"
+},
+{
+"ubigeo": "230405",
+"nombre": "Sitajara",
+"provincia": "2304"
+},
+{
+"ubigeo": "230406",
+"nombre": "Susapaya",
+"provincia": "2304"
+},
+{
+"ubigeo": "230407",
+"nombre": "Tarucachi",
+"provincia": "2304"
+},
+{
+"ubigeo": "230408",
+"nombre": "Ticaco",
+"provincia": "2304"
+},
+{
+"ubigeo": "240101",
+"nombre": "Tumbes",
+"provincia": "2401"
+},
+{
+"ubigeo": "240102",
+"nombre": "Corrales",
+"provincia": "2401"
+},
+{
+"ubigeo": "240103",
+"nombre": "La Cruz",
+"provincia": "2401"
+},
+{
+"ubigeo": "240104",
+"nombre": "Pampas de Hospital",
+"provincia": "2401"
+},
+{
+"ubigeo": "240105",
+"nombre": "San Jacinto",
+"provincia": "2401"
+},
+{
+"ubigeo": "240106",
+"nombre": "San Juan de la Virgen",
+"provincia": "2401"
+},
+{
+"ubigeo": "240201",
+"nombre": "Zorritos",
+"provincia": "2402"
+},
+{
+"ubigeo": "240202",
+"nombre": "Casitas",
+"provincia": "2402"
+},
+{
+"ubigeo": "240203",
+"nombre": "Canoas de Punta Sal",
+"provincia": "2402"
+},
+{
+"ubigeo": "240301",
+"nombre": "Zarumilla",
+"provincia": "2403"
+},
+{
+"ubigeo": "240302",
+"nombre": "Aguas Verdes",
+"provincia": "2403"
+},
+{
+"ubigeo": "240303",
+"nombre": "Matapalo",
+"provincia": "2403"
+},
+{
+"ubigeo": "240304",
+"nombre": "Papayal",
+"provincia": "2403"
+},
+{
+"ubigeo": "250101",
+"nombre": "Calleria",
+"provincia": "2501"
+},
+{
+"ubigeo": "250102",
+"nombre": "Campoverde",
+"provincia": "2501"
+},
+{
+"ubigeo": "250103",
+"nombre": "Iparia",
+"provincia": "2501"
+},
+{
+"ubigeo": "250104",
+"nombre": "Masisea",
+"provincia": "2501"
+},
+{
+"ubigeo": "250105",
+"nombre": "Yarinacocha",
+"provincia": "2501"
+},
+{
+"ubigeo": "250106",
+"nombre": "Nueva Requena",
+"provincia": "2501"
+},
+{
+"ubigeo": "250107",
+"nombre": "Manantay",
+"provincia": "2501"
+},
+{
+"ubigeo": "250201",
+"nombre": "Raymondi",
+"provincia": "2502"
+},
+{
+"ubigeo": "250202",
+"nombre": "Sepahua",
+"provincia": "2502"
+},
+{
+"ubigeo": "250203",
+"nombre": "Tahuania",
+"provincia": "2502"
+},
+{
+"ubigeo": "250204",
+"nombre": "Yurua",
+"provincia": "2502"
+},
+{
+"ubigeo": "250301",
+"nombre": "Padre Abad",
+"provincia": "2503"
+},
+{
+"ubigeo": "250302",
+"nombre": "Irazola",
+"provincia": "2503"
+},
+{
+"ubigeo": "250303",
+"nombre": "Curimana",
+"provincia": "2503"
+},
+{
+"ubigeo": "250304",
+"nombre": "Neshuya",
+"provincia": "2503"
+},
+{
+"ubigeo": "250305",
+"nombre": "Alexander Von Humboldt",
+"provincia": "2503"
+},
+{
+"ubigeo": "250401",
+"nombre": "Purus",
+"provincia": "2504"
+}
+]
+}

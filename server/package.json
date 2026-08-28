@@ -1,0 +1,42 @@
+{
+  "dependencies": {
+    "axios": "^1.17.0",
+    "bcryptjs": "^3.0.3",
+    "cloudinary": "^2.10.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "exceljs": "^4.4.0",
+    "express": "^5.2.1",
+    "express-fileupload": "^1.5.2",
+    "express-rate-limit": "^8.6.2",
+    "google-auth-library": "^11.0.2",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mysql2": "^3.22.4",
+    "nodemailer": "^8.0.10"
+  },
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test --test-concurrency=1 \"tests/*.test.js\"",
+    "test:unidad": "node --test tests/unidad.test.js",
+    "db:sp": "node database/procedimientos/aplicar.js",
+    "db:sp:check": "node database/procedimientos/aplicar.js --check",
+    "db:sp:gen": "node scripts/generarInstalador.mjs",
+    "db:ubigeo": "node database/ubigeo/cargarUbigeo.js",
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "crear-admin": "node scripts/crearAdmin.js",
+    "limpiar-datos": "node scripts/limpiarDatosPrueba.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
