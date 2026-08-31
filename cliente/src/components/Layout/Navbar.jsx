@@ -24,6 +24,7 @@ const Navbar = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [category, setCategory] = useState("");
   const [subcategorias, setSubcategorias] = useState([]);
+  const [categoryDropdownOpen, setCategoryDropdownOpen] = useState(false);
   let cartItemsCount = 0;
   if (cart) {
     cartItemsCount = cart.reduce((total, item) => total + item.cantidad, 0);
@@ -123,27 +124,66 @@ const Navbar = () => {
               style={{ borderColor: "var(--store-border)" }}
             >
               <div className="relative">
-                <select
-                  value={category}
-                  onChange={(e) => setCategory(e.target.value)}
-                  className="h-full pl-5 pr-8 bg-transparent text-sm store-text outline-none appearance-none min-w-[168px]"
+                <button
+                  type="button"
+                  onClick={() => setCategoryDropdownOpen(!categoryDropdownOpen)}
+                  className="h-full pl-5 pr-8 bg-transparent text-sm store-text outline-none min-w-[168px] flex items-center gap-2 hover:bg-[var(--store-hover)] transition-colors"
                 >
-                  <option value="">Todas las categorías</option>
-                  {categorias.map((cat) => {
-                    const subcats = subcategorias.filter(s => s.id_categoria === cat.id);
-                    return (
-                      <optgroup key={cat.id} label={cat.nombre}>
-                        <option value={cat.nombre}>{cat.nombre} (Todos)</option>
-                        {subcats.map((subcat) => (
-                          <option key={subcat.id} value={subcat.nombre}>
-                            &nbsp;&nbsp;↳ {subcat.nombre}
-                          </option>
-                        ))}
-                      </optgroup>
-                    );
-                  })}
-                </select>
-                <ChevronDown className="w-4 h-4 absolute right-2 top-1/2 -translate-y-1/2 store-muted pointer-events-none" />
+                  <span className="truncate">{category || "Todas las categorías"}</span>
+                  <ChevronDown className={`w-4 h-4 store-muted transition-transform ${categoryDropdownOpen ? 'rotate-180' : ''}`} />
+                </button>
+                
+                {categoryDropdownOpen && (
+                  <>
+                    <div 
+                      className="fixed inset-0 z-10" 
+                      onClick={() => setCategoryDropdownOpen(false)}
+                    />
+                    <div className="absolute top-full left-0 mt-2 w-64 max-h-96 overflow-y-auto rounded-xl border shadow-lg store-surface z-20" style={{ borderColor: "var(--store-border)" }}>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setCategory("");
+                          setCategoryDropdownOpen(false);
+                        }}
+                        className={`w-full text-left px-4 py-2.5 text-sm hover:bg-[var(--store-hover)] transition-colors ${!category ? 'store-ink font-medium' : 'store-text'}`}
+                      >
+                        Todas las categorías
+                      </button>
+                      {categorias.map((cat) => {
+                        const subcats = subcategorias.filter(s => s.id_categoria === cat.id);
+                        return (
+                          <div key={cat.id}>
+                            <button
+                              type="button"
+                              onClick={() => {
+                                setCategory(cat.nombre);
+                                setCategoryDropdownOpen(false);
+                              }}
+                              className={`w-full text-left px-4 py-2.5 text-sm font-medium border-t hover:bg-[var(--store-hover)] transition-colors ${category === cat.nombre ? 'store-ink' : 'store-text'}`}
+                              style={{ borderColor: "var(--store-border)" }}
+                            >
+                              {cat.nombre}
+                            </button>
+                            {subcats.map((subcat) => (
+                              <button
+                                key={subcat.id}
+                                type="button"
+                                onClick={() => {
+                                  setCategory(subcat.nombre);
+                                  setCategoryDropdownOpen(false);
+                                }}
+                                className={`w-full text-left px-8 py-2 text-sm hover:bg-[var(--store-hover)] transition-colors ${category === subcat.nombre ? 'store-ink font-medium' : 'store-muted'}`}
+                              >
+                                ↳ {subcat.nombre}
+                              </button>
+                            ))}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </>
+                )}
               </div>
               <div className="w-px h-6 self-center" style={{ background: "var(--store-border)" }} />
               <input
