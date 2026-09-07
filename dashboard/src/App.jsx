@@ -1,95 +1,29 @@
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate,
-} from "react-router-dom";
-import SideBar from "./components/SideBar";
-import Login from "./pages/Login";
-import ForgotPassword from "./pages/ForgotPassword";
-import ResetPassword from "./pages/ResetPassword";
-import { ToastContainer } from "react-toastify";
-import { useDispatch, useSelector } from "react-redux";
-import Dashboard from "./components/Dashboard";
-import Products from "./components/Products";
-import Orders from "./components/Orders";
-import Profile from "./components/Profile";
-import Users from "./components/Users";
-import ContactMessages from "./components/ContactMessages";
-import Categories from "./components/Categories";
-import Coupons from "./components/Coupons";
-import ShippingRates from "./components/ShippingRates";
-import { useEffect } from "react";
-import { getUser } from "./store/slices/authSlice";
-import { fetchAllUsers, getDashboardStats } from "./store/slices/adminSlice";
-import { fetchAllProducts } from "./store/slices/productsSlice";
-import { fetchCategoriasActivas } from "./store/slices/categorySlice";
+import { Package } from "lucide-react";
 
-function App() {
-  const { openedComponent } = useSelector((state) => state.extra);
-  const { user, isAuthenticated } = useSelector((state) => state.auth);
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(getUser());
-  }, []);
-  useEffect(() => {
-    if (isAuthenticated) {
-      dispatch(getDashboardStats());
-      dispatch(fetchAllProducts());
-      dispatch(fetchCategoriasActivas());
-    }
-  }, [isAuthenticated]);
-  const renderDashboardContent = () => {
-    switch (openedComponent) {
-      case "Dashboard":
-        return <Dashboard />;
-      case "Users":
-        return <Users />;
-      case "Products":
-        return <Products />;
-      case "Orders":
-        return <Orders />;
-      case "Categories":
-        return <Categories />;
-      case "Coupons":
-        return <Coupons />;
-      case "ShippingRates":
-        return <ShippingRates />;
-      case "ContactMessages":
-        return <ContactMessages />;
-      case "Profile":
-        return <Profile />;
-
-      default:
-        return <Dashboard />;
-    }
-  };
-
+const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/contrasena/reiniciar" element={<ForgotPassword />} />
-        <Route path="/contrasena/reiniciar/:token" element={<ResetPassword />} />
-
-        {/* Protected Admin Route */}
-        <Route
-          path="/"
-          element={
-            isAuthenticated && user?.rol === "Admin" ? (
-              <div className="flex min-h-screen">
-                <SideBar />
-                {renderDashboardContent()}
-              </div>
-            ) : (
-              <Navigate to="/login" replace />
-            )
-          }
-        />
-      </Routes>
-      <ToastContainer theme="dark" />
-    </Router>
+    <main className="min-h-screen flex items-center justify-center bg-slate-50 px-6">
+      <section className="max-w-lg w-full bg-white border border-slate-200 rounded-2xl shadow-sm p-8 text-center">
+        <div className="mx-auto w-14 h-14 rounded-full bg-rose-50 text-rose-500 flex items-center justify-center mb-4">
+          <Package size={28} />
+        </div>
+        <h1 className="text-2xl font-semibold text-slate-800 mb-2">
+          Panel administrativo retirado
+        </h1>
+        <p className="text-slate-600 leading-relaxed">
+          El panel admin vive en <code className="px-1.5 py-0.5 rounded bg-slate-100 text-slate-800">cliente/src/admin/</code>.
+          Esta carpeta conserva solo la configuración base de Vite para mantener
+          el repositorio consistente.
+        </p>
+        <a
+          href="../../README.md"
+          className="inline-block mt-6 px-4 py-2 rounded-lg bg-slate-800 text-white text-sm hover:bg-slate-700"
+        >
+          Ver README del proyecto
+        </a>
+      </section>
+    </main>
   );
-}
+};
 
 export default App;

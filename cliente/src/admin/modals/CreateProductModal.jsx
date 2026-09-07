@@ -20,6 +20,9 @@ const CreateProductModal = () => {
     subcategoryId: "",
     stock: "",
     images: [],
+    precio_oferta: "",
+    oferta_inicio: "",
+    oferta_fin: "",
   });
 
   const [subcategorias, setSubcategorias] = useState([]);
@@ -82,6 +85,15 @@ const CreateProductModal = () => {
 
     for (let i = 0; i < formData.images.length; i++) {
       data.append("imagenes", formData.images[i]);
+    }
+
+    if (formData.precio_oferta && Number(formData.precio_oferta) > 0) {
+      data.append("precio_oferta", formData.precio_oferta);
+      if (formData.oferta_inicio) data.append("oferta_inicio", formData.oferta_inicio);
+      if (formData.oferta_fin) data.append("oferta_fin", formData.oferta_fin);
+    } else if (formData.precio_oferta === "" && (formData.oferta_inicio || formData.oferta_fin)) {
+      alert("Indica un precio de oferta o limpia las fechas.");
+      return;
     }
 
     dispatch(createNewProduct(data));
@@ -171,6 +183,63 @@ const CreateProductModal = () => {
             {
 
  }
+
+            <div className="col-span-1 md:col-span-2 admin-card p-4 space-y-3">
+              <div className="flex items-center justify-between">
+                <label className="admin-label !mb-0">Promoción (opcional)</label>
+                <span className="text-xs text-[#6b8a8a]">
+                  Déjalo vacío si no quieres ofertar
+                </span>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                <div className="flex flex-col gap-1">
+                  <label className="text-xs text-[#6b8a8a]">Precio oferta</label>
+                  <input
+                    type="number"
+                    step="0.01"
+                    min="0"
+                    placeholder="Ej: 49.00"
+                    value={formData.precio_oferta}
+                    onChange={(e) =>
+                      setFormData({ ...formData, precio_oferta: e.target.value })
+                    }
+                    className="admin-input"
+                  />
+                </div>
+                <div className="flex flex-col gap-1">
+                  <label className="text-xs text-[#6b8a8a]">Inicio</label>
+                  <input
+                    type="datetime-local"
+                    value={formData.oferta_inicio}
+                    onChange={(e) =>
+                      setFormData({ ...formData, oferta_inicio: e.target.value })
+                    }
+                    className="admin-input"
+                  />
+                </div>
+                <div className="flex flex-col gap-1">
+                  <label className="text-xs text-[#6b8a8a]">Fin</label>
+                  <input
+                    type="datetime-local"
+                    value={formData.oferta_fin}
+                    onChange={(e) =>
+                      setFormData({ ...formData, oferta_fin: e.target.value })
+                    }
+                    className="admin-input"
+                  />
+                </div>
+              </div>
+              {formData.precio_oferta && Number(formData.price) > 0 && (
+                <p className="text-xs text-[#1aa89a]">
+                  Descuento calculado: -
+                  {Math.round(
+                    (1 - Number(formData.precio_oferta) / Number(formData.price)) * 100
+                  )}
+                  % (S/. {Number(formData.precio_oferta).toFixed(2)} de S/.{" "}
+                  {Number(formData.price).toFixed(2)})
+                </p>
+              )}
+            </div>
             {variantes.length === 0 && (
               <input
                 type="number"

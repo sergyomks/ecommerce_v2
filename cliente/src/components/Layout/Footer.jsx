@@ -26,7 +26,7 @@ const Footer = () => {
   const columns = {
     brand: [
       { name: "Sobre nosotros", path: "/about" },
-      { name: "Atención Tec System", path: "/contact" },
+      { name: "Atención Textil SAC", path: "/contact" },
       { name: "Productos", path: "/products" },
       { name: "Blog", path: "#" },
     ],
@@ -37,7 +37,7 @@ const Footer = () => {
       { name: "Preguntas frecuentes", path: "/faq" },
     ],
     sell: [
-      { name: "Vende en Tec System", path: "/contact" },
+      { name: "Vende en Textil SAC", path: "/contact" },
       { name: "Trabaja con nosotros", path: "/about" },
       { name: "Publicidad", path: "/contact" },
       { name: "Afiliados", path: "#" },
@@ -78,7 +78,7 @@ const Footer = () => {
         <div className="store-wrap py-14">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 mb-12">
             <div className="col-span-2 md:col-span-3 lg:col-span-1">
-              <h2 className="text-xl font-extrabold mb-3">TecSystem.com</h2>
+              <h2 className="text-xl font-extrabold mb-3">Compañia Peruana Nacional Textil SAC</h2>
               <p className="text-white/60 text-sm mb-5 leading-relaxed">
                 Tu socio de confianza para compras online. Calidad, estilo y envíos a todo el Perú.
               </p>
@@ -99,7 +99,7 @@ const Footer = () => {
               </p>
             </div>
             <div>
-              <h3 className="text-sm font-semibold mb-4">Tec System</h3>
+              <h3 className="text-sm font-semibold mb-4">Textil SAC</h3>
               <ul className="space-y-2.5">
                 {columns.brand.map((link) => (
                   <li key={link.name}>
@@ -149,7 +149,7 @@ const Footer = () => {
           </div>
 
           <p className="text-center text-white/45 text-xs border-t border-white/10 pt-6">
-            © 2021-{new Date().getFullYear()}, TecSystem.com
+            © 2021-{new Date().getFullYear()}, Compañia Peruana Nacional Textil SAC. Todos los derechos reservados.
           </p>
         </div>
       </div>

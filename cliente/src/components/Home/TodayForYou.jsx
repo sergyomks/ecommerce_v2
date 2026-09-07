@@ -1,11 +1,12 @@
 import { useMemo, useState } from "react";
 import ProductCard from "../Products/ProductCard";
+import { leerPrecio } from "../../lib/precio";
 
 const TABS = [
   { id: "best", label: "Mas vendidos" },
   { id: "new", label: "Estilo nuevo" },
   { id: "discount", label: "Descuento especial" },
-  { id: "store", label: "Tec System Store" },
+  { id: "store", label: "Textil Store" },
   { id: "brand", label: "Productos top" },
 ];
 
@@ -17,7 +18,7 @@ const TodayForYou = ({ products = [], newProducts = [], topRated = [] }) => {
     const source = catalog;
     if (tab === "new") return (newProducts.length ? newProducts : source).slice(0, 12);
     if (tab === "discount") {
-      return [...source].sort((a, b) => Number(a.precio) - Number(b.precio)).slice(0, 12);
+      return source.filter((p) => leerPrecio(p).enOferta).slice(0, 12);
     }
     if (tab === "store") return source.filter((p) => Number(p.stock) > 0).slice(0, 12);
     if (tab === "brand") return (topRated.length ? topRated : source).slice(0, 12);

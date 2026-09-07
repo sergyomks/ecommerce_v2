@@ -1,5 +1,5 @@
 import React from "react";
-import { Heart, Star } from "lucide-react";
+import { Heart, Star, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleWishlist } from "../../store/slices/wishlistSlice";
@@ -40,10 +40,11 @@ const ProductCard = ({ product, variant = "today" }) => {
         />
         {enOferta && (
           <span
-            className="absolute top-3 left-3 z-10 px-2 py-1 rounded-full text-[11px] font-bold text-white"
+            className="absolute top-3 left-3 z-10 px-2.5 py-1 rounded-full text-[11px] font-bold text-white shadow-sm flex items-center gap-1"
             style={{ background: "#ff4d6d" }}
           >
-            -{porcentaje}%
+            <Zap className="w-3 h-3 fill-white" />
+            ¡En promoción! -{porcentaje}%
           </span>
         )}
         {!enOferta && stock === 0 && (

@@ -91,7 +91,7 @@ const SideBar = () => {
         <nav className="space-y-1.5">
           <div className="flex items-center justify-between px-2 pb-6 pt-1">
             <h2 className="text-[22px] font-extrabold tracking-tight text-[#16343a]">
-              TecPro
+              C.P.N.T SAC
             </h2>
             <MoveLeft
               className="block md:hidden w-5 h-5 text-[#3d5c62] cursor-pointer"

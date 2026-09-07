@@ -15,13 +15,38 @@ CREATE PROCEDURE sp_crear_producto(
   IN p_id_subcategoria CHAR(36),
   IN p_stock INT,
   IN p_imagenes JSON,
-  IN p_creado_por CHAR(36)
+  IN p_creado_por CHAR(36),
+  IN p_precio_oferta DECIMAL(10,2),
+  IN p_oferta_inicio DATETIME,
+  IN p_oferta_fin DATETIME
 )
 BEGIN
-  INSERT INTO productos (id, nombre, descripcion, precio, id_categoria, id_subcategoria, stock, imagenes, creado_por)
-  VALUES (p_id, p_nombre, p_descripcion, p_precio, p_id_categoria, p_id_subcategoria, p_stock, p_imagenes, p_creado_por);
+  IF p_precio_oferta IS NOT NULL
+     AND (p_precio_oferta <= 0 OR p_precio_oferta >= p_precio) THEN
+    SIGNAL SQLSTATE '45000'
+      SET MESSAGE_TEXT = 'PRECIO_OFERTA_INVALIDO';
+  END IF;
 
-  SELECT p.*, COALESCE(s.nombre, c.nombre) AS categoria, s.nombre AS subcategoria, c.nombre AS categoria_padre
+  IF p_precio_oferta IS NOT NULL
+     AND p_oferta_inicio IS NOT NULL
+     AND p_oferta_fin IS NOT NULL
+     AND p_oferta_fin < p_oferta_inicio THEN
+    SIGNAL SQLSTATE '45000'
+      SET MESSAGE_TEXT = 'OFERTA_FECHAS_INVALIDAS';
+  END IF;
+
+  INSERT INTO productos (
+    id, nombre, descripcion, precio, id_categoria, id_subcategoria, stock, imagenes, creado_por,
+    precio_oferta, oferta_inicio, oferta_fin
+  )
+  VALUES (
+    p_id, p_nombre, p_descripcion, p_precio, p_id_categoria, p_id_subcategoria, p_stock, p_imagenes, p_creado_por,
+    p_precio_oferta, p_oferta_inicio, p_oferta_fin
+  );
+
+  SELECT p.*, COALESCE(s.nombre, c.nombre) AS categoria, s.nombre AS subcategoria, c.nombre AS categoria_padre,
+         fn_precio_efectivo(p.precio, p.precio_oferta, p.oferta_inicio, p.oferta_fin, NOW()) AS precio_efectivo,
+         (fn_precio_efectivo(p.precio, p.precio_oferta, p.oferta_inicio, p.oferta_fin, NOW()) < p.precio) AS en_oferta
   FROM productos p
   LEFT JOIN subcategorias s ON s.id = p.id_subcategoria
   LEFT JOIN categorias c ON c.id = p.id_categoria

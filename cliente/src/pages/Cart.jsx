@@ -39,11 +39,26 @@ const Cart = () => {
     dispatch(updateCart({ id, cantidad }));
   };
   let total = 0;
+  let ahorro = 0;
   if (cart) {
     total = cart.reduce(
       (sum, item) => sum + precioLinea(item) * item.cantidad,
       0
     );
+    ahorro = cart.reduce((sum, item) => {
+      const precio = Number(item.producto?.precio);
+      const efectivo = Number(item.producto?.precio_efectivo);
+      const cantidad = Number(item.cantidad) || 0;
+      if (
+        Number.isFinite(precio) &&
+        Number.isFinite(efectivo) &&
+        efectivo > 0 &&
+        efectivo < precio
+      ) {
+        return sum + (precio - efectivo) * cantidad;
+      }
+      return sum;
+    }, 0);
   }
   let cartItemCount = 0;
   if (cart) {
@@ -132,10 +147,17 @@ const Cart = () => {
                             <span className="font-medium">{etiquetaVariante(item.variante)}</span>
                           </p>
                         )}
-                        <div className="flex items-center space-x-2">
+                        <div className="flex items-baseline space-x-2">
                           <span className="text-xl font-bold text-primary">
                             {formatearSoles(precioLinea(item))}
                           </span>
+                          {item.producto.precio_efectivo &&
+                            Number(item.producto.precio_efectivo) <
+                              Number(item.producto.precio) && (
+                              <span className="text-sm text-muted-foreground line-through">
+                                {formatearSoles(item.producto.precio)}
+                              </span>
+                            )}
                         </div>
                       </div>
                       <div className="flex items-center space-x-4">
@@ -169,7 +191,7 @@ const Cart = () => {
                         </div>
                         <button
                           onClick={() =>
-                            dispatch(removeFromCart(item.producto.id))
+                            dispatch(removeFromCart({ id: item.variante?.id }))
                           }
                           className="p-2 glass-card text-destructive hover:glow-on-hover animate-smooth"
                         >
@@ -178,8 +200,7 @@ const Cart = () => {
                       </div>
                       <div className="text-right">
                         <span className="text-lg font-bold text-foreground">
-                          S/.
-                          {(item.producto.precio * item.cantidad).toFixed(2)}
+                          S/.{formatearSoles(precioLinea(item) * item.cantidad)}
                         </span>
                       </div>
                     </div>
@@ -201,6 +222,14 @@ const Cart = () => {
                       S/.{total.toFixed(2)}
                     </span>
                   </div>
+                  {ahorro > 0 && (
+                    <div className="flex justify-between">
+                      <span className="text-emerald-600">Ahorro por promoción:</span>
+                      <span className="text-emerald-600 font-semibold">
+                        -S/.{ahorro.toFixed(2)}
+                      </span>
+                    </div>
+                  )}
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Envio:</span>
                     <span className="text-green-500 font-semibold">

@@ -1,33 +1,89 @@
 import { useDispatch, useSelector } from "react-redux";
 import { toggleComponent } from "../../store/slices/extraSlice";
+import { TrendingUp, UserPlus, ShoppingBag, BarChart3 } from "lucide-react";
 
 const MiniSummary = () => {
-  const { lowStockProducts } = useSelector((state) => state.admin);
+  const {
+    currentMonthSales,
+    revenueGrowth,
+    newUsersThisMonth,
+    orderStatusCounts,
+  } = useSelector((state) => state.admin);
   const dispatch = useDispatch();
-  const stock = Number(lowStockProducts || 0);
+
+  const totalOrders = Object.values(orderStatusCounts || {}).reduce(
+    (acc, count) => acc + Number(count || 0),
+    0
+  );
+
+  const growthIsPositive =
+    typeof revenueGrowth === "string" && revenueGrowth.trim().startsWith("+");
+
+  const items = [
+    {
+      icon: ShoppingBag,
+      label: "Ventas del mes",
+      value: `S/. ${Number(currentMonthSales || 0).toFixed(2)}`,
+    },
+    {
+      icon: BarChart3,
+      label: "Pedidos totales",
+      value: totalOrders,
+    },
+    {
+      icon: TrendingUp,
+      label: "Crecimiento de ingresos",
+      value: revenueGrowth || "0%",
+      valueClass: growthIsPositive ? "text-[#5eead4]" : "text-[#fca5a5]",
+    },
+    {
+      icon: UserPlus,
+      label: "Nuevos usuarios este mes",
+      value: newUsersThisMonth || 0,
+    },
+  ];
 
   return (
-    <article className="relative overflow-hidden rounded-[24px] bg-admin-cta text-white p-6 min-h-[168px] shadow-[0_12px_32px_rgba(15,76,92,0.28)]">
-      <p className="text-[11px] tracking-[0.18em] font-semibold text-white/70 mb-2">
-        NO OLVIDES
-      </p>
-      <h3 className="text-[22px] font-extrabold leading-tight max-w-[220px]">
-        {stock > 0
-          ? `Revisar ${stock} producto${stock === 1 ? "" : "s"} con poco stock`
-          : "Preparar el catálogo para la próxima semana"}
-      </h3>
-      <button
-        type="button"
-        onClick={() => dispatch(toggleComponent("Products"))}
-        className="mt-5 inline-flex items-center bg-white text-[#0f4c5c] text-sm font-semibold px-4 py-2.5 rounded-xl hover:bg-white/90 transition"
-      >
-        Ir a productos
-      </button>
-      <div className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 w-36 h-36">
-        <div className="absolute right-6 top-4 w-16 h-16 rounded-2xl rotate-12 bg-gradient-to-br from-white/35 to-cyan-200/20 shadow-lg" />
-        <div className="absolute right-2 top-0 w-11 h-11 rounded-full bg-gradient-to-br from-white/50 to-teal-300/30" />
-        <div className="absolute right-10 bottom-4 w-12 h-12 rounded-full border-[5px] border-white/35" />
-        <div className="absolute right-0 bottom-10 w-8 h-8 rounded-lg -rotate-12 bg-white/20" />
+    <article className="admin-card p-6">
+      <div className="flex items-start justify-between gap-3 mb-4">
+        <div>
+          <h3 className="text-lg font-semibold text-[#16343a]">Resumen</h3>
+          <p className="text-sm text-[#6b8a8a]">Indicadores clave del negocio</p>
+        </div>
+        <button
+          type="button"
+          onClick={() => dispatch(toggleComponent("Orders"))}
+          className="text-sm font-medium text-[#1aa89a] hover:underline whitespace-nowrap"
+        >
+          Ver pedidos
+        </button>
+      </div>
+      <div className="grid grid-cols-2 gap-3">
+        {items.map((item) => {
+          const Icon = item.icon;
+          return (
+            <div
+              key={item.label}
+              className="flex items-start gap-3 p-3 rounded-xl bg-[#f6f9fa] hover:bg-[#eef4f5] transition"
+            >
+              <div className="w-9 h-9 rounded-lg bg-white flex items-center justify-center shadow-sm shrink-0">
+                <Icon className="w-4 h-4 text-[#1aa89a]" strokeWidth={2} />
+              </div>
+              <div className="min-w-0">
+                <p className="text-[11px] uppercase tracking-wide text-[#8aa0a4] truncate">
+                  {item.label}
+                </p>
+                <p
+                  className={`text-base font-extrabold text-[#16343a] truncate ${
+                    item.valueClass || ""
+                  }`}
+                >
+                  {item.value}
+                </p>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </article>
   );

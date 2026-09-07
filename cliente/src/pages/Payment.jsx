@@ -7,6 +7,7 @@ import PaymentForm from "../components/PaymentForm";
 import { placeOrder } from "../store/slices/orderSlice";
 import { axiosInstance } from "../lib/axios";
 import { extraerIgv } from "../lib/igv";
+import { precioLinea, formatearSoles } from "../lib/precio";
 import SelectorUbigeo from "../components/Layout/SelectorUbigeo";
 
 const Payment = () => {
@@ -57,9 +58,23 @@ const Payment = () => {
   }, []);
 
   const subtotal = cart.reduce(
-    (sum, item) => sum + Number(item.producto.precio) * item.cantidad,
+    (sum, item) => sum + precioLinea(item) * item.cantidad,
     0
   );
+  const ahorro = cart.reduce((sum, item) => {
+    const precio = Number(item.producto?.precio);
+    const efectivo = Number(item.producto?.precio_efectivo);
+    const cantidad = Number(item.cantidad) || 0;
+    if (
+      Number.isFinite(precio) &&
+      Number.isFinite(efectivo) &&
+      efectivo > 0 &&
+      efectivo < precio
+    ) {
+      return sum + (precio - efectivo) * cantidad;
+    }
+    return sum;
+  }, 0);
   const baseImponible = Math.max(subtotal - descuento, 0);
   const igv = extraerIgv(baseImponible);
   const total =
@@ -402,10 +417,7 @@ const Payment = () => {
                           </p>
                         </div>
                         <p className="text-sm font-semibold">
-                          S/{" "}
-                          {(
-                            Number(item.producto.precio) * item.cantidad
-                          ).toFixed(2)}
+                          S/ {formatearSoles(precioLinea(item) * item.cantidad)}
                         </p>
                       </div>
                     ))}
@@ -415,6 +427,12 @@ const Payment = () => {
                       <span className="text-muted-foreground">Subtotal</span>
                       <span>S/{subtotal.toFixed(2)}</span>
                     </div>
+                    {ahorro > 0 && (
+                      <div className="flex justify-between text-emerald-600">
+                        <span>Ahorro por promoción</span>
+                        <span>-S/{ahorro.toFixed(2)}</span>
+                      </div>
+                    )}
                     {descuento > 0 && (
                       <div className="flex justify-between text-green-500">
                         <span>

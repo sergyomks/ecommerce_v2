@@ -28,7 +28,7 @@ const About = () => {
     <div className="min-h-screen">
       <div className="store-wrap py-16">
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-foreground mb-6">Acerca de ShopMate</h1>
+          <h1 className="text-4xl font-bold text-foreground mb-6">Acerca de Compañia Peruana Nacional Textil SAC</h1>
           <p className="text-xl text-muted-foreground">
             Tu plataforma de comercio electrónico confiable para productos de calidad y un servicio excepcional.
           </p>
@@ -49,7 +49,7 @@ const About = () => {
         <div className="bg-secondary rounded-xl p-8">
           <h2 className="text-2xl font-bold text-foreground mb-4">Nuestra Historia</h2>
           <p className="text-muted-foreground leading-relaxed">
-            Fundada con la visión de hacer que las compras en línea sean simples y agradables, ShopMate ha crecido
+            Fundada con la visión de hacer que las compras en línea sean simples y agradables, Compañia Peruana Nacional Textil SAC ha crecido
             para convertirse en una plataforma confiable para miles de clientes en todo el mundo. Creemos que
             todos merecen acceso a productos de calidad a precios justos, respaldados por un servicio al cliente
             excepcional.

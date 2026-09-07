@@ -8,6 +8,15 @@ import { comoLista, validarImagenes } from "../utils/imagenes.js";
 import { esImporte, esEnteroNoNegativo, esUuid } from "../utils/validaciones.js";
 import { TALLA_UNICA, COLOR_UNICO } from "../models/tablaVariante.js";
 
+const pad2 = (n) => String(n).padStart(2, "0");
+
+const formatMysqlDateTime = (input) => {
+    if (input === null || input === undefined || input === "") return null;
+    const d = new Date(input);
+    if (Number.isNaN(d.getTime())) return null;
+    return `${d.getFullYear()}-${pad2(d.getMonth() + 1)}-${pad2(d.getDate())} ${pad2(d.getHours())}:${pad2(d.getMinutes())}:00`;
+};
+
 const productoTienePedidos = async (productoId) => {
     const [resProd] = await pool.query(`CALL sp_verificar_pedidos_producto(?)`, [productoId]);
     return resProd[0] && resProd[0].length > 0;
@@ -25,7 +34,7 @@ const eliminarImagenesCloudinary = async (imagenes) => {
 };
 
 export const crearProducto = catchAsyncErrors(async (req, res, next) => {
-    const { nombre, descripcion, precio, categoria, stock } = req.body;
+    const { nombre, descripcion, precio, categoria, stock, precio_oferta, oferta_inicio, oferta_fin } = req.body;
     const creado_por = req.user.id;
 
     if (!nombre || !descripcion || !precio || !categoria || stock === undefined || stock === null || stock === '') {
@@ -45,6 +54,37 @@ export const crearProducto = catchAsyncErrors(async (req, res, next) => {
 
     if (String(nombre).trim().length > 255) {
         return next(new ErrorHandler('El nombre del producto no puede superar los 255 caracteres.', 400));
+    }
+
+    let precioOfertaNum = null;
+    if (precio_oferta !== undefined && precio_oferta !== null && precio_oferta !== '') {
+        if (!esImporte(precio_oferta)) {
+            return next(new ErrorHandler('El precio de oferta debe ser un número válido.', 400));
+        }
+        precioOfertaNum = Number(String(precio_oferta).trim().replace(',', '.'));
+        if (precioOfertaNum <= 0 || precioOfertaNum >= precioNum) {
+            return next(new ErrorHandler('El precio de oferta debe ser mayor a 0 y menor que el precio normal.', 400));
+        }
+    }
+
+    let ofertaInicioFmt = null;
+    let ofertaFinFmt = null;
+    if (precioOfertaNum !== null) {
+        if (oferta_inicio) {
+            ofertaInicioFmt = formatMysqlDateTime(oferta_inicio);
+            if (ofertaInicioFmt === null) {
+                return next(new ErrorHandler('La fecha de inicio de oferta no es válida.', 400));
+            }
+        }
+        if (oferta_fin) {
+            ofertaFinFmt = formatMysqlDateTime(oferta_fin);
+            if (ofertaFinFmt === null) {
+                return next(new ErrorHandler('La fecha de fin de oferta no es válida.', 400));
+            }
+        }
+        if (ofertaInicioFmt && ofertaFinFmt && ofertaFinFmt < ofertaInicioFmt) {
+            return next(new ErrorHandler('La fecha de fin debe ser posterior a la fecha de inicio.', 400));
+        }
     }
 
     let idCategoria = null;
@@ -85,8 +125,8 @@ export const crearProducto = catchAsyncErrors(async (req, res, next) => {
 
     const id = crypto.randomUUID();
     const [resProd] = await pool.query(
-        `CALL sp_crear_producto(?, ?, ?, ?, ?, ?, ?, ?, ?)`,
-        [id, nombre, descripcion, precioNum, idCategoria, idSubcategoria, stockNum, JSON.stringify(uploaderImagenes), creado_por]
+        `CALL sp_crear_producto(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+        [id, nombre, descripcion, precioNum, idCategoria, idSubcategoria, stockNum, JSON.stringify(uploaderImagenes), creado_por, precioOfertaNum, ofertaInicioFmt, ofertaFinFmt]
     );
 
     const rows = resProd[0] || [];
@@ -238,7 +278,7 @@ export const obtenerProducto = catchAsyncErrors(async (req, res, next) => {
 });
 export const actualizarProducto = catchAsyncErrors(async (req, res, next) => {
     const { productoId } = req.params;
-    const { nombre, descripcion, precio, categoria, stock } = req.body;
+    const { nombre, descripcion, precio, categoria, stock, precio_oferta, oferta_inicio, oferta_fin, quitar_oferta } = req.body;
 
     if (!nombre || !descripcion || !precio || !categoria || stock === undefined || stock === null || stock === '') {
         return next(new ErrorHandler('Por favor, proporcione todos los detalles del producto. Necesario: nombre, descripcion, precio, categoria, stock', 400));
@@ -281,6 +321,47 @@ export const actualizarProducto = catchAsyncErrors(async (req, res, next) => {
     }
 
     const productoActual = productoRows[0];
+
+    const quiereQuitarOferta = quitar_oferta === true || quitar_oferta === 'true' || quitar_oferta === '1';
+    let precioOfertaNum = productoActual.precio_oferta !== null && productoActual.precio_oferta !== undefined
+        ? Number(productoActual.precio_oferta)
+        : null;
+    let ofertaInicioFmt = productoActual.oferta_inicio
+        ? formatMysqlDateTime(productoActual.oferta_inicio)
+        : null;
+    let ofertaFinFmt = productoActual.oferta_fin
+        ? formatMysqlDateTime(productoActual.oferta_fin)
+        : null;
+
+    if (quiereQuitarOferta) {
+        precioOfertaNum = null;
+        ofertaInicioFmt = null;
+        ofertaFinFmt = null;
+    } else if (precio_oferta !== undefined && precio_oferta !== null && precio_oferta !== '') {
+        if (!esImporte(precio_oferta)) {
+            return next(new ErrorHandler('El precio de oferta debe ser un número válido.', 400));
+        }
+        precioOfertaNum = Number(String(precio_oferta).trim().replace(',', '.'));
+        if (precioOfertaNum <= 0 || precioOfertaNum >= precioNum) {
+            return next(new ErrorHandler('El precio de oferta debe ser mayor a 0 y menor que el precio normal.', 400));
+        }
+
+        if (oferta_inicio) {
+            ofertaInicioFmt = formatMysqlDateTime(oferta_inicio);
+            if (ofertaInicioFmt === null) {
+                return next(new ErrorHandler('La fecha de inicio de oferta no es válida.', 400));
+            }
+        }
+        if (oferta_fin) {
+            ofertaFinFmt = formatMysqlDateTime(oferta_fin);
+            if (ofertaFinFmt === null) {
+                return next(new ErrorHandler('La fecha de fin de oferta no es válida.', 400));
+            }
+        }
+        if (ofertaInicioFmt && ofertaFinFmt && ofertaFinFmt < ofertaInicioFmt) {
+            return next(new ErrorHandler('La fecha de fin debe ser posterior a la fecha de inicio.', 400));
+        }
+    }
 
     let imagenesActuales = [];
     if (productoActual.imagenes) {
@@ -347,8 +428,8 @@ export const actualizarProducto = catchAsyncErrors(async (req, res, next) => {
     }
 
     const [resAct] = await pool.query(
-        `CALL sp_actualizar_producto_completo(?, ?, ?, ?, ?, ?, ?, ?)`,
-        [productoId, nombre, descripcion, precioNum, idCategoria, idSubcategoria, stockNum, JSON.stringify(imagenes)]
+        `CALL sp_actualizar_producto_completo(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+        [productoId, nombre, descripcion, precioNum, idCategoria, idSubcategoria, stockNum, JSON.stringify(imagenes), precioOfertaNum, ofertaInicioFmt, ofertaFinFmt]
     );
     const productoActualizado = resAct[0] || [];
 

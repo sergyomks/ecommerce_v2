@@ -15,7 +15,7 @@ export const adminSlice = createSlice({
     monthlySales: [],
     orderStatusCounts: {},
     topSellingProducts: [],
-    lowStockProducts: 0,
+    lowStockProducts: [],
     revenueGrowth: "",
     newUsersThisMonth: 0,
     currentMonthSales: 0,
@@ -59,7 +59,7 @@ export const adminSlice = createSlice({
       state.monthlySales = action.payload.monthlySales;
       state.orderStatusCounts = action.payload.orderStatusCounts;
       state.topSellingProducts = action.payload.topSellingProducts;
-      state.lowStockProducts = action.payload.lowStockProducts?.length;
+      state.lowStockProducts = action.payload.lowStockProducts || [];
       state.revenueGrowth = action.payload.revenueGrowth;
       state.newUsersThisMonth = action.payload.newUsersThisMonth;
       state.currentMonthSales = action.payload.currentMonthSales;

@@ -76,7 +76,7 @@ const Navbar = () => {
             </Link></span>
         <div className="flex items-center gap-5">
           <Link to="/about" className="hover:opacity-80" style={{ color: "var(--store-muted)" }}>
-            Sobre Tec System
+            Sobre Compañia Peruana Nacional Textil SAC
           </Link>
           <Link to="/contact" className="hover:opacity-80" style={{ color: "var(--store-muted)" }}>
             Atención
@@ -115,7 +115,7 @@ const Navbar = () => {
               className="shrink-0 border px-2.5 py-1 text-[18px] md:text-[20px] font-extrabold store-text tracking-tight"
               style={{ borderColor: "var(--store-text)" }}
             >
-              TecSystem.com
+              Compañia Peruana Nacional Textil SAC
             </Link>
             <form
               onSubmit={handleSearch}

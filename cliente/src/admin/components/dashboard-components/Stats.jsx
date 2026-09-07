@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { formatNumber } from "../../lib/helper";
 import { useSelector } from "react-redux";
-import { DollarSign, Wallet, Star, TrendingUp } from "lucide-react";
+import { DollarSign, Wallet, TrendingUp, UserPlus, AlertTriangle } from "lucide-react";
 
 const Stats = () => {
   const [revenueChange, setRevenueChange] = useState("");
@@ -11,7 +11,9 @@ const Stats = () => {
     yesterdayRevenue,
     totalUsersCount,
     currentMonthSales,
-    topSellingProducts,
+    revenueGrowth,
+    newUsersThisMonth,
+    lowStockProducts,
   } = useSelector((state) => state.admin);
 
   useEffect(() => {
@@ -23,21 +25,14 @@ const Stats = () => {
     setRevenueChange(`${change > 0 ? "+" : ""}${change.toFixed(1)}%`);
   }, [todayRevenue, yesterdayRevenue]);
 
-  const avgScore =
-    topSellingProducts?.length > 0
-      ? (
-          topSellingProducts.reduce(
-            (sum, item) => sum + Number(item.calificacion || 0),
-            0
-          ) / topSellingProducts.length
-        ).toFixed(1)
-      : "0.0";
+  const lowStockCount = Array.isArray(lowStockProducts) ? lowStockProducts.length : 0;
 
   const stats = [
     {
       title: "Ingresos de hoy",
       value: `S/. ${formatNumber(todayRevenue || 0)}`,
       change: revenueChange,
+      changeLabel: "vs ayer",
       icon: DollarSign,
       iconClass: "from-[#a78bfa] to-[#7c3aed]",
     },
@@ -50,15 +45,24 @@ const Stats = () => {
     {
       title: "Ventas del mes",
       value: `S/. ${formatNumber(currentMonthSales || 0)}`,
+      change: revenueGrowth && revenueGrowth !== "0%" ? revenueGrowth : null,
+      changeLabel: "vs mes anterior",
       icon: TrendingUp,
       iconClass: "from-[#fdba74] to-[#f59e0b]",
     },
     {
-      title: "Score promedio",
-      value: avgScore,
-      hint: `${totalUsersCount || 0} usuarios`,
-      icon: Star,
+      title: "Nuevos usuarios este mes",
+      value: newUsersThisMonth || 0,
+      hint: `${totalUsersCount || 0} usuarios totales`,
+      icon: UserPlus,
       iconClass: "from-[#5eead4] to-[#0d9488]",
+    },
+    {
+      title: "Alerta de stock bajo",
+      value: lowStockCount,
+      hint: lowStockCount > 0 ? "Productos requieren reposición" : "Inventario saludable",
+      icon: AlertTriangle,
+      iconClass: lowStockCount > 0 ? "from-[#fca5a5] to-[#ef4444]" : "from-[#86efac] to-[#22c55e]",
     },
   ];
 
@@ -83,7 +87,7 @@ const Stats = () => {
                   stat.change.startsWith("+") ? "text-[#1aa89a]" : "text-[#e07a7a]"
                 }`}
               >
-                {stat.change} vs ayer
+                {stat.change} {stat.changeLabel || ""}
               </p>
             )}
             {stat.hint && (

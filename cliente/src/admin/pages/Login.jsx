@@ -47,7 +47,7 @@ const Login = () => {
     <div className="min-h-[calc(100vh-28px)] flex items-center justify-center px-4">
       <div className="admin-card p-8 max-w-md w-full sm:p-10">
         <h2 className="text-3xl font-extrabold text-center mb-2 text-[#16343a]">
-          TecPro
+          Compañia Peruana Nacional Textil SAC
         </h2>
         <p className="text-center text-sm text-[#6b8a8a] mb-6">
           Inicia sesión con una cuenta Admin

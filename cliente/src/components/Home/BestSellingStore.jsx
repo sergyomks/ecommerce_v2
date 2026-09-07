@@ -35,12 +35,12 @@ const BestSellingStore = ({ categorias = [], products = [] }) => {
         >
           <img
             src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80"
-            alt="Tec System Mall"
+            alt="Compañia Peruana Nacional Textil SAC"
             className="absolute inset-0 w-full h-full object-cover opacity-70"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
           <div className="relative z-10 h-full min-h-[280px] flex flex-col justify-end p-8">
-            <p className="text-3xl font-extrabold mb-2">Tec System Mall</p>
+            <p className="text-3xl font-extrabold mb-2">Compañia Peruana Nacional Textil SAC</p>
             <p className="text-white/85 max-w-xs text-sm">
               La selección oficial de la tienda. Calidad verificada y envíos a todo el Perú.
             </p>

@@ -77,7 +77,7 @@ const CartSidebar = () => {
                             <button onClick={() => updateQuantity(item.variante?.id, item.cantidad + 1)} className="p-1 rounded-md glass-card hover:glow-on-hover animate-smooth">
                               <Plus className="w-4 h-4" />
                             </button>
-                            <button onClick={() => dispatch(removeFromCart(item.producto.id))} className="p-1 rounded-md glass-card hover:glow-on-hover animate-smooth ml-2 text-destructive">
+                            <button onClick={() => dispatch(removeFromCart({ id: item.variante?.id }))} className="p-1 rounded-md glass-card hover:glow-on-hover animate-smooth ml-2 text-destructive">
                               <Trash2 className="w-4 h-4" />
                             </button>
                           </div>

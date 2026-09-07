@@ -1,18 +1,43 @@
 import { useDispatch, useSelector } from "react-redux";
 import { toggleComponent } from "../../store/slices/extraSlice";
+import { AlertTriangle, PackageCheck } from "lucide-react";
 
 const FeaturedDuel = () => {
-  const { topSellingProducts } = useSelector((state) => state.admin);
+  const { lowStockProducts } = useSelector((state) => state.admin);
   const dispatch = useDispatch();
-  const first = topSellingProducts?.[0];
-  const second = topSellingProducts?.[1];
+
+  const items = Array.isArray(lowStockProducts) ? lowStockProducts : [];
+  const hasAlerts = items.length > 0;
+  const preview = items.slice(0, 3);
 
   return (
     <article className="admin-card p-6">
-      <div className="flex items-start justify-between gap-3 mb-6">
-        <p className="text-sm text-[#6b8a8a]">
-          Top ventas · los dos productos más vendidos
-        </p>
+      <div className="flex items-start justify-between gap-3 mb-5">
+        <div className="flex items-center gap-3">
+          <div
+            className={`w-11 h-11 rounded-2xl flex items-center justify-center shadow-sm ${
+              hasAlerts
+                ? "bg-gradient-to-br from-[#fca5a5] to-[#ef4444] text-white"
+                : "bg-gradient-to-br from-[#86efac] to-[#22c55e] text-white"
+            }`}
+          >
+            {hasAlerts ? (
+              <AlertTriangle className="w-5 h-5" strokeWidth={2} />
+            ) : (
+              <PackageCheck className="w-5 h-5" strokeWidth={2} />
+            )}
+          </div>
+          <div>
+            <p className="text-[11px] uppercase tracking-wide text-[#8aa0a4]">
+              Alerta de inventario
+            </p>
+            <h3 className="text-lg font-semibold text-[#16343a] leading-tight">
+              {hasAlerts
+                ? `${items.length} producto${items.length === 1 ? "" : "s"} con stock bajo`
+                : "Inventario saludable"}
+            </h3>
+          </div>
+        </div>
         <button
           type="button"
           onClick={() => dispatch(toggleComponent("Products"))}
@@ -21,37 +46,52 @@ const FeaturedDuel = () => {
           Ver productos
         </button>
       </div>
-      <div className="flex items-center justify-between gap-3 sm:gap-6 px-2 sm:px-8 py-2">
-        <ProductSide product={first} fallback="Producto 1" />
-        <div className="shrink-0 w-11 h-11 rounded-full bg-[#e07a7a] text-white text-xs font-bold uppercase flex items-center justify-center shadow-md">
-          vs
-        </div>
-        <ProductSide product={second} fallback="Producto 2" />
-      </div>
+
+      {hasAlerts ? (
+        <ul className="divide-y divide-[#edf2f3]">
+          {preview.map((item, index) => (
+            <li
+              key={`${item.nombre}-${index}`}
+              className="flex items-center justify-between gap-3 py-3"
+            >
+              <div className="flex items-center gap-3 min-w-0">
+                <span
+                  className={`shrink-0 w-9 h-9 rounded-lg flex items-center justify-center text-xs font-bold ${
+                    Number(item.stock) === 0
+                      ? "bg-[#fee2e2] text-[#b91c1c]"
+                      : "bg-[#fef3c7] text-[#b45309]"
+                  }`}
+                >
+                  {Number(item.stock) || 0}
+                </span>
+                <span className="font-medium text-[#16343a] truncate">
+                  {item.nombre}
+                </span>
+              </div>
+              <span
+                className={`text-xs font-semibold px-2.5 py-1 rounded-full whitespace-nowrap ${
+                  Number(item.stock) === 0
+                    ? "bg-[#fee2e2] text-[#b91c1c]"
+                    : "bg-[#fef3c7] text-[#b45309]"
+                }`}
+              >
+                {Number(item.stock) === 0 ? "Sin stock" : "Stock bajo"}
+              </span>
+            </li>
+          ))}
+          {items.length > preview.length && (
+            <li className="pt-3 text-xs text-[#6b8a8a]">
+              y {items.length - preview.length} más...
+            </li>
+          )}
+        </ul>
+      ) : (
+        <p className="text-sm text-[#6b8a8a]">
+          Todos los productos tienen stock suficiente (más de 5 unidades).
+        </p>
+      )}
     </article>
   );
 };
-
-const ProductSide = ({ product, fallback }) => (
-  <div className="flex-1 flex flex-col items-center text-center min-w-0">
-    <div className="w-[88px] h-[88px] sm:w-28 sm:h-28 rounded-full bg-white/80 border border-white shadow-inner overflow-hidden mb-3">
-      {product?.imagen ? (
-        <img
-          src={product.imagen}
-          alt={product.nombre}
-          className="w-full h-full object-cover"
-        />
-      ) : (
-        <div className="w-full h-full bg-[#e8eef0]" />
-      )}
-    </div>
-    <p className="font-semibold text-[#16343a] truncate w-full">
-      {product?.nombre || fallback}
-    </p>
-    <p className="text-xs text-[#6b8a8a] mt-0.5">
-      {product ? `${product.total_ventas} ventas` : "Sin datos"}
-    </p>
-  </div>
-);
 
 export default FeaturedDuel;

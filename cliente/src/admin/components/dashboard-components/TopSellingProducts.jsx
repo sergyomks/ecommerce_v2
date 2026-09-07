@@ -16,7 +16,6 @@ const TopSellingProducts = () => {
               <th className="px-2 py-2 font-medium">Producto</th>
               <th className="px-2 py-2 font-medium">Cat.</th>
               <th className="px-2 py-2 font-medium">Ventas</th>
-              <th className="px-2 py-2 font-medium">Pts</th>
             </tr>
           </thead>
           <tbody>
@@ -40,14 +39,11 @@ const TopSellingProducts = () => {
                   <td className="px-2 py-3 font-semibold text-[#16343a]">
                     {element.total_ventas}
                   </td>
-                  <td className="px-2 py-3 font-semibold text-[#1aa89a]">
-                    {element.calificacion}
-                  </td>
                 </tr>
               ))
             ) : (
               <tr>
-                <td colSpan={5} className="px-2 py-6 text-sm text-[#6b8a8a]">
+                <td colSpan={4} className="px-2 py-6 text-sm text-[#6b8a8a]">
                   Todavía no hay productos con ventas.
                 </td>
               </tr>
