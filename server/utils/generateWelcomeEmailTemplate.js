@@ -3,7 +3,7 @@ import { escaparHtml, urlSegura } from "./escaparHtml.js";
 export const generateWelcomeEmailTemplate = ({ nombreUsuario, tiendaUrl }) => {
   const enlace = urlSegura(tiendaUrl);
 
-  return `
+  const html = `
   <div style="font-family:Arial,Helvetica,sans-serif;max-width:600px;margin:0 auto;padding:24px;color:#121722;">
     <h2 style="margin:0 0 16px;font-size:22px;">Tu cuenta ya está lista</h2>
 
@@ -28,4 +28,16 @@ export const generateWelcomeEmailTemplate = ({ nombreUsuario, tiendaUrl }) => {
       Si no creaste esta cuenta, escríbenos respondiendo desde la tienda y la damos de baja.
     </p>
   </div>`;
+
+  const text = [
+    `Tu cuenta ya está lista`,
+    ``,
+    `Hola ${nombreUsuario || ""}, gracias por registrarte. Desde tu cuenta puedes seguir tus pedidos, guardar prendas en tu lista de deseos y pagar más rápido la próxima vez.`,
+    ``,
+    enlace ? `Ir a la tienda: ${enlace}` : "",
+    ``,
+    `Si no creaste esta cuenta, escríbenos respondiendo desde la tienda y la damos de baja.`,
+  ].filter(Boolean).join("\n");
+
+  return { html, text };
 };

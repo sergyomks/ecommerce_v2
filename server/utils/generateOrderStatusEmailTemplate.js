@@ -28,7 +28,7 @@ export const generateOrderStatusEmailTemplate = (data) => {
 
   const enlacePedidos = urlSegura(ordersUrl);
 
-  return `
+  const html = `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; background-color: #000; color: #fff;">
       <h2 style="color: #fff; text-align: center;">Actualización de pedido</h2>
       <p style="font-size: 16px; color: #ccc;">Hola ${escaparHtml(nombreUsuario || "cliente")},</p>
@@ -57,4 +57,26 @@ export const generateOrderStatusEmailTemplate = (data) => {
       </footer>
     </div>
   `;
+
+  const text = [
+    `Actualización de pedido`,
+    ``,
+    `Hola ${nombreUsuario || "cliente"},`,
+    ``,
+    `Tu pedido #${shortId} ahora está en estado ${estadoNuevo}.`,
+    ``,
+    detalle,
+    ``,
+    `Estado anterior: ${estadoAnterior}`,
+    `ID de pedido: ${pedidoId}`,
+    ``,
+    enlacePedidos ? `Ver mis pedidos: ${enlacePedidos}` : "",
+    ``,
+    `Gracias,`,
+    `SYSTEC STORE`,
+    ``,
+    `Este es un mensaje automático. Por favor, no responda a este correo electrónico.`,
+  ].filter(Boolean).join("\n");
+
+  return { html, text };
 };

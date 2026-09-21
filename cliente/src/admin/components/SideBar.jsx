@@ -63,7 +63,7 @@ const SideBar = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const handleLogout = () => {
-    dispatch(cerrarSesion({ skipPopup: true })).finally(() => {
+    dispatch(cerrarSesion({ skipPopup: true, scope: "admin" })).finally(() => {
       navigate("/admin/login", { replace: true });
     });
   };

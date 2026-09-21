@@ -19,7 +19,7 @@ export const registrar = createAsyncThunk("auth/registar", async (data, thunkApi
 
 export const login = createAsyncThunk("auth/login", async (data, thunkApi) => {
   try {
-    const res = await axiosInstance.post("/auth/login", data);
+    const res = await axiosInstance.post("/auth/login", { ...data, destino: "store" });
     toast.success(res.data.message);
     thunkApi.dispatch(toggleAuthPopup());
     return res.data.user;
@@ -32,13 +32,7 @@ export const login = createAsyncThunk("auth/login", async (data, thunkApi) => {
 
 export const loginAdmin = createAsyncThunk("auth/loginAdmin", async (data, thunkApi) => {
   try {
-    const res = await axiosInstance.post("/auth/login", data);
-    if (res.data.user?.rol !== "Admin") {
-      await axiosInstance.post("/auth/cerrarSesion");
-      const message = "Acceso denegado. No tiene permisos de administrador.";
-      toast.error(message);
-      return thunkApi.rejectWithValue(message);
-    }
+    const res = await axiosInstance.post("/auth/login", { ...data, destino: "admin" });
     toast.success(res.data.message);
     return res.data.user;
   } catch (error) {
@@ -61,7 +55,8 @@ export const obtenerUsuario = createAsyncThunk("auth/obtenerUsuario", async (_, 
 
 export const cerrarSesion = createAsyncThunk("auth/cerrarSesion", async (options, thunkApi) => {
   try {
-    await axiosInstance.post("/auth/cerrarSesion");
+    const scope = options?.scope === "admin" ? "admin" : "store";
+    await axiosInstance.post("/auth/cerrarSesion", { scope });
     if (!options?.skipPopup) {
       thunkApi.dispatch(toggleAuthPopup());
     }

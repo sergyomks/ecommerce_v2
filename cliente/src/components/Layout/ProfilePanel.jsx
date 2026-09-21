@@ -51,7 +51,7 @@ const ProfilePanel = () => {
     </div>
 
     { }
-    <div className="fixed right-0 top-0 h-full w-96 z-50 store-surface shadow-xl animate-slide-in-right overflow-y-auto">
+    <div className="fixed right-0 top-0 h-full w-full sm:w-96 z-50 store-surface shadow-xl animate-slide-in-right overflow-y-auto">
       <div className="flex items-center justify-between p-6 border-b" style={{ borderColor: "var(--store-border)" }}>
         <h2 className="text-xl font-semibold store-text">Perfil</h2>
         <button className="p-2 rounded-lg store-hover" onClick={() => dispatch(toggleAuthPopup())}>

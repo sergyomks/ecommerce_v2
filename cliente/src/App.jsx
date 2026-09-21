@@ -72,7 +72,7 @@ const StoreLayout = () => {
 
   return (
     <ThemeProvider>
-      <div className="store-page pt-[8.5rem] md:pt-[6.75rem]">
+      <div className="store-page pt-[4.5rem] md:pt-[6.75rem]">
         <Navbar />
         <Sidebar />
         <SearchOverlay />

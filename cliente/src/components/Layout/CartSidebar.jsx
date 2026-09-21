@@ -33,7 +33,7 @@ const CartSidebar = () => {
   return <>
     <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40" onClick={() => dispatch(toggleCart())}>
     </div>
-    <div className="fixed right-0 top-0 h-full w-96 z-50 store-surface shadow-xl animate-slide-in-right overflow-y-auto">
+    <div className="fixed right-0 top-0 h-full w-full sm:w-96 z-50 store-surface shadow-xl animate-slide-in-right overflow-y-auto">
       <div className="flex items-center justify-between p-6 border-b" style={{ borderColor: "var(--store-border)" }}>
         <h2 className="text-xl font-semibold store-text">Carrito de compras</h2>
         <button onClick={() => dispatch(toggleCart())} className="p-2 rounded-lg store-hover">

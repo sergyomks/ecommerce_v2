@@ -2,7 +2,7 @@ import ErrorHandler from "../middlewares/errorMiddleware.js";
 import { catchAsyncErrors } from "../middlewares/catchAsyncError.js";
 import pool from "../database/db.js";
 import bcrypt from "bcryptjs";
-import { sendToken } from "../utils/jwtToken.js";
+import { sendToken, COOKIE_NAMES } from "../utils/jwtToken.js";
 import crypto from "crypto";
 import {
   generateEmailTemplate,
@@ -69,13 +69,15 @@ export const registrar = catchAsyncErrors(async (req, res, next) => {
     };
 
     try {
+        const welcomeTemplate = generateWelcomeEmailTemplate({
+            nombreUsuario: nombreNorm,
+            tiendaUrl: process.env.FRONTEND_URL,
+        });
         await sendEmail({
             email,
             subject: "Tu cuenta en la tienda ya está lista",
-            message: generateWelcomeEmailTemplate({
-                nombreUsuario: nombreNorm,
-                tiendaUrl: process.env.FRONTEND_URL,
-            }),
+            message: welcomeTemplate.html,
+            textoPlano: welcomeTemplate.text,
         });
     } catch (error) {
         console.error(
@@ -84,7 +86,10 @@ export const registrar = catchAsyncErrors(async (req, res, next) => {
         );
     }
 
-    sendToken(user, 201, "Usuario registrado exitosamente", res);
+    sendToken(user, 201, "Usuario registrado exitosamente", res, {
+      cookieName: COOKIE_NAMES.store,
+      scope: "store",
+    });
 });
 
 const MAX_INTENTOS_FALLIDOS = 5;
@@ -93,10 +98,12 @@ const MINUTOS_BLOQUEO_CUENTA = 15;
 const CREDENCIALES_INVALIDAS = "Correo electrónico o contraseña incorrectos.";
 
 export const login = catchAsyncErrors(async (req, res, next) => {
-    const { email, contraseña } = req.body;
+    const { email, contraseña, destino } = req.body;
     if (!email || !contraseña) {
         return next(new ErrorHandler("Por favor, proporcione su correo electrónico y contraseña.", 400));
     }
+
+    const destinoNorm = destino === "admin" ? "admin" : "store";
 
     const emailNorm = String(email).trim().toLowerCase();
 
@@ -108,6 +115,15 @@ export const login = catchAsyncErrors(async (req, res, next) => {
     }
 
     const user = rows[0];
+
+    if (destinoNorm === "admin" && user.rol !== "Admin") {
+        return next(
+            new ErrorHandler(
+                "Acceso denegado. Este inicio de sesión es solo para administradores.",
+                403
+            )
+        );
+    }
 
     if (Number(user.esta_bloqueado) === 1) {
         const minutos = Math.max(1, Math.ceil(Number(user.segundos_restantes || 0) / 60));
@@ -155,20 +171,28 @@ export const login = catchAsyncErrors(async (req, res, next) => {
         await pool.query(`CALL sp_limpiar_intentos_fallidos(?)`, [user.id]);
     }
 
-    sendToken(user, 200, "Inicio de sesión exitoso", res);
+    sendToken(user, 200, "Inicio de sesión exitoso", res, {
+        cookieName: COOKIE_NAMES[destinoNorm],
+        scope: destinoNorm,
+    });
 });
 export const obtenerUsuario = catchAsyncErrors(async (req, res, next) => {
     res.status(200).json({
         success: true,
         user: sanitizeUser(req.user),
+        scope: req.authScope || "store",
     });
 });
 export const cerrarSesion = catchAsyncErrors(async (req, res, next) => {
-    res.status(200).cookie("token", "", {
+    const scope = req.body?.scope === "admin" ? "admin" : "store";
+    const cookieName = COOKIE_NAMES[scope];
+
+    res.status(200).cookie(cookieName, "", {
         ...getAuthCookieOptions({ expires: new Date(Date.now()) }),
     }).json({
         success: true,
         message: "sesion cerrado exitosamente",
+        scope,
     })
 });
 const RESPUESTA_RECUPERACION = {
@@ -184,12 +208,14 @@ const enviarEnlaceRecuperacion = async (user, destino) => {
     await pool.query(`CALL sp_actualizar_reset_token(?, ?, ?)`, [user.id, hashedToken, new Date(resetPasswordExpireTime)]);
 
     try {
+        const resetTemplate = generateEmailTemplate(
+            urlRestablecerContrasena(destino, resetToken)
+        );
         await sendEmail({
             email: user.email,
             subject: "Solicitud de restablecimiento de contraseña",
-            message: generateEmailTemplate(
-                urlRestablecerContrasena(destino, resetToken)
-            ),
+            message: resetTemplate.html,
+            textoPlano: resetTemplate.text,
         });
     } catch (err) {
         await pool.query(`CALL sp_limpiar_reset_token(?)`, [user.id]);
@@ -218,15 +244,17 @@ export const contraseñaOlvidado = catchAsyncErrors(async (req, res, next) => {
     if (Number(user.tiene_contrasena) === 0 && Number(user.tiene_google) === 1) {
 
         try {
+            const googleTemplate = generateGoogleAccountEmailTemplate({
+                nombreUsuario: user.nombre,
+                loginUrl: process.env.FRONTEND_URL
+                    ? `${process.env.FRONTEND_URL}/login`
+                    : undefined,
+            });
             await sendEmail({
                 email: user.email,
                 subject: "Tu cuenta entra con Google",
-                message: generateGoogleAccountEmailTemplate({
-                    nombreUsuario: user.nombre,
-                    loginUrl: process.env.FRONTEND_URL
-                        ? `${process.env.FRONTEND_URL}/login`
-                        : undefined,
-                }),
+                message: googleTemplate.html,
+                textoPlano: googleTemplate.text,
             });
         } catch (error) {
             console.error("Falló el aviso de cuenta de Google:", error?.message || error);
@@ -438,13 +466,15 @@ export const loginGoogle = catchAsyncErrors(async (req, res, next) => {
     const user = { id, nombre: nombreNorm, email, rol: "Usuario" };
 
     try {
+        const welcomeTemplate = generateWelcomeEmailTemplate({
+            nombreUsuario: nombreNorm,
+            tiendaUrl: process.env.FRONTEND_URL,
+        });
         await sendEmail({
             email,
             subject: "Tu cuenta en la tienda ya está lista",
-            message: generateWelcomeEmailTemplate({
-                nombreUsuario: nombreNorm,
-                tiendaUrl: process.env.FRONTEND_URL,
-            }),
+            message: welcomeTemplate.html,
+            textoPlano: welcomeTemplate.text,
         });
     } catch (error) {
         console.error(

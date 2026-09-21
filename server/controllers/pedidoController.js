@@ -23,6 +23,7 @@ import {
   esCodigoPostal,
   esTextoConLongitud,
   normalizarTelefono,
+  formatearTelefonoWhatsApp,
   primerError,
 } from "../utils/validaciones.js";
 
@@ -399,22 +400,33 @@ export const nuevoPedido = catchAsyncErrors(async (req, res, next) => {
                 [req.usuario.id]
             );
             const usuario = resUsuario[0]?.[0];
-            if (usuario?.email) {
+            const esUsuarioGoogle = Number(usuario?.tiene_google) === 1;
+
+            if (esUsuarioGoogle && usuario?.email) {
+                const template = generateOrderPlacedEmailTemplate({
+                    nombreUsuario: usuario.nombre,
+                    pedidoId,
+                    items: detallesPedido,
+                    precioTotal: precio_total_final,
+                    minutosExpiracion:
+                        Number(process.env.PEDIDO_EXPIRA_MINUTOS) || 30,
+                    ordersUrl: process.env.FRONTEND_URL
+                        ? `${process.env.FRONTEND_URL}/orders`
+                        : undefined,
+                });
                 await sendEmail({
                     email: usuario.email,
                     subject: `Recibimos tu pedido #${pedidoId.slice(0, 8)}`,
-                    message: generateOrderPlacedEmailTemplate({
-                        nombreUsuario: usuario.nombre,
-                        pedidoId,
-                        items: detallesPedido,
-                        precioTotal: precio_total_final,
-                        minutosExpiracion:
-                            Number(process.env.PEDIDO_EXPIRA_MINUTOS) || 30,
-                        ordersUrl: process.env.FRONTEND_URL
-                            ? `${process.env.FRONTEND_URL}/orders`
-                            : undefined,
-                    }),
+                    message: template.html,
+                    textoPlano: template.text,
                 });
+                console.log(`📧 Email enviado a usuario Google: ${usuario.email}`);
+            } else if (!esUsuarioGoogle) {
+                const telefonoWsp = formatearTelefonoWhatsApp(envio.telefono);
+                console.log(
+                    `📱 [WhatsApp pendiente] Usuario normal detectado. ` +
+                    `Teléfono formateado: ${telefonoWsp || "inválido"}`
+                );
             }
         } catch (error) {
             console.error(
@@ -597,23 +609,38 @@ export const actualizarEstadoPedido = catchAsyncErrors(async (req, res, next) =>
             const [resUsuario] = await pool.query(`CALL sp_obtener_usuario_email_nombre(?)`, [currentOrder.id_comprador]);
             const usuarioRows = resUsuario[0] || [];
             const usuario = usuarioRows[0];
+            const esUsuarioGoogle = Number(usuario?.tiene_google) === 1;
 
-            if (usuario?.email) {
+            if (esUsuarioGoogle && usuario?.email) {
                 const ordersUrl = process.env.FRONTEND_URL
                     ? `${process.env.FRONTEND_URL}/orders`
                     : undefined;
 
+                const statusTemplate = generateOrderStatusEmailTemplate({
+                    nombreUsuario: usuario.nombre,
+                    pedidoId,
+                    estadoAnterior,
+                    estadoNuevo: status,
+                    ordersUrl,
+                });
                 await sendEmail({
                     email: usuario.email,
                     subject: `Pedido #${pedidoId.slice(0, 8)} — ${status}`,
-                    message: generateOrderStatusEmailTemplate({
-                        nombreUsuario: usuario.nombre,
-                        pedidoId,
-                        estadoAnterior,
-                        estadoNuevo: status,
-                        ordersUrl,
-                    }),
+                    message: statusTemplate.html,
+                    textoPlano: statusTemplate.text,
                 });
+                console.log(`📧 Email de cambio de estado enviado a: ${usuario.email}`);
+            } else if (!esUsuarioGoogle) {
+                const [resEnvio] = await pool.query(
+                    `SELECT telefono FROM informacion_envio WHERE id_pedido = ? LIMIT 1`,
+                    [pedidoId]
+                );
+                const telefono = resEnvio[0]?.[0]?.telefono;
+                const telefonoWsp = formatearTelefonoWhatsApp(telefono);
+                console.log(
+                    `📱 [WhatsApp pendiente] Estado "${status}" para usuario normal. ` +
+                    `Teléfono formateado: ${telefonoWsp || "inválido"}`
+                );
             }
         } catch (emailError) {
             console.error(

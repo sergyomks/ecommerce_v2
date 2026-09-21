@@ -1,4 +1,4 @@
-import { Menu, User, ShoppingBag, Sun, Moon, Search, Heart, ChevronDown } from "lucide-react";
+import { Menu, User, ShoppingBag, Sun, Moon, Search, Heart, ChevronDown, Package } from "lucide-react";
 import { useTheme } from "../../contexts/ThemeContext";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
@@ -84,6 +84,11 @@ const Navbar = () => {
           <Link to="/products" className="hover:opacity-80" style={{ color: "var(--store-muted)" }}>
             Productos
           </Link>
+          {authUser && (
+            <Link to="/orders" className="hover:opacity-80" style={{ color: "var(--store-muted)" }}>
+              Mis pedidos
+            </Link>
+          )}
           {authUser ? (
             <button type="button" onClick={() => dispatch(toggleAuthPopup())} className="store-text hover:opacity-80">
               {authUser.nombre}
@@ -178,6 +183,11 @@ const Navbar = () => {
                   </span>
                 )}
               </Link>
+              {authUser && (
+                <Link to="/orders" className="p-2 rounded-lg store-hover" aria-label="Mis pedidos">
+                  <Package className="w-5 h-5 store-text" />
+                </Link>
+              )}
               <button
                 type="button"
                 onClick={() => openAuth("iniciar sesion")}

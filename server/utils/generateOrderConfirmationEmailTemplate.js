@@ -31,7 +31,7 @@ export const generateOrderConfirmationEmailTemplate = (data) => {
   const shortId = escaparHtml(pedidoId?.slice(0, 8) || "—");
   const enlacePedidos = urlSegura(ordersUrl);
 
-  return `
+  const html = `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; background-color: #000; color: #fff;">
       <h2 style="color: #fff; text-align: center;">Pago confirmado</h2>
       <p style="font-size: 16px; color: #ccc;">Hola ${escaparHtml(nombreUsuario || "cliente")},</p>
@@ -84,4 +84,44 @@ export const generateOrderConfirmationEmailTemplate = (data) => {
       </footer>
     </div>
   `;
+
+  const lineasTexto = [
+    `Pago confirmado`,
+    ``,
+    `Hola ${nombreUsuario || "cliente"},`,
+    ``,
+    `Recibimos tu pago correctamente. Tu pedido #${shortId} ya está en proceso.`,
+    ``,
+    `Productos:`,
+  ];
+
+  items.forEach((item) => {
+    lineasTexto.push(`- ${item.titulo} x${item.cantidad} — ${formatMoney(item.precio * item.cantidad)}`);
+  });
+
+  lineasTexto.push(
+    ``,
+    `IGV (incluido): ${formatMoney(impuesto)}`,
+    `Envío: ${formatMoney(precioEnvio)}`,
+    `Total pagado: ${formatMoney(precioTotal)}`,
+    ``
+  );
+
+  if (chargeId) {
+    lineasTexto.push(`Referencia de pago Culqi: ${chargeId}`);
+  }
+  lineasTexto.push(`ID de pedido: ${pedidoId}`, ``);
+
+  if (enlacePedidos) {
+    lineasTexto.push(`Ver mis pedidos: ${enlacePedidos}`, ``);
+  }
+
+  lineasTexto.push(
+    `Gracias por tu compra,`,
+    `SYSTEC STORE`,
+    ``,
+    `Este es un mensaje automático. Por favor, no responda a este correo electrónico.`
+  );
+
+  return { html, text: lineasTexto.join("\n") };
 };

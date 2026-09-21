@@ -37,6 +37,14 @@ export const esTelefono = (valor) => {
 
 export const normalizarTelefono = (valor) => nucleoTelefono(valor);
 
+export const CODIGO_PAIS_DEFAULT = "+51";
+
+export const formatearTelefonoWhatsApp = (valor, codigoPais = CODIGO_PAIS_DEFAULT) => {
+  const nucleo = nucleoTelefono(valor);
+  if (!nucleo) return null;
+  return `${codigoPais}${nucleo}`;
+};
+
 export const esCodigoPostal = (valor) =>
   typeof valor === "string" && /^\d{5}$/.test(valor.trim());
 

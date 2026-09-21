@@ -35,7 +35,7 @@ export const generateOrderPlacedEmailTemplate = (data) => {
     })
     .join("");
 
-  return `
+  const html = `
   <div style="font-family:Arial,Helvetica,sans-serif;max-width:600px;margin:0 auto;padding:24px;color:#121722;">
     <h2 style="margin:0 0 16px;font-size:22px;">Recibimos tu pedido</h2>
 
@@ -84,4 +84,43 @@ export const generateOrderPlacedEmailTemplate = (data) => {
       se cancela solo.
     </p>
   </div>`;
+
+  const lineasTexto = [
+    `Hola ${nombreUsuario || "cliente"},`,
+    ``,
+    `Recibimos tu pedido #${shortId}. Todavía no está pagado.`,
+    ``,
+  ];
+
+  if (minutosExpiracion) {
+    lineasTexto.push(
+      `Guardamos las prendas durante ${minutosExpiracion} minutos.`,
+      `Si no completas el pago en ese plazo, el pedido se cancela.`,
+      ``
+    );
+  }
+
+  lineasTexto.push("Productos:");
+  items.forEach((item) => {
+    const variante = [item.talla, item.color]
+      .filter((v) => v && v !== "Única" && v !== "Único")
+      .join(" · ");
+    lineasTexto.push(`- ${item.titulo || "Producto"}${variante ? ` (${variante})` : ""} x${item.cantidad ?? 1} — S/ ${Number(item.precio || 0).toFixed(2)}`);
+  });
+
+  lineasTexto.push(
+    ``,
+    `Total: S/ ${Number(precioTotal || 0).toFixed(2)}`,
+    ``
+  );
+
+  if (enlacePedidos) {
+    lineasTexto.push(`Completar el pago: ${enlacePedidos}`, ``);
+  }
+
+  lineasTexto.push(
+    `Si no fuiste tú quien hizo este pedido, puedes ignorar este mensaje.`
+  );
+
+  return { html, text: lineasTexto.join("\n") };
 };

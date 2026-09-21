@@ -1,6 +1,26 @@
 import nodemailer from "nodemailer";
 
-export const sendEmail = async ({ email, subject, message }) => {
+const htmlATextoPlano = (html) => {
+  if (!html) return "";
+  return html
+    .replace(/<style[^>]*>[\s\S]*?<\/style>/gi, "")
+    .replace(/<script[^>]*>[\s\S]*?<\/script>/gi, "")
+    .replace(/<br\s*\/?>/gi, "\n")
+    .replace(/<\/p>/gi, "\n\n")
+    .replace(/<\/div>/gi, "\n")
+    .replace(/<\/tr>/gi, "\n")
+    .replace(/<\/td>/gi, " | ")
+    .replace(/<[^>]+>/g, "")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+};
+
+export const sendEmail = async ({ email, subject, message, textoPlano }) => {
   const usuario = process.env.SMTP_MAIL || process.env.SMTP_EMAIL;
   const clave = process.env.SMTP_PASSWORD;
 
@@ -27,17 +47,32 @@ export const sendEmail = async ({ email, subject, message }) => {
         }
   );
 
-  const from = process.env.STORE_NAME
-    ? `"${process.env.STORE_NAME}" <${usuario}>`
-    : usuario;
+  const nombreTienda = process.env.STORE_NAME?.trim() || "Tienda";
+  const from = `"${nombreTienda}" <${usuario}>`;
+  const replyTo = process.env.STORE_EMAIL || usuario;
+  const unsubscribeUrl = process.env.FRONTEND_URL
+    ? `${process.env.FRONTEND_URL}/unsubscribe`
+    : `mailto:${usuario}?subject=unsubscribe`;
+
+  const textVersion = textoPlano || htmlATextoPlano(message);
 
   const mailOptions = {
     from,
     to: email,
-
-    replyTo: process.env.STORE_EMAIL || usuario,
+    replyTo,
     subject,
     html: message,
+    text: textVersion,
+    headers: {
+      "X-Mailer": `${nombreTienda} Mailer`,
+      "X-Priority": "3",
+      "List-Unsubscribe": `<${unsubscribeUrl}>`,
+      "List-Unsubscribe-Post": "List-Unsubscribe=One-Click",
+    },
+    envelope: {
+      from: usuario,
+      to: email,
+    },
   };
 
   await transporter.sendMail(mailOptions);

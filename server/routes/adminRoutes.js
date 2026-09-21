@@ -5,16 +5,13 @@ import {
     obtenerTodoUsuarios,
     reporteVentasExcel,
 } from "../controllers/adminController.js";
-import {
-    autherizedRoles,
-    isAuthenticate,
-} from "../middlewares/authMiddleware.js";
+import { isAuthenticateAdmin } from "../middlewares/authMiddleware.js";
 
 const router = express.Router();
 
-router.get("/obtenertodosusuarios", isAuthenticate, autherizedRoles("Admin"), obtenerTodoUsuarios);
-router.delete("/eliminar/:id", isAuthenticate, autherizedRoles("Admin"), eliminarUsuario);
-router.get("/buscar/dashboard-panel", isAuthenticate, autherizedRoles("Admin"), dashboardPanel);
-router.get("/reportes/ventas", isAuthenticate, autherizedRoles("Admin"), reporteVentasExcel);
+router.get("/obtenertodosusuarios", isAuthenticateAdmin, obtenerTodoUsuarios);
+router.delete("/eliminar/:id", isAuthenticateAdmin, eliminarUsuario);
+router.get("/buscar/dashboard-panel", isAuthenticateAdmin, dashboardPanel);
+router.get("/reportes/ventas", isAuthenticateAdmin, reporteVentasExcel);
 
 export default router;
